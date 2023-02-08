@@ -1,8 +1,9 @@
 # Index of katas by its category/discipline
 
-These are the 15 code challenges I have completed:
+These are the 16 code challenges I have completed:
 ## Fundamentals
 
+- [Two to One](./Katas/two-to-one)
 - [Binary Addition](./Katas/binary-addition)
 - [Complementary DNA](./Katas/complementary-dna)
 - [String repeat](./Katas/string-repeat)
