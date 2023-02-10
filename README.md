@@ -1,8 +1,9 @@
 # Index of katas by its category/discipline
 
-These are the 16 code challenges I have completed:
+These are the 19 code challenges I have completed:
 ## Fundamentals
 
+- [Odd or Even?](./Katas/odd-or-even)
 - [Two to One](./Katas/two-to-one)
 - [Binary Addition](./Katas/binary-addition)
 - [Complementary DNA](./Katas/complementary-dna)
@@ -20,7 +21,8 @@ These are the 16 code challenges I have completed:
 - [Find the odd int](./Katas/find-the-odd-int)
 ## Algorithms
 
-
+- [Bit Counting](./Katas/bit-counting)
+- [Create Phone Number](./Katas/create-phone-number)
 ## Bug Fixes
 
 - [Multiply](./Katas/multiply)
