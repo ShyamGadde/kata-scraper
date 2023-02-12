@@ -1,8 +1,9 @@
 # Index of katas by its category/discipline
 
-These are the 20 code challenges I have completed:
+These are the 22 code challenges I have completed:
 ## Fundamentals
 
+- [Convert a String to a Number!](./Katas/convert-a-string-to-a-number)
 - [Odd or Even?](./Katas/odd-or-even)
 - [Two to One](./Katas/two-to-one)
 - [Binary Addition](./Katas/binary-addition)
@@ -21,6 +22,7 @@ These are the 20 code challenges I have completed:
 - [Find the odd int](./Katas/find-the-odd-int)
 ## Algorithms
 
+- [Valid Parentheses](./Katas/valid-parentheses)
 - [Is a number prime?](./Katas/is-a-number-prime)
 - [Bit Counting](./Katas/bit-counting)
 - [Create Phone Number](./Katas/create-phone-number)
