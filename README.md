@@ -1,8 +1,10 @@
 # Index of katas by its category/discipline
 
-These are the 22 code challenges I have completed:
+These are the 24 code challenges I have completed:
 ## Fundamentals
 
+- [Friend or Foe?](./Katas/friend-or-foe)
+- [Array.diff](./Katas/array-dot-diff)
 - [Convert a String to a Number!](./Katas/convert-a-string-to-a-number)
 - [Odd or Even?](./Katas/odd-or-even)
 - [Two to One](./Katas/two-to-one)
