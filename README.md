@@ -1,8 +1,10 @@
 # Index of katas by its category/discipline
 
-These are the 24 code challenges I have completed:
+These are the 26 code challenges I have completed:
 ## Fundamentals
 
+- [Count of positives / sum of negatives](./Katas/count-of-positives-slash-sum-of-negatives)
+- [Descending Order](./Katas/descending-order)
 - [Friend or Foe?](./Katas/friend-or-foe)
 - [Array.diff](./Katas/array-dot-diff)
 - [Convert a String to a Number!](./Katas/convert-a-string-to-a-number)
