@@ -1,8 +1,11 @@
 # Index of katas by its category/discipline
 
-These are the 26 code challenges I have completed:
+These are the 29 code challenges I have completed:
 ## Fundamentals
 
+- [Build Tower](./Katas/build-tower)
+- [Growth of a Population](./Katas/growth-of-a-population)
+- [You Can't Code Under Pressure #1](./Katas/you-cant-code-under-pressure-number-1)
 - [Count of positives / sum of negatives](./Katas/count-of-positives-slash-sum-of-negatives)
 - [Descending Order](./Katas/descending-order)
 - [Friend or Foe?](./Katas/friend-or-foe)
