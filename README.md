@@ -1,8 +1,13 @@
 # Index of katas by its category/discipline
 
-These are the 29 code challenges I have completed:
+These are the 34 code challenges I have completed:
 ## Fundamentals
 
+- [Beginner - Reduce but Grow](./Katas/beginner-reduce-but-grow)
+- [Remove String Spaces](./Katas/remove-string-spaces)
+- [MakeUpperCase](./Katas/makeuppercase)
+- [Replace With Alphabet Position](./Katas/replace-with-alphabet-position)
+- [Jaden Casing Strings](./Katas/jaden-casing-strings)
 - [Build Tower](./Katas/build-tower)
 - [Growth of a Population](./Katas/growth-of-a-population)
 - [You Can't Code Under Pressure #1](./Katas/you-cant-code-under-pressure-number-1)
