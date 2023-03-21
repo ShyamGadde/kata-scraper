@@ -1,8 +1,17 @@
 # Index of katas by its category/discipline
 
-These are the 34 code challenges I have completed:
+These are the 43 code challenges I have completed:
 ## Fundamentals
 
+- [Reversed sequence ](./Katas/reversed-sequence)
+- [Is he gonna survive?](./Katas/is-he-gonna-survive)
+- [Categorize New Member](./Katas/categorize-new-member)
+- [List Filtering](./Katas/list-filtering)
+- [Are You Playing Banjo?](./Katas/are-you-playing-banjo)
+- [Invert values](./Katas/invert-values)
+- [Opposites Attract](./Katas/opposites-attract)
+- [String ends with?](./Katas/string-ends-with)
+- [Square(n) Sum](./Katas/square-n-sum)
 - [Beginner - Reduce but Grow](./Katas/beginner-reduce-but-grow)
 - [Remove String Spaces](./Katas/remove-string-spaces)
 - [MakeUpperCase](./Katas/makeuppercase)
