@@ -1,8 +1,10 @@
 # Index of katas by its category/discipline
 
-These are the 43 code challenges I have completed:
+These are the 45 code challenges I have completed:
 ## Fundamentals
 
+- [Equal Sides Of An Array](./Katas/equal-sides-of-an-array)
+- [Tribonacci Sequence](./Katas/tribonacci-sequence)
 - [Reversed sequence ](./Katas/reversed-sequence)
 - [Is he gonna survive?](./Katas/is-he-gonna-survive)
 - [Categorize New Member](./Katas/categorize-new-member)
