@@ -1,8 +1,13 @@
 # Index of katas by its category/discipline
 
-These are the 45 code challenges I have completed:
+These are the 50 code challenges I have completed:
 ## Fundamentals
 
+- [Duplicate Encoder](./Katas/duplicate-encoder)
+- [Transportation on vacation ](./Katas/transportation-on-vacation)
+- [A Needle in the Haystack](./Katas/a-needle-in-the-haystack)
+- [Exes and Ohs](./Katas/exes-and-ohs)
+- [Break camelCase](./Katas/break-camelcase)
 - [Equal Sides Of An Array](./Katas/equal-sides-of-an-array)
 - [Tribonacci Sequence](./Katas/tribonacci-sequence)
 - [Reversed sequence ](./Katas/reversed-sequence)
