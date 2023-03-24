@@ -1,8 +1,11 @@
 # Index of katas by its category/discipline
 
-These are the 50 code challenges I have completed:
+These are the 53 code challenges I have completed:
 ## Fundamentals
 
+- [Highest Scoring Word](./Katas/highest-scoring-word)
+- [Convert a Boolean to a String](./Katas/convert-a-boolean-to-a-string)
+- [Isograms](./Katas/isograms)
 - [Duplicate Encoder](./Katas/duplicate-encoder)
 - [Transportation on vacation ](./Katas/transportation-on-vacation)
 - [A Needle in the Haystack](./Katas/a-needle-in-the-haystack)
