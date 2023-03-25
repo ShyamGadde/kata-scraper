@@ -1,8 +1,14 @@
 # Index of katas by its category/discipline
 
-These are the 53 code challenges I have completed:
+These are the 59 code challenges I have completed:
 ## Fundamentals
 
+- [Your order,  please](./Katas/your-order-please)
+- [Sum of two lowest positive integers](./Katas/sum-of-two-lowest-positive-integers)
+- [Convert number to reversed array of digits](./Katas/convert-number-to-reversed-array-of-digits)
+- [Will you make it?](./Katas/will-you-make-it)
+- [Basic Mathematical Operations](./Katas/basic-mathematical-operations)
+- [Double Char](./Katas/double-char)
 - [Highest Scoring Word](./Katas/highest-scoring-word)
 - [Convert a Boolean to a String](./Katas/convert-a-boolean-to-a-string)
 - [Isograms](./Katas/isograms)
