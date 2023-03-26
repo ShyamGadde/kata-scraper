@@ -1,8 +1,18 @@
 # Index of katas by its category/discipline
 
-These are the 59 code challenges I have completed:
+These are the 69 code challenges I have completed:
 ## Fundamentals
 
+- [Correct the mistakes of the character recognition software](./Katas/correct-the-mistakes-of-the-character-recognition-software)
+- [Beginner Series #4 Cockroach](./Katas/beginner-series-number-4-cockroach)
+- [Find the smallest integer in the array](./Katas/find-the-smallest-integer-in-the-array)
+- [Parse nice int from char problem](./Katas/parse-nice-int-from-char-problem)
+- [Third Angle of a Triangle](./Katas/third-angle-of-a-triangle)
+- [Persistent Bugger.](./Katas/persistent-bugger)
+- [DNA to RNA Conversion](./Katas/dna-to-rna-conversion)
+- [Testing 1-2-3](./Katas/testing-1-2-3)
+- [Remove exclamation marks](./Katas/remove-exclamation-marks)
+- [Find the next perfect square!](./Katas/find-the-next-perfect-square)
 - [Your order,  please](./Katas/your-order-please)
 - [Sum of two lowest positive integers](./Katas/sum-of-two-lowest-positive-integers)
 - [Convert number to reversed array of digits](./Katas/convert-number-to-reversed-array-of-digits)
