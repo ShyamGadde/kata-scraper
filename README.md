@@ -1,8 +1,14 @@
 # Index of katas by its category/discipline
 
-These are the 69 code challenges I have completed:
+These are the 75 code challenges I have completed:
 ## Fundamentals
 
+- [Sum Arrays](./Katas/sum-arrays)
+- [Switch it Up!](./Katas/switch-it-up)
+- [Take a Number And Sum  Its Digits Raised To The Consecutive Powers And ....¡Eureka!!](./Katas/take-a-number-and-sum-its-digits-raised-to-the-consecutive-powers-and-dot-dot-dot-eureka)
+- [How good are you really?](./Katas/how-good-are-you-really)
+- [Rot13](./Katas/rot13-1)
+- [Thinkful - Logic Drills: Traffic light](./Katas/thinkful-logic-drills-traffic-light)
 - [Correct the mistakes of the character recognition software](./Katas/correct-the-mistakes-of-the-character-recognition-software)
 - [Beginner Series #4 Cockroach](./Katas/beginner-series-number-4-cockroach)
 - [Find the smallest integer in the array](./Katas/find-the-smallest-integer-in-the-array)
