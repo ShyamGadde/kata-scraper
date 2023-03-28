@@ -1,8 +1,14 @@
 # Index of katas by its category/discipline
 
-These are the 75 code challenges I have completed:
+These are the 81 code challenges I have completed:
 ## Fundamentals
 
+- [Welcome!](./Katas/welcome)
+- [Remove the minimum](./Katas/remove-the-minimum)
+- [Cat years, Dog years](./Katas/cat-years-dog-years)
+- [Find the first non-consecutive number](./Katas/find-the-first-non-consecutive-number)
+- [Playing with digits](./Katas/playing-with-digits)
+- [Vowel Count](./Katas/vowel-count)
 - [Sum Arrays](./Katas/sum-arrays)
 - [Switch it Up!](./Katas/switch-it-up)
 - [Take a Number And Sum  Its Digits Raised To The Consecutive Powers And ....¡Eureka!!](./Katas/take-a-number-and-sum-its-digits-raised-to-the-consecutive-powers-and-dot-dot-dot-eureka)
