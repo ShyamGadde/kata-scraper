@@ -1,8 +1,16 @@
 # Index of katas by its category/discipline
 
-These are the 81 code challenges I have completed:
+These are the 89 code challenges I have completed:
 ## Fundamentals
 
+- [Take a Ten Minutes Walk](./Katas/take-a-ten-minutes-walk)
+- [Write Number in Expanded Form](./Katas/write-number-in-expanded-form)
+- [Beginner - Lost Without a Map](./Katas/beginner-lost-without-a-map)
+- [Convert a string to an array](./Katas/convert-a-string-to-an-array)
+- [Keep up the hoop](./Katas/keep-up-the-hoop)
+- [Area or Perimeter](./Katas/area-or-perimeter)
+- [Count the smiley faces!](./Katas/count-the-smiley-faces)
+- [Sort the odd](./Katas/sort-the-odd)
 - [Welcome!](./Katas/welcome)
 - [Remove the minimum](./Katas/remove-the-minimum)
 - [Cat years, Dog years](./Katas/cat-years-dog-years)
