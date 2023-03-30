@@ -1,8 +1,12 @@
 # Index of katas by its category/discipline
 
-These are the 89 code challenges I have completed:
+These are the 93 code challenges I have completed:
 ## Fundamentals
 
+- [Counting sheep...](./Katas/counting-sheep-dot-dot-dot)
+- [All Star Code Challenge #18](./Katas/all-star-code-challenge-number-18)
+- [Find the stray number](./Katas/find-the-stray-number)
+- [Fake Binary](./Katas/fake-binary)
 - [Take a Ten Minutes Walk](./Katas/take-a-ten-minutes-walk)
 - [Write Number in Expanded Form](./Katas/write-number-in-expanded-form)
 - [Beginner - Lost Without a Map](./Katas/beginner-lost-without-a-map)
