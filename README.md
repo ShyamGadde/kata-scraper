@@ -1,8 +1,15 @@
 # Index of katas by its category/discipline
 
-These are the 93 code challenges I have completed:
+These are the 100 code challenges I have completed:
 ## Fundamentals
 
+- [Powers of 2](./Katas/powers-of-2)
+- [Detect Pangram](./Katas/detect-pangram)
+- [Two Sum](./Katas/two-sum)
+- [Find Maximum and Minimum Values of a List](./Katas/find-maximum-and-minimum-values-of-a-list)
+- [Sum without highest and lowest number](./Katas/sum-without-highest-and-lowest-number)
+- [L1: Set Alarm](./Katas/l1-set-alarm)
+- [Number of People in the Bus](./Katas/number-of-people-in-the-bus)
 - [Counting sheep...](./Katas/counting-sheep-dot-dot-dot)
 - [All Star Code Challenge #18](./Katas/all-star-code-challenge-number-18)
 - [Find the stray number](./Katas/find-the-stray-number)
