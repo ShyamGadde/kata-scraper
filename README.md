@@ -1,8 +1,19 @@
 # Index of katas by its category/discipline
 
-These are the 100 code challenges I have completed:
+These are the 111 code challenges I have completed:
 ## Fundamentals
 
+- [Give me a Diamond](./Katas/give-me-a-diamond)
+- [Beginner Series #2 Clock](./Katas/beginner-series-number-2-clock)
+- [Is it even?](./Katas/is-it-even)
+- [Extract the domain name from a URL](./Katas/extract-the-domain-name-from-a-url-1)
+- [Sum The Strings](./Katas/sum-the-strings)
+- [Removing Elements](./Katas/removing-elements)
+- [Grasshopper - Check for factor](./Katas/grasshopper-check-for-factor)
+- [Count the divisors of a number](./Katas/count-the-divisors-of-a-number)
+- [Count by X](./Katas/count-by-x)
+- [If you can't sleep, just count sheep!!](./Katas/if-you-cant-sleep-just-count-sheep)
+- [Volume of a Cuboid](./Katas/volume-of-a-cuboid)
 - [Powers of 2](./Katas/powers-of-2)
 - [Detect Pangram](./Katas/detect-pangram)
 - [Two Sum](./Katas/two-sum)
