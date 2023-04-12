@@ -1,8 +1,17 @@
 # Index of katas by its category/discipline
 
-These are the 111 code challenges I have completed:
+These are the 120 code challenges I have completed:
 ## Fundamentals
 
+- [Highest and Lowest](./Katas/highest-and-lowest)
+- [Digit*Digit](./Katas/digit-star-digit)
+- [Find the middle element](./Katas/find-the-middle-element)
+- [Grasshopper - Terminal game move function](./Katas/grasshopper-terminal-game-move-function)
+- [Counting Duplicates](./Katas/counting-duplicates)
+- [Reverse words](./Katas/reverse-words)
+- [Filter out the geese](./Katas/filter-out-the-geese)
+- [Abbreviate a Two Word Name](./Katas/abbreviate-a-two-word-name)
+- [Sort and Star](./Katas/sort-and-star)
 - [Give me a Diamond](./Katas/give-me-a-diamond)
 - [Beginner Series #2 Clock](./Katas/beginner-series-number-2-clock)
 - [Is it even?](./Katas/is-it-even)
