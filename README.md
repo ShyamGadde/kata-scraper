@@ -1,8 +1,14 @@
 # Index of katas by its category/discipline
 
-These are the 120 code challenges I have completed:
+These are the 126 code challenges I have completed:
 ## Fundamentals
 
+- [Calculating with Functions](./Katas/calculating-with-functions)
+- [Century From Year](./Katas/century-from-year)
+- [5 without numbers !!](./Katas/5-without-numbers)
+- [You only need one - Beginner](./Katas/you-only-need-one-beginner)
+- [Sum of the first nth term of Series](./Katas/sum-of-the-first-nth-term-of-series)
+- [Directions Reduction](./Katas/directions-reduction)
 - [Highest and Lowest](./Katas/highest-and-lowest)
 - [Digit*Digit](./Katas/digit-star-digit)
 - [Find the middle element](./Katas/find-the-middle-element)
