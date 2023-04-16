@@ -1,8 +1,17 @@
 # Index of katas by its category/discipline
 
-These are the 126 code challenges I have completed:
+These are the 135 code challenges I have completed:
 ## Fundamentals
 
+- [Count the Digit](./Katas/count-the-digit)
+- [Printer Errors](./Katas/printer-errors)
+- [Product of consecutive Fib numbers](./Katas/product-of-consecutive-fib-numbers)
+- [Keep Hydrated!](./Katas/keep-hydrated-1)
+- [altERnaTIng cAsE <=> ALTerNAtiNG CaSe](./Katas/alternating-case-<-equals->-alternating-case)
+- [Round up to the next multiple of 5](./Katas/round-up-to-the-next-multiple-of-5)
+- [Reverse List Order](./Katas/reverse-list-order)
+- [Sort Numbers](./Katas/sort-numbers)
+- [Count characters in your string](./Katas/count-characters-in-your-string)
 - [Calculating with Functions](./Katas/calculating-with-functions)
 - [Century From Year](./Katas/century-from-year)
 - [5 without numbers !!](./Katas/5-without-numbers)
