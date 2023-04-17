@@ -1,8 +1,10 @@
 # Index of katas by its category/discipline
 
-These are the 135 code challenges I have completed:
+These are the 137 code challenges I have completed:
 ## Fundamentals
 
+- [Build a pile of Cubes](./Katas/build-a-pile-of-cubes)
+- [The Feast of Many Beasts](./Katas/the-feast-of-many-beasts)
 - [Count the Digit](./Katas/count-the-digit)
 - [Printer Errors](./Katas/printer-errors)
 - [Product of consecutive Fib numbers](./Katas/product-of-consecutive-fib-numbers)
