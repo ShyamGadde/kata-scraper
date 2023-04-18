@@ -1,8 +1,12 @@
 # Index of katas by its category/discipline
 
-These are the 137 code challenges I have completed:
+These are the 141 code challenges I have completed:
 ## Fundamentals
 
+- [Lario and Muigi Pipe Problem](./Katas/lario-and-muigi-pipe-problem)
+- [Remove anchor from URL](./Katas/remove-anchor-from-url)
+- [Mexican Wave](./Katas/mexican-wave)
+- [What is between?](./Katas/what-is-between)
 - [Build a pile of Cubes](./Katas/build-a-pile-of-cubes)
 - [The Feast of Many Beasts](./Katas/the-feast-of-many-beasts)
 - [Count the Digit](./Katas/count-the-digit)
