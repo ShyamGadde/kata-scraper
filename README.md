@@ -1,8 +1,13 @@
 # Index of katas by its category/discipline
 
-These are the 141 code challenges I have completed:
+These are the 146 code challenges I have completed:
 ## Fundamentals
 
+- [Money, Money, Money](./Katas/money-money-money)
+- [Name Shuffler](./Katas/name-shuffler)
+- [You're a square!](./Katas/youre-a-square)
+- [Find the capitals](./Katas/find-the-capitals-1)
+- [Sum Mixed Array](./Katas/sum-mixed-array)
 - [Lario and Muigi Pipe Problem](./Katas/lario-and-muigi-pipe-problem)
 - [Remove anchor from URL](./Katas/remove-anchor-from-url)
 - [Mexican Wave](./Katas/mexican-wave)
