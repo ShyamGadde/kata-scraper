@@ -1,8 +1,15 @@
 # Index of katas by its category/discipline
 
-These are the 146 code challenges I have completed:
+These are the 153 code challenges I have completed:
 ## Fundamentals
 
+- [Two fighters, one winner.](./Katas/two-fighters-one-winner)
+- [get character from ASCII Value](./Katas/get-character-from-ascii-value)
+- [Anagram Detection](./Katas/anagram-detection)
+- [Find Multiples of a Number](./Katas/find-multiples-of-a-number)
+- [Sum of a sequence](./Katas/sum-of-a-sequence)
+- [Exclamation marks series #11: Replace all vowel to exclamation mark in the sentence](./Katas/exclamation-marks-series-number-11-replace-all-vowel-to-exclamation-mark-in-the-sentence)
+- [Grasshopper - Summation](./Katas/grasshopper-summation)
 - [Money, Money, Money](./Katas/money-money-money)
 - [Name Shuffler](./Katas/name-shuffler)
 - [You're a square!](./Katas/youre-a-square)
