@@ -1,8 +1,10 @@
 # Index of katas by its category/discipline
 
-These are the 153 code challenges I have completed:
+These are the 155 code challenges I have completed:
 ## Fundamentals
 
+- [Summing  a number's digits](./Katas/summing-a-numbers-digits)
+- [Simple Fun #176: Reverse Letter](./Katas/simple-fun-number-176-reverse-letter)
 - [Two fighters, one winner.](./Katas/two-fighters-one-winner)
 - [get character from ASCII Value](./Katas/get-character-from-ascii-value)
 - [Anagram Detection](./Katas/anagram-detection)
