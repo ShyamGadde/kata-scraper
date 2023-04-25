@@ -1,8 +1,13 @@
 # Index of katas by its category/discipline
 
-These are the 155 code challenges I have completed:
+These are the 160 code challenges I have completed:
 ## Fundamentals
 
+- [Form The Minimum](./Katas/form-the-minimum)
+- [Difference of Volumes of Cuboids](./Katas/difference-of-volumes-of-cuboids)
+- [Super Duper Easy](./Katas/super-duper-easy)
+- [Small enough? - Beginner](./Katas/small-enough-beginner)
+- [Consecutive strings](./Katas/consecutive-strings)
 - [Summing  a number's digits](./Katas/summing-a-numbers-digits)
 - [Simple Fun #176: Reverse Letter](./Katas/simple-fun-number-176-reverse-letter)
 - [Two fighters, one winner.](./Katas/two-fighters-one-winner)
