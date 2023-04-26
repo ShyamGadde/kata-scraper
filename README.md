@@ -1,8 +1,20 @@
 # Index of katas by its category/discipline
 
-These are the 160 code challenges I have completed:
+These are the 172 code challenges I have completed:
 ## Fundamentals
 
+- [No zeros for heros](./Katas/no-zeros-for-heros)
+- [Plural](./Katas/plural)
+- [Merge two sorted arrays into one](./Katas/merge-two-sorted-arrays-into-one)
+- [Sort array by string length](./Katas/sort-array-by-string-length)
+- [Grasshopper - Personalized Message](./Katas/grasshopper-personalized-message)
+- [Enumerable Magic #25 - Take the First N Elements](./Katas/enumerable-magic-number-25-take-the-first-n-elements)
+- [How many lightsabers do you own?](./Katas/how-many-lightsabers-do-you-own)
+- [A wolf in sheep's clothing](./Katas/a-wolf-in-sheeps-clothing)
+- [Simple multiplication](./Katas/simple-multiplication)
+- [Bin to Decimal](./Katas/bin-to-decimal)
+- [Get the Middle Character](./Katas/get-the-middle-character)
+- [Student's Final Grade](./Katas/students-final-grade)
 - [Form The Minimum](./Katas/form-the-minimum)
 - [Difference of Volumes of Cuboids](./Katas/difference-of-volumes-of-cuboids)
 - [Super Duper Easy](./Katas/super-duper-easy)
