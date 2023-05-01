@@ -1,8 +1,14 @@
 # Index of katas by its category/discipline
 
-These are the 172 code challenges I have completed:
+These are the 178 code challenges I have completed:
 ## Fundamentals
 
+- [Grasshopper - Basic Function Fixer](./Katas/grasshopper-basic-function-fixer)
+- [Add Length](./Katas/add-length)
+- [Flatten and sort an array](./Katas/flatten-and-sort-an-array)
+- [Mumbling](./Katas/mumbling)
+- [Maximum Length Difference](./Katas/maximum-length-difference)
+- [Sentence Smash](./Katas/sentence-smash)
 - [No zeros for heros](./Katas/no-zeros-for-heros)
 - [Plural](./Katas/plural)
 - [Merge two sorted arrays into one](./Katas/merge-two-sorted-arrays-into-one)
