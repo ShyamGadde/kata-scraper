@@ -1,8 +1,15 @@
 # Index of katas by its category/discipline
 
-These are the 178 code challenges I have completed:
+These are the 185 code challenges I have completed:
 ## Fundamentals
 
+- [Fix your code before the garden dies! ](./Katas/fix-your-code-before-the-garden-dies)
+- [Alternate capitalization](./Katas/alternate-capitalization)
+- [Returning Strings](./Katas/returning-strings)
+- [Total amount of points](./Katas/total-amount-of-points)
+- [Sum of angles](./Katas/sum-of-angles)
+- [Alan Partridge II - Apple Turnover](./Katas/alan-partridge-ii-apple-turnover)
+- [Exclamation marks series #1: Remove an exclamation mark from the end of string](./Katas/exclamation-marks-series-number-1-remove-an-exclamation-mark-from-the-end-of-string)
 - [Grasshopper - Basic Function Fixer](./Katas/grasshopper-basic-function-fixer)
 - [Add Length](./Katas/add-length)
 - [Flatten and sort an array](./Katas/flatten-and-sort-an-array)
