@@ -1,8 +1,12 @@
 # Index of katas by its category/discipline
 
-These are the 185 code challenges I have completed:
+These are the 189 code challenges I have completed:
 ## Fundamentals
 
+- [Beginner Series #3 Sum of Numbers](./Katas/beginner-series-number-3-sum-of-numbers)
+- [Fix string case](./Katas/fix-string-case)
+- [Multiple of  index](./Katas/multiple-of-index)
+- [String cleaning](./Katas/string-cleaning)
 - [Fix your code before the garden dies! ](./Katas/fix-your-code-before-the-garden-dies)
 - [Alternate capitalization](./Katas/alternate-capitalization)
 - [Returning Strings](./Katas/returning-strings)
