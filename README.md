@@ -1,8 +1,15 @@
 # Index of katas by its category/discipline
 
-These are the 189 code challenges I have completed:
+These are the 196 code challenges I have completed:
 ## Fundamentals
 
+- [Printing Array elements with Comma delimiters](./Katas/printing-array-elements-with-comma-delimiters)
+- [Reverse or rotate?](./Katas/reverse-or-rotate)
+- [Enumerable Magic - Does My List Include This?](./Katas/enumerable-magic-does-my-list-include-this)
+- [Predict your age!](./Katas/predict-your-age)
+- [N-th Power](./Katas/n-th-power)
+- [Hex to Decimal](./Katas/hex-to-decimal)
+- [Grasshopper - Messi goals function](./Katas/grasshopper-messi-goals-function)
 - [Beginner Series #3 Sum of Numbers](./Katas/beginner-series-number-3-sum-of-numbers)
 - [Fix string case](./Katas/fix-string-case)
 - [Multiple of  index](./Katas/multiple-of-index)
