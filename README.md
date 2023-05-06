@@ -1,8 +1,12 @@
 # Index of katas by its category/discipline
 
-These are the 196 code challenges I have completed:
+These are the 200 code challenges I have completed:
 ## Fundamentals
 
+- [Is this a triangle?](./Katas/is-this-a-triangle)
+- [Check the exam](./Katas/check-the-exam)
+- [Decipher this! ](./Katas/decipher-this)
+- [Encrypt this!](./Katas/encrypt-this)
 - [Printing Array elements with Comma delimiters](./Katas/printing-array-elements-with-comma-delimiters)
 - [Reverse or rotate?](./Katas/reverse-or-rotate)
 - [Enumerable Magic - Does My List Include This?](./Katas/enumerable-magic-does-my-list-include-this)
