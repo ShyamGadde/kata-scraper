@@ -1,8 +1,16 @@
 # Index of katas by its category/discipline
 
-These are the 200 code challenges I have completed:
+These are the 208 code challenges I have completed:
 ## Fundamentals
 
+- [Regex Password Validation](./Katas/regex-password-validation)
+- [Function 2 - squaring an argument](./Katas/function-2-squaring-an-argument)
+- [Sum of Minimums!](./Katas/sum-of-minimums)
+- [Sum of differences in array](./Katas/sum-of-differences-in-array)
+- [Multiplication table for number](./Katas/multiplication-table-for-number)
+- [The Wide-Mouthed frog! ](./Katas/the-wide-mouthed-frog)
+- [Hello, Name or World!](./Katas/hello-name-or-world)
+- [What's the real floor?](./Katas/whats-the-real-floor)
 - [Is this a triangle?](./Katas/is-this-a-triangle)
 - [Check the exam](./Katas/check-the-exam)
 - [Decipher this! ](./Katas/decipher-this)
