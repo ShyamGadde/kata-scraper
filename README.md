@@ -1,8 +1,11 @@
 # Index of katas by its category/discipline
 
-These are the 208 code challenges I have completed:
+These are the 211 code challenges I have completed:
 ## Fundamentals
 
+- [Data Reverse](./Katas/data-reverse)
+- [Largest pair sum in array](./Katas/largest-pair-sum-in-array)
+- [Help the bookseller !](./Katas/help-the-bookseller)
 - [Regex Password Validation](./Katas/regex-password-validation)
 - [Function 2 - squaring an argument](./Katas/function-2-squaring-an-argument)
 - [Sum of Minimums!](./Katas/sum-of-minimums)
