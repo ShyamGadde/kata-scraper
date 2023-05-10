@@ -1,8 +1,14 @@
 # Index of katas by its category/discipline
 
-These are the 211 code challenges I have completed:
+These are the 217 code challenges I have completed:
 ## Fundamentals
 
+- [Meeting](./Katas/meeting)
+- [Return the day ](./Katas/return-the-day)
+- [Surface  Area and Volume of a Box](./Katas/surface-area-and-volume-of-a-box)
+- [Delete occurrences of an element if it occurs more than n times](./Katas/delete-occurrences-of-an-element-if-it-occurs-more-than-n-times)
+- [Find the Remainder](./Katas/find-the-remainder)
+- [Find out whether the shape is a cube](./Katas/find-out-whether-the-shape-is-a-cube)
 - [Data Reverse](./Katas/data-reverse)
 - [Largest pair sum in array](./Katas/largest-pair-sum-in-array)
 - [Help the bookseller !](./Katas/help-the-bookseller)
