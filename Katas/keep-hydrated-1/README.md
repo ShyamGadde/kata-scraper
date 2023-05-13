@@ -35,5 +35,5 @@ hours = 6.7---> liters = 3
 hours = 11.8--> liters = 5
 ```
 
-You have to return 3 columns: `id`, `hours` and `liters` (not litres, it's a difference from the kata description)
+Input data is available from the table `cycling`, which has 2 columns: `id` and `hours`. For each row, you have to return 3 columns: `id`, `hours` and `liters` (not litres, it's a difference from the kata description)
 ~~~

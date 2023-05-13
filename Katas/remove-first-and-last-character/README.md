@@ -2,7 +2,7 @@
 
 - **Completed at:** 2023-02-06T09:27:04.879Z
 
-- **Completed languages:** javascript
+- **Completed languages:** javascript, python
 
 - **Tags:** Strings, Fundamentals
 

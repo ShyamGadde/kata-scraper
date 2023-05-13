@@ -1,8 +1,22 @@
 # Index of katas by its category/discipline
 
-These are the 217 code challenges I have completed:
+These are the 231 code challenges I have completed:
 ## Fundamentals
 
+- [Primes in numbers](./Katas/primes-in-numbers)
+- [Welcome to the City](./Katas/welcome-to-the-city)
+- [Title Case](./Katas/title-case)
+- [Grasshopper - Terminal game combat function](./Katas/grasshopper-terminal-game-combat-function-1)
+- [Sorted? yes? no? how?](./Katas/sorted-yes-no-how)
+- [Shortest Word](./Katas/shortest-word)
+- [How old will I be in 2099?](./Katas/how-old-will-i-be-in-2099)
+- [Determine offspring sex based on genes XX and XY chromosomes](./Katas/determine-offspring-sex-based-on-genes-xx-and-xy-chromosomes)
+- [Sum of Pairs](./Katas/sum-of-pairs)
+- [Maximum  subarray sum](./Katas/maximum-subarray-sum)
+- [Take the Derivative](./Katas/take-the-derivative)
+- [Remove duplicates from list](./Katas/remove-duplicates-from-list)
+- [Remove First and Last Character Part Two](./Katas/remove-first-and-last-character-part-two)
+- [Is the string uppercase?](./Katas/is-the-string-uppercase)
 - [Meeting](./Katas/meeting)
 - [Return the day ](./Katas/return-the-day)
 - [Surface  Area and Volume of a Box](./Katas/surface-area-and-volume-of-a-box)
