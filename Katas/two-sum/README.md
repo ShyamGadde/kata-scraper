@@ -47,7 +47,9 @@ two_sum(&[1, 2, 3], 4) // return (0, 2) or (2, 0)
 ```cobol
       TwoSum([1, 2, 3], 4) => result = [1, 3]
 ```
-
+```scala
+twoSum(List(1, 2, 3), 4) // (0, 2) or (2, 0)
+```
 ~~~if:lambdacalc
 ### Encodings
 

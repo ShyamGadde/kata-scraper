@@ -1,8 +1,14 @@
 # Index of katas by its category/discipline
 
-These are the 231 code challenges I have completed:
+These are the 237 code challenges I have completed:
 ## Fundamentals
 
+- [Most digits](./Katas/most-digits)
+- [Factorial](./Katas/factorial)
+- [No oddities here](./Katas/no-oddities-here)
+- [Find Nearest square number](./Katas/find-nearest-square-number)
+- [The 'if' function](./Katas/the-if-function)
+- [Disemvowel Trolls](./Katas/disemvowel-trolls)
 - [Primes in numbers](./Katas/primes-in-numbers)
 - [Welcome to the City](./Katas/welcome-to-the-city)
 - [Title Case](./Katas/title-case)
