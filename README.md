@@ -1,8 +1,13 @@
 # Index of katas by its category/discipline
 
-These are the 237 code challenges I have completed:
+These are the 242 code challenges I have completed:
 ## Fundamentals
 
+- [Simple Encryption #1 - Alternating Split](./Katas/simple-encryption-number-1-alternating-split)
+- [Maximum Product ](./Katas/maximum-product)
+- [USD => CNY](./Katas/usd-equals->-cny)
+- [Bumps in the Road](./Katas/bumps-in-the-road)
+- [Alphabet war](./Katas/alphabet-war)
 - [Most digits](./Katas/most-digits)
 - [Factorial](./Katas/factorial)
 - [No oddities here](./Katas/no-oddities-here)
