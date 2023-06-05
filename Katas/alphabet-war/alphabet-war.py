@@ -1,11 +1,8 @@
-left_side = {
-    'w': 4,
-    'p': 3,
-    'b': 2,
-    's': 1
-}
-
-right_side = {
+alphabets = {
+    'w': -4,
+    'p': -3,
+    'b': -2,
+    's': -1,
     'm': 4,
     'q': 3,
     'd': 2,
@@ -13,15 +10,10 @@ right_side = {
 }
 
 def alphabet_war(fight):
-    left_side_score = right_side_score = 0
-    
+    score = 0
     for letter in fight:
-        if letter in left_side:
-            left_side_score += left_side[letter]
-        elif letter in right_side:
-            right_side_score += right_side[letter]
+        score += alphabets.get(letter, 0)
     
-    if left_side_score == right_side_score:
+    if score == 0:
         return "Let's fight again!"
-    else:
-        return f'{"Right" if right_side_score > left_side_score else "Left"} side wins!'
+    return f"{'Right' if score > 0 else 'Left'} side wins!"

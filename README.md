@@ -1,8 +1,12 @@
 # Index of katas by its category/discipline
 
-These are the 242 code challenges I have completed:
+These are the 246 code challenges I have completed:
 ## Fundamentals
 
+- [String incrementer](./Katas/string-incrementer)
+- [Quarter of the year](./Katas/quarter-of-the-year)
+- [CSV representation of array](./Katas/csv-representation-of-array)
+- [Sum of Cubes](./Katas/sum-of-cubes)
 - [Simple Encryption #1 - Alternating Split](./Katas/simple-encryption-number-1-alternating-split)
 - [Maximum Product ](./Katas/maximum-product)
 - [USD => CNY](./Katas/usd-equals->-cny)
