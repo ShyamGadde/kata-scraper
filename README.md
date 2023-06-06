@@ -1,8 +1,17 @@
 # Index of katas by its category/discipline
 
-These are the 246 code challenges I have completed:
+These are the 255 code challenges I have completed:
 ## Fundamentals
 
+- [Minimize  Sum Of Array (Array Series #1)   ](./Katas/minimize-sum-of-array-array-series-number-1)
+- [Make a function that does arithmetic!](./Katas/make-a-function-that-does-arithmetic)
+- [Find the position!](./Katas/find-the-position)
+- [Exclamation marks series #2: Remove all exclamation marks from the end of sentence](./Katas/exclamation-marks-series-number-2-remove-all-exclamation-marks-from-the-end-of-sentence)
+- [The Supermarket Queue](./Katas/the-supermarket-queue)
+- [Calculate average ](./Katas/calculate-average)
+- [Beginner Series #1 School Paperwork](./Katas/beginner-series-number-1-school-paperwork)
+- [Convert to Binary](./Katas/convert-to-binary)
+- [Do you speak "English"?](./Katas/do-you-speak-english)
 - [String incrementer](./Katas/string-incrementer)
 - [Quarter of the year](./Katas/quarter-of-the-year)
 - [CSV representation of array](./Katas/csv-representation-of-array)
