@@ -1,8 +1,13 @@
 # Index of katas by its category/discipline
 
-These are the 255 code challenges I have completed:
+These are the 260 code challenges I have completed:
 ## Fundamentals
 
+- [Are they the "same"?](./Katas/are-they-the-same)
+- [Row Weights](./Katas/row-weights)
+- [Even numbers in an array](./Katas/even-numbers-in-an-array)
+- [Find the unique number](./Katas/find-the-unique-number-1)
+- [simple calculator ](./Katas/simple-calculator)
 - [Minimize  Sum Of Array (Array Series #1)   ](./Katas/minimize-sum-of-array-array-series-number-1)
 - [Make a function that does arithmetic!](./Katas/make-a-function-that-does-arithmetic)
 - [Find the position!](./Katas/find-the-position)
