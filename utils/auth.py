@@ -31,7 +31,7 @@ async def sign_in_to_codewars(
         sign_in_form: WebElement = driver.find_element(By.ID, "new_user")
         driver.find_element(By.ID, "user_email").send_keys(codewars_email)
         driver.find_element(By.ID, "user_password").send_keys(codewars_password)
-        sign_in_form.find_element(By.CLASS_NAME, "is-red").click()
+        sign_in_form.find_element(By.CSS_SELECTOR, 'button.is-red[type="submit"]').click()
     except NoSuchElementException:
         print("A web element was not found on the page (sign-in step).")
         sys.exit(1)
