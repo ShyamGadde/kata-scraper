@@ -1,10 +1,11 @@
 import asyncio
 import os
-import json
+
 import requests
 from selenium import webdriver
-from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
+from selenium.webdriver.firefox.options import Options
+
 
 async def main():
     credentials = read_user_credentials()
