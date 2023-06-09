@@ -1,0 +1,56 @@
+name: Web Scraping
+
+on:
+  schedule:
+    - cron: "30 17 * * *"
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11.1'
+
+      - name: Install jq
+        run: sudo apt-get install jq -y
+
+      - name: Install Firefox and geckodriver
+        run: |
+          # Install Firefox
+          sudo apt-get install firefox -y
+
+          # Get the latest geckodriver release
+          latest_release=$(curl -s "https://api.github.com/repos/mozilla/geckodriver/releases/latest")
+          download_url=$(echo "$latest_release" | jq -r '.assets | map(select(.browser_download_url | contains("linux64.tar.gz")))[0].browser_download_url')
+          echo "Downloading geckodriver from $download_url"
+
+          # echo current directory
+          pwd
+
+          # Download and install geckodriver
+          curl -L -o geckodriver.tar.gz "$download_url"
+          tar -xvzf geckodriver.tar.gz
+          rm geckodriver.tar.gz
+          sudo mv geckodriver /usr/local/bin/
+          sudo chmod +x /usr/local/bin/geckodriver
+
+      # - name: Install dependencies
+      #   run: pip install -r requirements.txt
+
+      # - name: Run scraper
+      #   run: |
+      #     # Execute your Python scraper
+      #     python main.py
+
+      # - name: Commit and push changes
+      #   uses: EndBug/add-and-commit@v9
+      #   with:
+      #     default_author: github_actions
+      #     message: "Add katas for $(date +%Y/%m/%d)"
+      #     add: .
