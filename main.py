@@ -12,7 +12,7 @@ async def main():
 
     options = Options()
     options.add_argument("--headless")
-    driver = webdriver.Firefox(options=options, executable_path='./geckodriver')
+    driver = webdriver.Firefox(options=options, executable_path="./geckodriver")
 
     codewars_username = ""
     email = ""
@@ -48,11 +48,18 @@ async def main():
             kata_info_object = response_kata_info.json()
             kata_folder_path = os.path.join(main_folder_path, kata["slug"])
 
-            tasks.append(create_main_file_async(
-                kata_folder_path, kata["name"], kata["id"],
-                kata["completedAt"], kata["completedLanguages"],
-                kata_info_object["description"], kata_info_object["rank"], kata_info_object["tags"]
-            ))
+            tasks.append(
+                create_main_file_async(
+                    kata_folder_path,
+                    kata["name"],
+                    kata["id"],
+                    kata["completedAt"],
+                    kata["completedLanguages"],
+                    kata_info_object["description"],
+                    kata_info_object["rank"],
+                    kata_info_object["tags"],
+                )
+            )
             await asyncio.sleep(0.1)
 
     await asyncio.gather(*tasks)
@@ -63,17 +70,23 @@ async def main():
     if not exceptions:
         print("\nAll data was loaded successfully.")
     else:
-        print(f"\nAll data was loaded successfully except {len(exceptions)} katas: {', '.join(exceptions)}.")
+        print(
+            f"\nAll data was loaded successfully except {len(exceptions)} katas: {', '.join(exceptions)}."
+        )
 
     input("Press any key to exit.")
 
+
 def read_user_credentials():
     credentials = []
-    print("CodewarsLogger, v1.2.0. Source code: https://github.com/JoseDeFreitas/CodewarsLogger")
+    print(
+        "CodewarsLogger, v1.2.0. Source code: https://github.com/JoseDeFreitas/CodewarsLogger"
+    )
     credentials.append(input("Enter your Codewars username: "))
     credentials.append(input("Enter your email: "))
     credentials.append(input("Enter your Codewars password: "))
     return credentials
+
 
 async def sign_in_to_codewars(driver, email, codewars_password):
     try:
@@ -90,7 +103,10 @@ async def sign_in_to_codewars(driver, email, codewars_password):
     except:
         print("A web element was not found on the page (sign-in step).")
 
-async def create_main_file_async(folder, name, id, date, languages, description, rank, tags):
+
+async def create_main_file_async(
+    folder, name, id, date, languages, description, rank, tags
+):
     file_path = os.path.join(folder, "README.md")
     with open(file_path, "w") as file:
         file.write("# " + name + "\n\n")
@@ -108,6 +124,7 @@ async def create_main_file_async(folder, name, id, date, languages, description,
         for language in languages:
             file.write("- " + language + "\n")
 
+
 async def create_index_file_async():
     main_folder_path = "./Katas"
     index_file_path = os.path.join(main_folder_path, "index.md")
@@ -120,5 +137,6 @@ async def create_index_file_async():
 
     with open(index_file_path, "w") as index_file:
         index_file.write(index_text)
+
 
 asyncio.run(main())
