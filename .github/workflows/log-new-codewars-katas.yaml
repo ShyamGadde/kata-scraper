@@ -1,4 +1,4 @@
-name: Web Scraping
+name: Log New CodeWars Katas
 
 on:
   schedule:
