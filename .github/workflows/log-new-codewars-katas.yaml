@@ -2,7 +2,7 @@ name: Log New CodeWars Katas
 
 on:
   schedule:
-    - cron: "30 17 * * *"
+    - cron: "45 23 * * *"
 
 jobs:
   scrape:
