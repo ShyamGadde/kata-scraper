@@ -1,3 +1,4 @@
+'''The auth module contains functions that are related to authentication.'''
 import sys
 
 from selenium.common.exceptions import NoSuchElementException
