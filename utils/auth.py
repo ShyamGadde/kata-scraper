@@ -9,6 +9,17 @@ from selenium.webdriver.remote.webelement import WebElement
 async def sign_in_to_codewars(
     driver: WebDriver, codewars_email: str, codewars_password: str
 ):
+    """
+    This function signs in to Codewars using a given email and password through a web driver.
+
+    Args:
+    - driver (WebDriver): WebDriver is an object that controls the web browser and allows the script
+    to interact with it.
+    - codewars_email (str): The email address associated with the Codewars account that you want to
+    sign in to.
+    - codewars_password (str): The password for the Codewars account that the user wants to sign in
+    to.
+    """
     try:
         driver.get("https://www.codewars.com/users/sign_in")
     except TimeoutError:
