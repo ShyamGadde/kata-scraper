@@ -1,10 +1,12 @@
+# pylint: disable=missing-module-docstring
 import asyncio
 import os
 
 import requests
 from selenium import webdriver
-from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options
+
+from utils.auth import sign_in_to_codewars
 
 
 async def main():
