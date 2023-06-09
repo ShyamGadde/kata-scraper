@@ -28,15 +28,19 @@ jobs:
           download_url=$(echo "$latest_release" | jq -r '.assets | map(select(.browser_download_url | contains("linux64.tar.gz")))[0].browser_download_url')
           echo "Downloading geckodriver from $download_url"
 
-          # echo current directory
           pwd
 
           # Download and install geckodriver
           curl -L -o geckodriver.tar.gz "$download_url"
           tar -xvzf geckodriver.tar.gz
           rm geckodriver.tar.gz
+
+          ls -la
+
           sudo mv geckodriver /usr/local/bin/
           sudo chmod +x /usr/local/bin/geckodriver
+
+          pwd
 
       # - name: Install dependencies
       #   run: pip install -r requirements.txt
