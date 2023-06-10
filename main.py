@@ -46,7 +46,8 @@ async def write_file_content(file_path, content):
 
 
 class CodewarsLogger:
-    """"..."""
+    """ "..."""
+
     def __init__(self):
         self.language_extensions = {
             "agda": "agda",
@@ -124,6 +125,7 @@ class CodewarsLogger:
         self.kata_info_url = "https://www.codewars.com/api/v1/code-challenges/"
         self.main_folder_path = "./katas"
         self.total_completed_katas = 0
+        self.counter = 0
 
         self.error_list = []
 
@@ -132,9 +134,10 @@ class CodewarsLogger:
         This is an async function that scrapes completed katas from Codewars, creates folders and
         files for each kata, and generates an index file.
         """
-        os.makedirs(self.main_folder_path, exist_ok=True)
 
         self.sign_in_to_codewars(self.browser, self.email, self.password)
+
+        os.makedirs(self.main_folder_path, exist_ok=True)
 
         async with aiohttp.ClientSession() as client:
             response = await client.get(self.completed_katas_url)
@@ -158,7 +161,8 @@ class CodewarsLogger:
                     self.kata_categories[kata_details["category"]].append(
                         f'- [{kata["name"]}](./katas/{kata["slug"]})'
                     )
-                    print(f'- [{kata["name"]}](./katas/{kata["slug"]})')
+
+                    os.makedirs(kata_folder_path, exist_ok=True)
 
                     tasks.append(
                         asyncio.create_task(
@@ -169,8 +173,12 @@ class CodewarsLogger:
                     )
 
                     for language in kata["completedLanguages"]:
-                        await self.create_solution_file(
-                            kata_folder_path, kata, language
+                        tasks.append(
+                            asyncio.create_task(
+                                self.create_solution_file(
+                                    kata_folder_path, kata, language
+                                )
+                            )
                         )
 
             await asyncio.gather(*tasks)
@@ -252,8 +260,6 @@ class CodewarsLogger:
         )
 
         try:
-            os.makedirs(kata_folder_path, exist_ok=True)
-
             if os.path.exists(file_path):
                 if content != await read_file_content(file_path):
                     await write_file_content(file_path, content)
@@ -344,5 +350,6 @@ class CodewarsLogger:
             print("There was a problem while creating the index file.")
 
 
-codewars_logger = CodewarsLogger()
-asyncio.run(codewars_logger.main())
+if __name__ == "__main__":
+    codewars_logger = CodewarsLogger()
+    asyncio.run(codewars_logger.main())
