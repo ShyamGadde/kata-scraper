@@ -137,20 +137,20 @@ class CodewarsLogger:
                     )
                     print(f'- [{kata["name"]}](./katas/{kata["slug"]})')
 
-            #         tasks.append(
-            #             asyncio.create_task(
-            #                 self.create_problem_description_file(
-            #                     kata_folder_path, kata, kata_details
-            #                 )
-            #             )
-            #         )
+                    tasks.append(
+                        asyncio.create_task(
+                            self.create_problem_description_file(
+                                kata_folder_path, kata, kata_details
+                            )
+                        )
+                    )
 
-            #         for language in kata["completedLanguages"]:
-            #             await self.create_solution_file(
-            #                 kata_folder_path, kata, language
-            #             )
+                    for language in kata["completedLanguages"]:
+                        await self.create_solution_file(
+                            kata_folder_path, kata, language
+                        )
 
-            # await asyncio.gather(*tasks)
+            await asyncio.gather(*tasks)
 
         await self.create_index_file()
 
