@@ -30,9 +30,7 @@ jobs:
       #   run: pip install -r requirements.txt
 
       # - name: Run scraper
-      #   run: |
-      #     # Execute your Python scraper
-      #     python main.py
+      #   run: python main.py
 
       # - name: Commit and push changes
       #   uses: EndBug/add-and-commit@v9
