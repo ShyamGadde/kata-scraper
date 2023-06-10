@@ -15,16 +15,38 @@ from selenium.webdriver.remote.webelement import WebElement
 
 
 async def read_file_content(file_path):
+    """
+    This is an asynchronous function that reads the content of a file and returns it.
+
+    Args:
+    file_path: The file path parameter is a string that specifies the location of the file to be
+    read. It can be an absolute or relative path to the file.
+
+    Returns:
+    The function `read_file_content` returns the content of the file located at `file_path` as a
+    string. The content is read asynchronously using the `aiofiles` library.
+    """
     async with aiofiles.open(file_path, "r", encoding="utf-8") as file:
         return await file.read()
 
 
 async def write_file_content(file_path, content):
+    """
+    This is an asynchronous Python function that writes content to a file at a specified file path.
+
+    Args:
+    - file_path: The file path is a string that specifies the location and name of the file that you
+    want to write to. It should include the file extension (e.g. ".txt", ".csv", etc.) and the
+    full path if the file is not in the current working directory.
+    - content: The content parameter is a string that represents the text content that will be
+    written to the file.
+    """
     async with aiofiles.open(file_path, "w", encoding="utf-8") as file:
         await file.write(content)
 
 
 class CodewarsLogger:
+    """"..."""
     def __init__(self):
         self.language_extensions = {
             "agda": "agda",
@@ -107,7 +129,8 @@ class CodewarsLogger:
 
     async def main(self):
         """
-        TODO: Add docstring.
+        This is an async function that scrapes completed katas from Codewars, creates folders and
+        files for each kata, and generates an index file.
         """
         os.makedirs(self.main_folder_path, exist_ok=True)
 
@@ -206,6 +229,18 @@ class CodewarsLogger:
     async def create_problem_description_file(
         self, kata_folder_path, kata, kata_details
     ):
+        """
+        This function creates a README.md file in a specified folder path with information about a
+        coding problem.
+
+        Args:
+        - kata_folder_path: The path to the folder where the README.md file will be created or
+        updated.
+        - kata: A dictionary containing information about a specific CodeWars kata, including its
+        name, ID, completion date, and completed languages.
+        - kata_details: The `kata_details` parameter is a dictionary containing details about a
+        specific coding challenge or kata, such as its description, tags, and rank.
+        """
         file_path = os.path.join(kata_folder_path, "README.md")
         content = (
             f"# [{kata['name']}](https://www.codewars.com/kata/{kata['id']})\n\n"
@@ -231,6 +266,16 @@ class CodewarsLogger:
             self.error_list.append(f"{kata['id']}: {kata['name']}")
 
     async def create_solution_file(self, kata_folder_path, kata, language):
+        """
+        This function creates a solution file for a given kata and language by scraping the code
+        from the newest solution on the kata's Codewars page.
+
+        Args:
+        - kata_folder_path: The path to the folder where the solution file will be created.
+        - kata: The kata parameter is a dictionary containing information about a specific coding
+        challenge on Codewars, such as its ID, name, and description.
+        - language: The programming language of the solution file to be created.
+        """
         try:
             self.browser.get(
                 f"https://www.codewars.com/kata/{kata['id']}/solutions/{language}/me/newest"
@@ -265,6 +310,10 @@ class CodewarsLogger:
             self.error_list.append(f'{kata["id"]}: {kata["name"]}')
 
     async def create_index_file(self):
+        """
+        This function creates an index file with a list of completed code challenges sorted
+        by category.
+        """
         file_path = "./README.md"
 
         for problems in self.kata_categories.values():
