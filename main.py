@@ -80,12 +80,14 @@ class CodewarsLogger:
         self.options = Options()
         self.options.add_argument("--headless")
         self.browser = webdriver.Chrome(options=self.options)
+        self.browser.implicitly_wait(0.5)
 
         self.username, self.email, self.password = self.get_credentials()
 
         self.completed_katas_url = f"https://www.codewars.com/api/v1/users/{self.username}/code-challenges/completed"
         self.kata_info_url = "https://www.codewars.com/api/v1/code-challenges/"
         self.main_folder_path = "./katas"
+        self.total_completed_katas = 0
 
     async def main(self):
         """
@@ -98,8 +100,40 @@ class CodewarsLogger:
         async with aiohttp.ClientSession() as client:
             response = await client.get(self.completed_katas_url)
             response_json = await response.json()
+            self.total_completed_katas = response_json["totalItems"]
             number_of_pages = response_json["totalPages"]
-            print(number_of_pages)
+
+            tasks = []
+
+            for page in range(number_of_pages):
+                response = await client.get(f"{self.completed_katas_url}?page={page}")
+                response_json = await response.json()
+                completed_katas = response_json["data"]
+
+                for kata in completed_katas:
+                    response = await client.get(f"{self.kata_info_url}{kata['id']}")
+                    kata_details = await response.json()
+
+                    kata_folder_path = os.path.join(self.main_folder_path, kata["slug"])
+
+                    self.kata_categories[kata_details["category"]].append(
+                        f'- [{kata["name"]}](./katas/{kata["slug"]})'
+                    )
+
+                    tasks.append(
+                        asyncio.create_task(
+                            self.create_problem_description_file(
+                                kata_folder_path, kata, kata_details
+                            )
+                        )
+                    )
+
+                    for language in kata["completedLanguages"]:
+                        await self.create_solution_file()
+
+            await asyncio.gather(*tasks)
+
+        await self.create_index_file()
 
         self.browser.quit()
 
@@ -135,7 +169,7 @@ class CodewarsLogger:
         try:
             driver.get("https://www.codewars.com/users/sign_in")
         except TimeoutError:
-            print("The driver took too much time.")
+            print("The driver took too much time to sign in.")
             sys.exit(1)
 
         try:
@@ -150,124 +184,39 @@ class CodewarsLogger:
             print("A web element was not found on the page (sign-in step).")
             sys.exit(1)
 
+    async def create_problem_description_file(
+        self, kata_folder_path, kata, kata_details
+    ):
+        file_path = os.path.join(kata_folder_path, "README.md")
+        content = (
+            f"# [{kata['name']}](https://www.codewars.com/kata/{kata['id']})\n\n"
+            + f"- **Completed at:** {kata['completedAt']}\n\n"
+            + f"- **Completed languages:** {', '.join(kata['completedLanguages'])}\n\n"
+            + f"- **Tags:** {', '.join(kata_details['tags'])}\n\n"
+            + f"- **Rank:** {kata_details['rank']['name']}\n\n"
+            + f"## Description\n\n{kata_details['description']}"
+        )
+
+        try:
+            os.makedirs(kata_folder_path, exist_ok=True)
+
+            if os.path.exists(file_path):
+                with open(file_path, "r", encoding="utf-8") as file:
+                    if file.read() != content:
+                        ...
+            else:
+                ...
+        except OSError:
+            print(
+                f"An error occurred while creating the problem description file for {kata['name']}."
+            )
+
+    async def create_solution_file(self):
+        ...
+
+    async def create_index_file(self):
+        ...
+
 
 codewars_logger = CodewarsLogger()
 asyncio.run(codewars_logger.main())
-
-
-# async def main():
-#     credentials = read_user_credentials()
-
-#     options = Options()
-#     options.headless = True
-#     options.set_capability("geckodriverPath", "usr/local/bin/geckodriver")
-#     driver = webdriver.Firefox(options=options)
-
-#     codewars_username = ""
-#     email = ""
-#     codewars_password = ""
-
-#     try:
-#         codewars_username = credentials[0]
-#         email = credentials[1]
-#         codewars_password = credentials[2]
-#     except IndexError:
-#         print("You must pass all the credentials.")
-#         return
-
-#     completed_katas_url = f"https://www.codewars.com/api/v1/users/{codewars_username}/code-challenges/completed"
-#     kata_info_url = "https://www.codewars.com/api/v1/code-challenges/"
-#     main_folder_path = "./Katas"
-
-#     await sign_in_to_codewars(driver, email, codewars_password)
-
-#     main_response = requests.get(completed_katas_url)
-#     main_response_json = main_response.json()
-#     number_of_pages = main_response_json["totalPages"]
-
-#     tasks = []
-#     for page in range(number_of_pages):
-#         response = requests.get(f"{completed_katas_url}?page={page}")
-#         kata_object = response.json()
-
-#         for kata in kata_object["data"]:
-#             response_kata_info = requests.get(f"{kata_info_url}{kata['id']}")
-#             kata_info_object = response_kata_info.json()
-#             kata_folder_path = os.path.join(main_folder_path, kata["slug"])
-
-#             tasks.append(
-#                 create_main_file_async(
-#                     kata_folder_path,
-#                     kata["name"],
-#                     kata["id"],
-#                     kata["completedAt"],
-#                     kata["completedLanguages"],
-#                     kata_info_object["description"],
-#                     kata_info_object["rank"],
-#                     kata_info_object["tags"],
-#                 )
-#             )
-#             await asyncio.sleep(0.1)
-
-#     await asyncio.gather(*tasks)
-#     await create_index_file_async()
-
-#     driver.quit()
-
-#     if not exceptions:
-#         print("\nAll data was loaded successfully.")
-#     else:
-#         print(
-#             f"\nAll data was loaded successfully except {len(exceptions)} katas: {', '.join(exceptions)}."
-#         )
-
-#     input("Press any key to exit.")
-
-
-# def read_user_credentials():
-#     credentials = []
-#     print(
-#         "CodewarsLogger, v1.2.0. Source code: https://github.com/JoseDeFreitas/CodewarsLogger"
-#     )
-#     credentials.append(input("Enter your Codewars username: "))
-#     credentials.append(input("Enter your email: "))
-#     credentials.append(input("Enter your Codewars password: "))
-#     return credentials
-
-
-# async def create_main_file_async(
-#     folder, name, id, date, languages, description, rank, tags
-# ):
-#     file_path = os.path.join(folder, "README.md")
-#     with open(file_path, "w") as file:
-#         file.write("# " + name + "\n\n")
-#         file.write("## Description\n\n")
-#         file.write(description + "\n\n")
-#         file.write("## Details\n\n")
-#         file.write("Kata ID: " + id + "\n\n")
-#         file.write("Completed Date: " + date + "\n\n")
-#         file.write("Completed Languages: " + ", ".join(languages) + "\n\n")
-#         file.write("Rank: " + rank["name"] + " - " + rank["color"] + "\n\n")
-#         file.write("Tags: " + ", ".join(tags) + "\n\n")
-#         file.write("## Solutions\n\n")
-#         file.write("This kata has been solved in the following languages:\n\n")
-
-#         for language in languages:
-#             file.write("- " + language + "\n")
-
-
-# async def create_index_file_async():
-#     main_folder_path = "./Katas"
-#     index_file_path = os.path.join(main_folder_path, "index.md")
-#     index_text = "# Codewars Kata Index\n\n"
-
-#     for root, dirs, files in os.walk(main_folder_path):
-#         if root == main_folder_path:
-#             for directory in sorted(dirs):
-#                 index_text += "- [" + directory + "](./" + directory + "/README.md)\n"
-
-#     with open(index_file_path, "w") as index_file:
-#         index_file.write(index_text)
-
-
-# asyncio.run(main())
