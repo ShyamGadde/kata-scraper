@@ -26,11 +26,15 @@ jobs:
           sudo apt-get install firefox -y
           firefox -v
 
-      # - name: Install dependencies
-      #   run: pip install -r requirements.txt
+      - name: Install dependencies
+        run: pip install -r requirements.txt
 
-      # - name: Run scraper
-      #   run: python main.py
+      - name: Run scraper
+        env:
+          CODEWARS_USERNAME: ${{ secrets.CODEWARS_USERNAME }}
+          CODEWARS_EMAIL: ${{ secrets.CODEWARS_EMAIL }}
+          CODEWARS_PASSWORD: ${{ secrets.CODEWARS_PASSWORD }}
+        run: python main.py
 
       # - name: Commit and push changes
       #   uses: EndBug/add-and-commit@v9
