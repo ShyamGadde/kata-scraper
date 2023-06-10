@@ -5,7 +5,7 @@ import sys
 
 import aiofiles
 import aiohttp
-import dotenv
+from dotenv import load_dotenv
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
@@ -208,7 +208,7 @@ class CodewarsLogger:
         A tuple containing the values of the environment variables "CODEWARS_USERNAME",
         "CODEWARS_EMAIL", and "CODEWARS_PASSWORD".
         """
-        dotenv.load_dotenv()
+        load_dotenv()
         return (
             os.getenv("CODEWARS_USERNAME"),
             os.getenv("CODEWARS_EMAIL"),
