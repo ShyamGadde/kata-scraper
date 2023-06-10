@@ -49,7 +49,7 @@ class CodewarsLogger:
     """ "..."""
 
     def __init__(self):
-        self.language_extensions = {
+        self.language_extensions: dict[str, str] = {
             "agda": "agda",
             "bf": "b",
             "c": "c",
@@ -103,7 +103,7 @@ class CodewarsLogger:
             "typescript": "ts",
             "vb": "vb",
         }
-        self.kata_categories = {
+        self.kata_categories: dict[str, list[str]] = {
             "reference": [],  # Equivalent to the "Fundamentals" category
             "algorithms": [],
             "bug_fixes": [],
@@ -118,16 +118,16 @@ class CodewarsLogger:
 
         self.username, self.email, self.password = self.get_credentials()
 
-        self.completed_katas_url = (
+        self.completed_katas_url: str = (
             f"https://www.codewars.com/api/v1/users/{self.username}/"
             "code-challenges/completed"
         )
-        self.kata_info_url = "https://www.codewars.com/api/v1/code-challenges/"
-        self.main_folder_path = "./katas"
-        self.total_completed_katas = 0
-        self.counter = 0
+        self.kata_info_url: str = "https://www.codewars.com/api/v1/code-challenges/"
+        self.main_folder_path: str = "./katas"
+        self.total_completed_katas: int = 0
+        self.counter: int = 0
 
-        self.error_list = []
+        self.error_list: list = []
 
     async def main(self):
         """
@@ -141,22 +141,24 @@ class CodewarsLogger:
 
         async with aiohttp.ClientSession() as client:
             response = await client.get(self.completed_katas_url)
-            response_json = await response.json()
-            self.total_completed_katas = response_json["totalItems"]
-            number_of_pages = response_json["totalPages"]
+            response_content: dict = await response.json()
+            self.total_completed_katas: int = response_content["totalItems"]
+            number_of_pages: int = response_content["totalPages"]
 
-            tasks = []
+            tasks: list = []
 
             for page in range(number_of_pages):
                 response = await client.get(f"{self.completed_katas_url}?page={page}")
-                response_json = await response.json()
-                completed_katas = response_json["data"]
+                response_content: dict = await response.json()
+                completed_katas: list = response_content["data"]
 
-                for kata in completed_katas:
+                for kata in completed_katas[:5]:
                     response = await client.get(f"{self.kata_info_url}{kata['id']}")
-                    kata_details = await response.json()
+                    kata_details: dict = await response.json()
 
-                    kata_folder_path = os.path.join(self.main_folder_path, kata["slug"])
+                    kata_folder_path: str = os.path.join(
+                        self.main_folder_path, kata["slug"]
+                    )
 
                     self.kata_categories[kata_details["category"]].append(
                         f'- [{kata["name"]}](./katas/{kata["slug"]})'
@@ -192,12 +194,13 @@ class CodewarsLogger:
         await self.create_index_file()
         print("\nDone.")
 
-        print("\nErrors:")
-        print("\n".join(self.error_list))
+        if self.error_list:
+            print("\nErrors:")
+            print("\n".join(self.error_list))
 
         self.browser.quit()
 
-    def get_credentials(self):
+    def get_credentials(self) -> tuple[str, str, str]:
         """
         This function loads environment variables and returns a tuple of Codewars credentials.
 
@@ -246,7 +249,7 @@ class CodewarsLogger:
 
     async def create_problem_description_file(
         self, kata_folder_path, kata, kata_details
-    ):
+    ) -> None:
         """
         This function creates a README.md file in a specified folder path with information about a
         coding problem.
@@ -259,8 +262,8 @@ class CodewarsLogger:
         - kata_details: The `kata_details` parameter is a dictionary containing details about a
         specific coding challenge or kata, such as its description, tags, and rank.
         """
-        file_path = os.path.join(kata_folder_path, "README.md")
-        content = (
+        file_path: str = os.path.join(kata_folder_path, "README.md")
+        content: str = (
             f"# [{kata['name']}](https://www.codewars.com/kata/{kata['id']})\n\n"
             f"- **Completed at:** {kata['completedAt']}\n\n"
             f"- **Completed languages:** {', '.join(kata['completedLanguages'])}\n\n"
@@ -280,7 +283,7 @@ class CodewarsLogger:
                 f"An error occurred while creating the problem description file of {kata['name']}."
             )
 
-    async def create_solution_file(self, kata_folder_path, kata, language):
+    async def create_solution_file(self, kata_folder_path, kata, language) -> None:
         """
         This function creates a solution file for a given kata and language by scraping the code
         from the newest solution on the kata's Codewars page.
@@ -298,9 +301,9 @@ class CodewarsLogger:
 
             solutions_list = self.browser.find_element(By.ID, "solutions_list")
             solution_item = solutions_list.find_element(By.TAG_NAME, "div")
-            solution_code = solution_item.find_element(By.TAG_NAME, "pre").text
+            solution_code: str = solution_item.find_element(By.TAG_NAME, "pre").text
 
-            file_path = os.path.join(
+            file_path: str = os.path.join(
                 kata_folder_path, f"solution.{self.language_extensions[language]}"
             )
 
@@ -324,17 +327,17 @@ class CodewarsLogger:
                 f"{kata['name']} ({language})."
             )
 
-    async def create_index_file(self):
+    async def create_index_file(self) -> None:
         """
         This function creates an index file with a list of completed code challenges sorted
         by category.
         """
-        file_path = "./README.md"
+        file_path: str = "./README.md"
 
         for problems in self.kata_categories.values():
             problems.sort()
 
-        content = (
+        content: str = (
             "# Index of katas by its category/discipline\n\n"
             + f"These are the {self.total_completed_katas} code challenges I have completed:"
             + "\n## Fundamentals\n\n"
