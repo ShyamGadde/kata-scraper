@@ -311,17 +311,17 @@ class CodewarsLogger:
                 await write_file_content(file_path, solution_code)
         except TimeoutError:
             self.error_list.append(
-                f"The driver took too much time for {kata['name']} (${language})."
+                f"The driver took too much time for {kata['name']} ({language})."
             )
         except NoSuchElementException:
             self.error_list.append(
                 "A web element was not found on the page (create solution file step) of "
-                f"{kata['name']} (${language})."
+                f"{kata['name']} ({language})."
             )
         except OSError:
             self.error_list.append(
                 "There was a problem while creating the solution file for "
-                f"{kata['name']} (${language})."
+                f"{kata['name']} ({language})."
             )
 
     async def create_index_file(self):
