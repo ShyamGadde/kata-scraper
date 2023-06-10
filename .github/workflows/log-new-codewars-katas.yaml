@@ -1,6 +1,9 @@
 name: Log New CodeWars Katas
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 17 * * *'
 
 jobs:
   scrape:
@@ -28,14 +31,10 @@ jobs:
           download_url=$(echo "$latest_release" | jq -r '.assets | map(select(.browser_download_url | contains("linux64.tar.gz")))[0].browser_download_url')
           echo "Downloading geckodriver from $download_url"
 
-          pwd
-
           # Download and install geckodriver
           curl -L -o geckodriver.tar.gz "$download_url"
           tar -xvzf geckodriver.tar.gz
           rm geckodriver.tar.gz
-
-          ls -la
 
           sudo mv geckodriver /usr/local/bin/
           sudo chmod +x /usr/local/bin/geckodriver
