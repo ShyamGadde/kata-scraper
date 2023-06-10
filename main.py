@@ -2,15 +2,27 @@
 import asyncio
 import os
 import sys
+from pathlib import Path
 
+import aiofiles
 import aiohttp
 import dotenv
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.webdriver import WebDriver
+from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
+
+
+async def read_file_content(file_path):
+    async with aiofiles.open(file_path, "r", encoding="utf-8") as file:
+        return await file.read()
+
+
+async def write_file_content(file_path, content):
+    async with aiofiles.open(file_path, "w", encoding="utf-8") as file:
+        await file.write(content)
 
 
 class CodewarsLogger:
@@ -84,10 +96,15 @@ class CodewarsLogger:
 
         self.username, self.email, self.password = self.get_credentials()
 
-        self.completed_katas_url = f"https://www.codewars.com/api/v1/users/{self.username}/code-challenges/completed"
+        self.completed_katas_url = (
+            f"https://www.codewars.com/api/v1/users/{self.username}/"
+            "code-challenges/completed"
+        )
         self.kata_info_url = "https://www.codewars.com/api/v1/code-challenges/"
         self.main_folder_path = "./katas"
         self.total_completed_katas = 0
+
+        self.error_list = []
 
     async def main(self):
         """
@@ -129,7 +146,9 @@ class CodewarsLogger:
                     )
 
                     for language in kata["completedLanguages"]:
-                        await self.create_solution_file()
+                        await self.create_solution_file(
+                            kata_folder_path, kata, language
+                        )
 
             await asyncio.gather(*tasks)
 
@@ -190,32 +209,79 @@ class CodewarsLogger:
         file_path = os.path.join(kata_folder_path, "README.md")
         content = (
             f"# [{kata['name']}](https://www.codewars.com/kata/{kata['id']})\n\n"
-            + f"- **Completed at:** {kata['completedAt']}\n\n"
-            + f"- **Completed languages:** {', '.join(kata['completedLanguages'])}\n\n"
-            + f"- **Tags:** {', '.join(kata_details['tags'])}\n\n"
-            + f"- **Rank:** {kata_details['rank']['name']}\n\n"
-            + f"## Description\n\n{kata_details['description']}"
+            f"- **Completed at:** {kata['completedAt']}\n\n"
+            f"- **Completed languages:** {', '.join(kata['completedLanguages'])}\n\n"
+            f"- **Tags:** {', '.join(kata_details['tags'])}\n\n"
+            f"- **Rank:** {kata_details['rank']['name']}\n\n"
+            f"## Description\n\n{kata_details['description']}"
         )
 
         try:
             os.makedirs(kata_folder_path, exist_ok=True)
 
             if os.path.exists(file_path):
-                with open(file_path, "r", encoding="utf-8") as file:
-                    if file.read() != content:
-                        ...
+                if content != await read_file_content(file_path):
+                    await write_file_content(file_path, content)
             else:
-                ...
+                await write_file_content(file_path, content)
         except OSError:
             print(
-                f"An error occurred while creating the problem description file for {kata['name']}."
+                f"An error occurred while creating the problem description file of {kata['name']}."
+            )
+            self.error_list.append(f"{kata['id']}: {kata['name']}")
+
+    async def create_solution_file(self, kata_folder_path, kata, language):
+        try:
+            self.browser.get(
+                f"https://www.codewars.com/kata/{kata['id']}/solutions/{language}/me/newest"
             )
 
-    async def create_solution_file(self):
-        ...
+            solutions_list = self.browser.find_element(By.ID, "solutions_list")
+            solution_item = solutions_list.find_element(By.TAG_NAME, "div")
+            solution_code = solution_item.find_element(By.TAG_NAME, "pre").text
+
+            file_path = os.path.join(
+                kata_folder_path, f"solution.{self.language_extensions[language]}"
+            )
+
+            if os.path.exists(file_path):
+                if solution_code != await read_file_content(file_path):
+                    await write_file_content(file_path, solution_code)
+            else:
+                await write_file_content(file_path, solution_code)
+        except TimeoutError:
+            print(f"The driver took too much time for {kata['name']}.")
+        except NoSuchElementException:
+            print(
+                f"A web element was not found on the page (create code file step) of {kata['name']}."
+            )
+            self.error_list.append(f"{kata['id']}: {kata['name']}")
+        except OSError:
+            print(
+                f"There was a problem while creating the solution file for {kata['name']}."
+            )
+            self.error_list.append(f'{kata["id"]}: {kata["name"]}')
 
     async def create_index_file(self):
-        ...
+        file_path = "./README.md"
+        content = (
+            "# Index of katas by its category/discipline\n\n"
+            + f"These are the {self.total_completed_katas} code challenges I have completed:"
+            + "\n## Fundamentals\n\n" "\n".join(self.kata_categories["reference"])
+            + "\n## Algorithms\n\n" "\n".join(self.kata_categories["algorithms"])
+            + "\n## Bug Fixes\n\n" "\n".join(self.kata_categories["bug_fixes"])
+            + "\n## Refactoring\n\n" + "\n".join(self.kata_categories["refactoring"])
+            + "\n## Puzzles\n\n" + "\n".join(self.kata_categories["games"])
+        )
+
+        try:
+            if os.path.exists(file_path):
+                if content != await read_file_content(file_path):
+                    await write_file_content(file_path, content)
+            else:
+                await write_file_content(file_path, content)
+        except OSError:
+            print("There was a problem while creating the index file.")
 
 
 codewars_logger = CodewarsLogger()
