@@ -28,9 +28,8 @@ jobs:
           CODEWARS_PASSWORD: ${{ secrets.CODEWARS_PASSWORD }}
         run: python main.py
         
-      - name: Get Today's Date
-        run: |
-          echo "TODAY=$(date +%Y/%m/%d)" >> "GITHUB_ENV"
+      - name: Set Today's Date
+        run: echo "TODAY=$(date +'%Y/%m/%d')" >> "$GITHUB_ENV"
 
       - name: Commit and push changes
         uses: EndBug/add-and-commit@v9
