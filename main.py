@@ -5,11 +5,10 @@ import sys
 
 import aiohttp
 import dotenv
-import requests
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
-from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.firefox.webdriver import WebDriver
 from selenium.webdriver.remote.webelement import WebElement
 
@@ -80,15 +79,11 @@ class CodewarsLogger:
 
         self.options = Options()
         self.options.add_argument("--headless")
-        # self.options.set_capability("geckodriverPath", "usr/local/bin/geckodriver")
-        self.driver = webdriver.Firefox(options=self.options)
-
-        self.client = aiohttp.ClientSession()
+        self.browser = webdriver.Chrome(options=self.options)
 
         self.username, self.email, self.password = self.get_credentials()
 
-        self.completed_katas_url = f"https://www.codewars.com/api/v1/users/{self.username}\
-                                    /code-challenges/completed"
+        self.completed_katas_url = f"https://www.codewars.com/api/v1/users/{self.username}/code-challenges/completed"
         self.kata_info_url = "https://www.codewars.com/api/v1/code-challenges/"
         self.main_folder_path = "./katas"
 
@@ -98,10 +93,15 @@ class CodewarsLogger:
         """
         os.makedirs(self.main_folder_path, exist_ok=True)
 
-        self.sign_in_to_codewars(self.driver, self.email, self.password)
+        self.sign_in_to_codewars(self.browser, self.email, self.password)
 
-        number_of_pages = await self.client.get(self.completed_katas_url)
-        print(number_of_pages)
+        async with aiohttp.ClientSession() as client:
+            response = await client.get(self.completed_katas_url)
+            response_json = await response.json()
+            number_of_pages = response_json["totalPages"]
+            print(number_of_pages)
+
+        self.browser.quit()
 
     def get_credentials(self):
         """
@@ -151,21 +151,7 @@ class CodewarsLogger:
 
 
 codewars_logger = CodewarsLogger()
-codewars_logger.main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+asyncio.run(codewars_logger.main())
 
 
 # async def main():
