@@ -14,7 +14,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
 
 
-async def read_file_content(file_path):
+async def read_file_content(file_path) -> str:
     """
     This is an asynchronous function that reads the content of a file and returns it.
 
@@ -30,7 +30,7 @@ async def read_file_content(file_path):
         return await file.read()
 
 
-async def write_file_content(file_path, content):
+async def write_file_content(file_path, content) -> None:
     """
     This is an asynchronous Python function that writes content to a file at a specified file path.
 
