@@ -135,6 +135,7 @@ class CodewarsLogger:
                     self.kata_categories[kata_details["category"]].append(
                         f'- [{kata["name"]}](./katas/{kata["slug"]})'
                     )
+                    print(f'- [{kata["name"]}](./katas/{kata["slug"]})')
 
             #         tasks.append(
             #             asyncio.create_task(
@@ -265,6 +266,10 @@ class CodewarsLogger:
 
     async def create_index_file(self):
         file_path = "./README.md"
+
+        for problems in self.kata_categories.values():
+            problems.sort()
+
         content = (
             "# Index of katas by its category/discipline\n\n"
             + f"These are the {self.total_completed_katas} code challenges I have completed:"
