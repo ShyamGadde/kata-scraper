@@ -21,25 +21,10 @@ jobs:
       - name: Install jq
         run: sudo apt-get install jq -y
 
-      - name: Install Firefox and geckodriver
+      - name: Install Firefox
         run: |
-          # Install Firefox
           sudo apt-get install firefox -y
-
-          # Get the latest geckodriver release
-          latest_release=$(curl -s "https://api.github.com/repos/mozilla/geckodriver/releases/latest")
-          download_url=$(echo "$latest_release" | jq -r '.assets | map(select(.browser_download_url | contains("linux64.tar.gz")))[0].browser_download_url')
-          echo "Downloading geckodriver from $download_url"
-
-          # Download and install geckodriver
-          curl -L -o geckodriver.tar.gz "$download_url"
-          tar -xvzf geckodriver.tar.gz
-          rm geckodriver.tar.gz
-
-          sudo mv geckodriver /usr/local/bin/
-          sudo chmod +x /usr/local/bin/geckodriver
-
-          pwd
+          firefox -v
 
       # - name: Install dependencies
       #   run: pip install -r requirements.txt
