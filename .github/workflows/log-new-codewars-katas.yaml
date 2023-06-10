@@ -18,13 +18,13 @@ jobs:
         with:
           python-version: '3.11.1'
 
-      - name: Install jq
-        run: sudo apt-get install jq -y
+      # - name: Install jq
+      #   run: sudo apt-get install jq -y
 
-      - name: Install Firefox
-        run: |
-          sudo apt-get install firefox -y
-          firefox -v
+      # - name: Install Firefox
+      #   run: |
+      #     sudo apt-get install firefox -y
+      #     firefox -v
 
       - name: Install dependencies
         run: pip install -r requirements.txt
