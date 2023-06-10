@@ -162,6 +162,12 @@ class CodewarsLogger:
                         f'- [{kata["name"]}](./katas/{kata["slug"]})'
                     )
 
+                    self.counter += 1
+                    print(
+                        f"\rDownloading kata {self.counter} of {self.total_completed_katas}...",
+                        end="",
+                    )
+
                     os.makedirs(kata_folder_path, exist_ok=True)
 
                     tasks.append(
@@ -184,6 +190,10 @@ class CodewarsLogger:
             await asyncio.gather(*tasks)
 
         await self.create_index_file()
+        print("\nDone.")
+
+        print("\nErrors:")
+        print("\n".join(self.error_list))
 
         self.browser.quit()
 
@@ -266,10 +276,9 @@ class CodewarsLogger:
             else:
                 await write_file_content(file_path, content)
         except OSError:
-            print(
+            self.error_list.append(
                 f"An error occurred while creating the problem description file of {kata['name']}."
             )
-            self.error_list.append(f"{kata['id']}: {kata['name']}")
 
     async def create_solution_file(self, kata_folder_path, kata, language):
         """
@@ -301,19 +310,19 @@ class CodewarsLogger:
             else:
                 await write_file_content(file_path, solution_code)
         except TimeoutError:
-            print(f"The driver took too much time for {kata['name']} (${language}).")
+            self.error_list.append(
+                f"The driver took too much time for {kata['name']} (${language})."
+            )
         except NoSuchElementException:
-            print(
+            self.error_list.append(
                 "A web element was not found on the page (create solution file step) of "
                 f"{kata['name']} (${language})."
             )
-            self.error_list.append(f"{kata['id']}: {kata['name']}")
         except OSError:
-            print(
+            self.error_list.append(
                 "There was a problem while creating the solution file for "
                 f"{kata['name']} (${language})."
             )
-            self.error_list.append(f'{kata["id"]}: {kata["name"]}')
 
     async def create_index_file(self):
         """
@@ -347,7 +356,7 @@ class CodewarsLogger:
             else:
                 await write_file_content(file_path, content)
         except OSError:
-            print("There was a problem while creating the index file.")
+            self.error_list.append("There was a problem while creating the index file.")
 
 
 if __name__ == "__main__":
