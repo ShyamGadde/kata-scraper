@@ -2,7 +2,6 @@
 import asyncio
 import os
 import sys
-from pathlib import Path
 
 import aiofiles
 import aiohttp
@@ -137,20 +136,20 @@ class CodewarsLogger:
                         f'- [{kata["name"]}](./katas/{kata["slug"]})'
                     )
 
-                    tasks.append(
-                        asyncio.create_task(
-                            self.create_problem_description_file(
-                                kata_folder_path, kata, kata_details
-                            )
-                        )
-                    )
+            #         tasks.append(
+            #             asyncio.create_task(
+            #                 self.create_problem_description_file(
+            #                     kata_folder_path, kata, kata_details
+            #                 )
+            #             )
+            #         )
 
-                    for language in kata["completedLanguages"]:
-                        await self.create_solution_file(
-                            kata_folder_path, kata, language
-                        )
+            #         for language in kata["completedLanguages"]:
+            #             await self.create_solution_file(
+            #                 kata_folder_path, kata, language
+            #             )
 
-            await asyncio.gather(*tasks)
+            # await asyncio.gather(*tasks)
 
         await self.create_index_file()
 
@@ -250,15 +249,17 @@ class CodewarsLogger:
             else:
                 await write_file_content(file_path, solution_code)
         except TimeoutError:
-            print(f"The driver took too much time for {kata['name']}.")
+            print(f"The driver took too much time for {kata['name']} (${language}).")
         except NoSuchElementException:
             print(
-                f"A web element was not found on the page (create code file step) of {kata['name']}."
+                "A web element was not found on the page (create solution file step) of "
+                f"{kata['name']} (${language})."
             )
             self.error_list.append(f"{kata['id']}: {kata['name']}")
         except OSError:
             print(
-                f"There was a problem while creating the solution file for {kata['name']}."
+                "There was a problem while creating the solution file for "
+                f"{kata['name']} (${language})."
             )
             self.error_list.append(f'{kata["id"]}: {kata["name"]}')
 
@@ -267,11 +268,16 @@ class CodewarsLogger:
         content = (
             "# Index of katas by its category/discipline\n\n"
             + f"These are the {self.total_completed_katas} code challenges I have completed:"
-            + "\n## Fundamentals\n\n" "\n".join(self.kata_categories["reference"])
-            + "\n## Algorithms\n\n" "\n".join(self.kata_categories["algorithms"])
-            + "\n## Bug Fixes\n\n" "\n".join(self.kata_categories["bug_fixes"])
-            + "\n## Refactoring\n\n" + "\n".join(self.kata_categories["refactoring"])
-            + "\n## Puzzles\n\n" + "\n".join(self.kata_categories["games"])
+            + "\n## Fundamentals\n\n"
+            + "\n".join(self.kata_categories["reference"])
+            + "\n## Algorithms\n\n"
+            + "\n".join(self.kata_categories["algorithms"])
+            + "\n## Bug Fixes\n\n"
+            + "\n".join(self.kata_categories["bug_fixes"])
+            + "\n## Refactoring\n\n"
+            + "\n".join(self.kata_categories["refactoring"])
+            + "\n## Puzzles\n\n"
+            + "\n".join(self.kata_categories["games"])
         )
 
         try:
