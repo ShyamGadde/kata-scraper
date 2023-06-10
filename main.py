@@ -145,6 +145,7 @@ class CodewarsLogger:
             sign_in_form.find_element(
                 By.CSS_SELECTOR, 'button.is-red[type="submit"]'
             ).click()
+            print("Signed in successfully.")
         except NoSuchElementException:
             print("A web element was not found on the page (sign-in step).")
             sys.exit(1)
