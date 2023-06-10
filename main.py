@@ -152,7 +152,7 @@ class CodewarsLogger:
                 response_content: dict = await response.json()
                 completed_katas: list = response_content["data"]
 
-                for kata in completed_katas[:20]:
+                for kata in completed_katas[:10]:
                     response = await client.get(f"{self.kata_info_url}{kata['id']}")
                     kata_details: dict = await response.json()
 
