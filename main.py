@@ -286,7 +286,7 @@ class CodewarsLogger:
             )
 
     async def create_solution_file(
-        self, kata_folder_path, kata, language, test
+        self, kata_folder_path, kata, language
     ) -> None:
         """
         This function creates a solution file for a given kata and language by scraping the code
