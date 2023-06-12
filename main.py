@@ -194,7 +194,7 @@ class CodeWarsKataScrapper:
 
             await asyncio.gather(*tasks)
 
-        await self.create_index_file()
+        self.create_index_file()
         print("\nDone.")
 
         if self.error_list:
@@ -326,8 +326,7 @@ class CodeWarsKataScrapper:
                 f"{kata['name']} ({language})."
             )
 
-    # TODO: Refactor this - No need for async
-    async def create_index_file(self) -> None:
+    def create_index_file(self) -> None:
         """
         This function creates an index file with a list of completed code challenges sorted
         by category.
@@ -353,8 +352,8 @@ class CodeWarsKataScrapper:
         )
 
         try:
-            if not os.path.exists(file_path) or content != await read_file_content(file_path):
-                await write_file_content(file_path, content)
+            if not os.path.exists(file_path) or content != read_file_content(file_path):
+                write_file_content(file_path, content)
         except OSError:
             self.error_list.append("There was a problem while creating the index file.")
 
