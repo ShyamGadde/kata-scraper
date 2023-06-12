@@ -1,4 +1,4 @@
-# pylint: disable=missing-module-docstring
+# TODO Add docstring to file
 import asyncio
 import os
 import sys
@@ -48,6 +48,7 @@ async def write_file_content(file_path, content) -> None:
 # TODO: Rename this class
 class CodewarsLogger:
     """ "..."""
+    # TODO: Add docstring to class
 
     def __init__(self):
         self.language_extensions: dict[str, str] = {
@@ -275,10 +276,7 @@ class CodewarsLogger:
         )
 
         try:
-            if os.path.exists(file_path):  # TODO: Refactor this
-                if content != await read_file_content(file_path):
-                    await write_file_content(file_path, content)
-            else:
+            if os.path.exists(file_path) or content != await read_file_content(file_path):
                 await write_file_content(file_path, content)
         except OSError:
             self.error_list.append(
@@ -311,13 +309,8 @@ class CodewarsLogger:
                 kata_folder_path, f"solution.{self.language_extensions[language]}"
             )
 
-            if os.path.exists(file_path):  # TODO: Refactor this
-                if solution_code != await read_file_content(file_path):
-                    await write_file_content(file_path, solution_code)
-            else:
+            if not os.path.exists(file_path) or solution_code != await read_file_content(file_path):
                 await write_file_content(file_path, solution_code)
-
-            print(f"Created solution file for kata {test}")
         except TimeoutError:
             self.error_list.append(
                 f"The driver took too much time for {kata['name']} ({language}). Skipping..."
@@ -360,10 +353,7 @@ class CodewarsLogger:
         )
 
         try:
-            if os.path.exists(file_path):  # TODO: Refactor this
-                if content != await read_file_content(file_path):
-                    await write_file_content(file_path, content)
-            else:
+            if not os.path.exists(file_path) or content != await read_file_content(file_path):
                 await write_file_content(file_path, content)
         except OSError:
             self.error_list.append("There was a problem while creating the index file.")
