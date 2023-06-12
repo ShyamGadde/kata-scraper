@@ -1,4 +1,9 @@
-# TODO Add docstring to file
+"""
+This script is a program for scraping completed katas from Codewars, organizing them into folders
+and files, and generating an index file. It utilizes Selenium and aiohttp libraries for web
+scraping and asynchronous file operations.
+"""
+
 import asyncio
 import os
 import sys
@@ -46,8 +51,28 @@ async def write_file_content(file_path, content) -> None:
 
 
 class CodeWarsKataScrapper:
-    """ "..."""
-    # TODO: Add docstring to class
+    """
+    A class that represents a scrapper for retrieving completed katas from Codewars.
+
+    This class scrapes completed katas from the user's Codewars profile, organizes them into folders
+    and files, and generates an index file categorizing the completed katas. It uses Selenium for
+    web scraping and aiohttp for asynchronous HTTP requests and file operations.
+
+    Attributes:
+        - language_extensions (dict): A dictionary mapping programming languages to their file
+        extensions.
+        - kata_categories (dict): A dictionary mapping category names to lists of katas belonging
+        to those categories.
+        - options (Options): Options for configuring the headless browser.
+        - browser (WebDriver): The web driver instance for interacting with the web browser.
+        - completed_katas_url (str): The URL for retrieving completed katas from the Codewars API.
+        - kata_info_url (str): The base URL for retrieving information about a specific kata from
+        the Codewars API.
+        - main_folder_path (str): The path to the main folder where the katas will be organized.
+        - total_completed_katas (int): The total number of completed katas.
+        - counter (int): A counter for tracking the progress of kata processing.
+        - error_list (list): A list for storing any errors encountered during processing.
+    """
 
     def __init__(self):
         self.language_extensions: dict[str, str] = {
