@@ -4,7 +4,7 @@ import os
 import sys
 
 import aiofiles
-import aiohttp
+from aiohttp import ClientSession
 from dotenv import load_dotenv
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
@@ -45,6 +45,7 @@ async def write_file_content(file_path, content) -> None:
         await file.write(content)
 
 
+# TODO: Rename this class
 class CodewarsLogger:
     """ "..."""
 
@@ -139,8 +140,8 @@ class CodewarsLogger:
 
         os.makedirs(self.main_folder_path, exist_ok=True)
 
-        async with aiohttp.ClientSession() as client:
-            response = await client.get(self.completed_katas_url)
+        async with ClientSession() as session:
+            response = await session.get(self.completed_katas_url)
             response_content: dict = await response.json()
             self.total_completed_katas: int = response_content["totalItems"]
             number_of_pages: int = response_content["totalPages"]
@@ -148,13 +149,14 @@ class CodewarsLogger:
             tasks: list = []
 
             for page in range(number_of_pages):
-                response = await client.get(f"{self.completed_katas_url}?page={page}")
+                response = await session.get(f"{self.completed_katas_url}?page={page}")
                 response_content: dict = await response.json()
-                completed_katas: list = response_content["data"]
+                completed_katas: list[dict] = response_content["data"]
 
-                for kata in completed_katas[:10]:
-                    response = await client.get(f"{self.kata_info_url}{kata['id']}")
+                for kata in completed_katas:
+                    response = await session.get(f"{self.kata_info_url}{kata['id']}")
                     kata_details: dict = await response.json()
+                    await asyncio.sleep(0.5)
 
                     kata_folder_path: str = os.path.join(
                         self.main_folder_path, kata["slug"]
@@ -166,7 +168,7 @@ class CodewarsLogger:
 
                     self.counter += 1
                     print(
-                        f"\rDownloading kata {self.counter} of {self.total_completed_katas}...",
+                        f"\rProcessing kata {self.counter} of {self.total_completed_katas}...",
                         end="",
                     )
 
@@ -273,7 +275,7 @@ class CodewarsLogger:
         )
 
         try:
-            if os.path.exists(file_path):
+            if os.path.exists(file_path):  # TODO: Refactor this
                 if content != await read_file_content(file_path):
                     await write_file_content(file_path, content)
             else:
@@ -283,7 +285,9 @@ class CodewarsLogger:
                 f"An error occurred while creating the problem description file of {kata['name']}."
             )
 
-    async def create_solution_file(self, kata_folder_path, kata, language) -> None:
+    async def create_solution_file(
+        self, kata_folder_path, kata, language, test
+    ) -> None:
         """
         This function creates a solution file for a given kata and language by scraping the code
         from the newest solution on the kata's Codewars page.
@@ -307,26 +311,29 @@ class CodewarsLogger:
                 kata_folder_path, f"solution.{self.language_extensions[language]}"
             )
 
-            if os.path.exists(file_path):
+            if os.path.exists(file_path):  # TODO: Refactor this
                 if solution_code != await read_file_content(file_path):
                     await write_file_content(file_path, solution_code)
             else:
                 await write_file_content(file_path, solution_code)
+
+            print(f"Created solution file for kata {test}")
         except TimeoutError:
             self.error_list.append(
-                f"The driver took too much time for {kata['name']} ({language})."
+                f"The driver took too much time for {kata['name']} ({language}). Skipping..."
             )
         except NoSuchElementException:
             self.error_list.append(
-                "A web element was not found on the page (create solution file step) of "
-                f"{kata['name']} ({language})."
+                f"Couldn't find the solution for {kata['name']} ({language}) on CodeWars. "
+                "Failed to create solution file. Skipping..."
             )
         except OSError:
             self.error_list.append(
-                "There was a problem while creating the solution file for "
+                "An error occurred while creating the solution file for "
                 f"{kata['name']} ({language})."
             )
 
+    # TODO: Refactor this - No need for async
     async def create_index_file(self) -> None:
         """
         This function creates an index file with a list of completed code challenges sorted
@@ -353,7 +360,7 @@ class CodewarsLogger:
         )
 
         try:
-            if os.path.exists(file_path):
+            if os.path.exists(file_path):  # TODO: Refactor this
                 if content != await read_file_content(file_path):
                     await write_file_content(file_path, content)
             else:
