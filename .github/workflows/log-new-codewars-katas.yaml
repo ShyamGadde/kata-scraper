@@ -27,7 +27,7 @@ jobs:
           CODEWARS_EMAIL: ${{ secrets.CODEWARS_EMAIL }}
           CODEWARS_PASSWORD: ${{ secrets.CODEWARS_PASSWORD }}
         run: python main.py
-        
+
       - name: Set Today's Date
         run: echo "TODAY=$(date +'%Y/%m/%d')" >> "$GITHUB_ENV"
 
