@@ -1,4 +1,4 @@
-name: Log New CodeWars Katas
+name: Scrape New CodeWars Solved Katas
 
 on:
   workflow_dispatch:
