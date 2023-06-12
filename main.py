@@ -46,7 +46,7 @@ async def write_file_content(file_path, content) -> None:
 
 
 # TODO: Rename this class
-class CodewarsLogger:
+class CodeWarsKataScrapper:
     """ "..."""
     # TODO: Add docstring to class
 
@@ -360,5 +360,5 @@ class CodewarsLogger:
 
 
 if __name__ == "__main__":
-    codewars_logger = CodewarsLogger()
-    asyncio.run(codewars_logger.main())
+    codewars_kata_scrapper = CodeWarsKataScrapper()
+    asyncio.run(codewars_kata_scrapper.main())
