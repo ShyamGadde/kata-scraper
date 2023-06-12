@@ -370,7 +370,7 @@ class CodeWarsKataScrapper:
         file_path: str = "./README.md"
 
         for problems in self.kata_categories.values():
-            problems.sort()
+            problems.sort(key=lambda s: s.lower())
 
         content: str = (
             "# Index of katas by its category/discipline\n\n"
