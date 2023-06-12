@@ -45,7 +45,6 @@ async def write_file_content(file_path, content) -> None:
         await file.write(content)
 
 
-# TODO: Rename this class
 class CodeWarsKataScrapper:
     """ "..."""
     # TODO: Add docstring to class
@@ -118,10 +117,8 @@ class CodeWarsKataScrapper:
         self.browser = webdriver.Chrome(options=self.options)
         self.browser.implicitly_wait(0.5)
 
-        self.username, self.email, self.password = self.get_credentials()
-
         self.completed_katas_url: str = (
-            f"https://www.codewars.com/api/v1/users/{self.username}/"
+            f"https://www.codewars.com/api/v1/users/{self.get_credentials('username')}/"
             "code-challenges/completed"
         )
         self.kata_info_url: str = "https://www.codewars.com/api/v1/code-challenges/"
@@ -137,7 +134,11 @@ class CodeWarsKataScrapper:
         files for each kata, and generates an index file.
         """
 
-        self.sign_in_to_codewars(self.browser, self.email, self.password)
+        self.sign_in_to_codewars(
+            self.browser,
+            self.get_credentials("email"),
+            self.get_credentials("password"),
+        )
 
         os.makedirs(self.main_folder_path, exist_ok=True)
 
@@ -203,20 +204,28 @@ class CodeWarsKataScrapper:
 
         self.browser.quit()
 
-    def get_credentials(self) -> tuple[str, str, str]:
+    def get_credentials(self, key: str) -> str:
         """
-        This function loads environment variables and returns a tuple of Codewars credentials.
+        This function retrieves the credentials for a specific key from the environment variables.
+
+        Args:
+        key (str): The key parameter is a string that specifies which credential to retrieve. It can
+        be one of three values: "username", "email", or "password".
 
         Returns:
-        A tuple containing the values of the environment variables "CODEWARS_USERNAME",
-        "CODEWARS_EMAIL", and "CODEWARS_PASSWORD".
+        a string that corresponds to the value of the environment variable associated with the input
+        key. If the key is "username", the function returns the value of the environment variable
+        "CODEWARS_USERNAME". If the key is "email", the function returns the value of the
+        environment variable "CODEWARS_EMAIL". If the key is "password", the function returns
+        the value of the environment variable
         """
         load_dotenv()
-        return (
-            os.getenv("CODEWARS_USERNAME"),
-            os.getenv("CODEWARS_EMAIL"),
-            os.getenv("CODEWARS_PASSWORD"),
-        )
+        if key == "username":
+            return os.getenv("CODEWARS_USERNAME")
+        if key == "email":
+            return os.getenv("CODEWARS_EMAIL")
+        if key == "password":
+            return os.getenv("CODEWARS_PASSWORD")
 
     def sign_in_to_codewars(
         self, driver: WebDriver, codewars_email: str, codewars_password: str
@@ -276,16 +285,16 @@ class CodeWarsKataScrapper:
         )
 
         try:
-            if os.path.exists(file_path) or content != await read_file_content(file_path):
+            if os.path.exists(file_path) or content != await read_file_content(
+                file_path
+            ):
                 await write_file_content(file_path, content)
         except OSError:
             self.error_list.append(
                 f"An error occurred while creating the problem description file of {kata['name']}."
             )
 
-    async def create_solution_file(
-        self, kata_folder_path, kata, language
-    ) -> None:
+    async def create_solution_file(self, kata_folder_path, kata, language) -> None:
         """
         This function creates a solution file for a given kata and language by scraping the code
         from the newest solution on the kata's Codewars page.
@@ -309,7 +318,9 @@ class CodeWarsKataScrapper:
                 kata_folder_path, f"solution.{self.language_extensions[language]}"
             )
 
-            if not os.path.exists(file_path) or solution_code != await read_file_content(file_path):
+            if not os.path.exists(
+                file_path
+            ) or solution_code != await read_file_content(file_path):
                 await write_file_content(file_path, solution_code)
         except TimeoutError:
             self.error_list.append(
