@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 260 code challenges I have completed:
+These are the 264 code challenges I have completed:
 ## Fundamentals
 
 - [5 without numbers !!](./katas/5-without-numbers)
@@ -107,6 +107,7 @@ These are the 260 code challenges I have completed:
 - [get character from ASCII Value](./katas/get-character-from-ascii-value)
 - [Get the Middle Character](./katas/get-the-middle-character)
 - [Give me a Diamond](./katas/give-me-a-diamond)
+- [Grasshopper - Array Mean](./katas/grasshopper-array-mean)
 - [Grasshopper - Basic Function Fixer](./katas/grasshopper-basic-function-fixer)
 - [Grasshopper - Check for factor](./katas/grasshopper-check-for-factor)
 - [Grasshopper - Messi goals function](./katas/grasshopper-messi-goals-function)
@@ -165,12 +166,14 @@ These are the 260 code challenges I have completed:
 - [Plural](./katas/plural)
 - [Powers of 2](./katas/powers-of-2)
 - [Predict your age!](./katas/predict-your-age)
+- [Price of Mangoes](./katas/price-of-mangoes)
 - [Primes in numbers](./katas/primes-in-numbers)
 - [Printer Errors](./katas/printer-errors)
 - [Printing Array elements with Comma delimiters](./katas/printing-array-elements-with-comma-delimiters)
 - [Product of consecutive Fib numbers](./katas/product-of-consecutive-fib-numbers)
 - [Quarter of the year](./katas/quarter-of-the-year)
 - [Regex Password Validation](./katas/regex-password-validation)
+- [Regular Ball Super Ball](./katas/regular-ball-super-ball)
 - [Remove anchor from URL](./katas/remove-anchor-from-url)
 - [Remove duplicates from list](./katas/remove-duplicates-from-list)
 - [Remove exclamation marks](./katas/remove-exclamation-marks)
@@ -203,6 +206,7 @@ These are the 260 code challenges I have completed:
 - [Sort Numbers](./katas/sort-numbers)
 - [Sort the odd](./katas/sort-the-odd)
 - [Sorted? yes? no? how?](./katas/sorted-yes-no-how)
+- [Speed Control](./katas/speed-control)
 - [Square(n) Sum](./katas/square-n-sum)
 - [String cleaning](./katas/string-cleaning)
 - [String ends with?](./katas/string-ends-with)
