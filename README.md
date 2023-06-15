@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 264 code challenges I have completed:
+These are the 270 code challenges I have completed:
 ## Fundamentals
 
 - [5 without numbers !!](./katas/5-without-numbers)
@@ -19,6 +19,7 @@ These are the 264 code challenges I have completed:
 - [Area or Perimeter](./katas/area-or-perimeter)
 - [Array.diff](./katas/array-dot-diff)
 - [Basic Mathematical Operations](./katas/basic-mathematical-operations)
+- [Basic Training: Add item to an Array](./katas/basic-training-add-item-to-an-array)
 - [Beginner - Lost Without a Map](./katas/beginner-lost-without-a-map)
 - [Beginner - Reduce but Grow](./katas/beginner-reduce-but-grow)
 - [Beginner Series #1 School Paperwork](./katas/beginner-series-number-1-school-paperwork)
@@ -27,6 +28,7 @@ These are the 264 code challenges I have completed:
 - [Beginner Series #4 Cockroach](./katas/beginner-series-number-4-cockroach)
 - [Bin to Decimal](./katas/bin-to-decimal)
 - [Binary Addition](./katas/binary-addition)
+- [Bouncing Balls](./katas/bouncing-balls)
 - [Break camelCase](./katas/break-camelcase)
 - [Build a pile of Cubes](./katas/build-a-pile-of-cubes)
 - [Build Tower](./katas/build-tower)
@@ -79,9 +81,11 @@ These are the 264 code challenges I have completed:
 - [Exclamation marks series #11: Replace all vowel to exclamation mark in the sentence](./katas/exclamation-marks-series-number-11-replace-all-vowel-to-exclamation-mark-in-the-sentence)
 - [Exclamation marks series #1: Remove an exclamation mark from the end of string](./katas/exclamation-marks-series-number-1-remove-an-exclamation-mark-from-the-end-of-string)
 - [Exclamation marks series #2: Remove all exclamation marks from the end of sentence](./katas/exclamation-marks-series-number-2-remove-all-exclamation-marks-from-the-end-of-sentence)
+- [Exclamation marks series #4: Remove all exclamation marks from sentence but ensure a exclamation mark at the end of string](./katas/exclamation-marks-series-number-4-remove-all-exclamation-marks-from-sentence-but-ensure-a-exclamation-mark-at-the-end-of-string)
 - [Exes and Ohs](./katas/exes-and-ohs)
 - [Extract the domain name from a URL](./katas/extract-the-domain-name-from-a-url-1)
 - [Factorial](./katas/factorial)
+- [Factorial](./katas/factorial-1)
 - [Fake Binary](./katas/fake-binary)
 - [Filter out the geese](./katas/filter-out-the-geese)
 - [Find Maximum and Minimum Values of a List](./katas/find-maximum-and-minimum-values-of-a-list)
@@ -204,6 +208,7 @@ These are the 264 code challenges I have completed:
 - [Sort and Star](./katas/sort-and-star)
 - [Sort array by string length](./katas/sort-array-by-string-length)
 - [Sort Numbers](./katas/sort-numbers)
+- [Sort the Gift Code](./katas/sort-the-gift-code)
 - [Sort the odd](./katas/sort-the-odd)
 - [Sorted? yes? no? how?](./katas/sorted-yes-no-how)
 - [Speed Control](./katas/speed-control)
@@ -241,6 +246,7 @@ These are the 264 code challenges I have completed:
 - [Thinkful - Logic Drills: Traffic light](./katas/thinkful-logic-drills-traffic-light)
 - [Third Angle of a Triangle](./katas/third-angle-of-a-triangle)
 - [Title Case](./katas/title-case)
+- [Tortoise racing](./katas/tortoise-racing)
 - [Total amount of points](./katas/total-amount-of-points)
 - [Transportation on vacation ](./katas/transportation-on-vacation)
 - [Tribonacci Sequence](./katas/tribonacci-sequence)
