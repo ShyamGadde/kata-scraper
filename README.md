@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 270 code challenges I have completed:
+These are the 275 code challenges I have completed:
 ## Fundamentals
 
 - [5 without numbers !!](./katas/5-without-numbers)
@@ -19,6 +19,7 @@ These are the 270 code challenges I have completed:
 - [Area or Perimeter](./katas/area-or-perimeter)
 - [Array.diff](./katas/array-dot-diff)
 - [Basic Mathematical Operations](./katas/basic-mathematical-operations)
+- [Basic subclasses - Adam and Eve](./katas/basic-subclasses-adam-and-eve)
 - [Basic Training: Add item to an Array](./katas/basic-training-add-item-to-an-array)
 - [Beginner - Lost Without a Map](./katas/beginner-lost-without-a-map)
 - [Beginner - Reduce but Grow](./katas/beginner-reduce-but-grow)
@@ -71,6 +72,7 @@ These are the 270 code challenges I have completed:
 - [DNA to RNA Conversion](./katas/dna-to-rna-conversion)
 - [Do you speak "English"?](./katas/do-you-speak-english)
 - [Double Char](./katas/double-char)
+- [Duck Duck Goose](./katas/duck-duck-goose)
 - [Duplicate Encoder](./katas/duplicate-encoder)
 - [Encrypt this!](./katas/encrypt-this)
 - [Enumerable Magic #25 - Take the First N Elements](./katas/enumerable-magic-number-25-take-the-first-n-elements)
@@ -124,6 +126,7 @@ These are the 270 code challenges I have completed:
 - [Help the bookseller !](./katas/help-the-bookseller)
 - [Hex to Decimal](./katas/hex-to-decimal)
 - [Highest and Lowest](./katas/highest-and-lowest)
+- [Highest Rank Number in an Array](./katas/highest-rank-number-in-an-array)
 - [Highest Scoring Word](./katas/highest-scoring-word)
 - [How good are you really?](./katas/how-good-are-you-really)
 - [How many lightsabers do you own?](./katas/how-many-lightsabers-do-you-own)
@@ -176,6 +179,7 @@ These are the 270 code challenges I have completed:
 - [Printing Array elements with Comma delimiters](./katas/printing-array-elements-with-comma-delimiters)
 - [Product of consecutive Fib numbers](./katas/product-of-consecutive-fib-numbers)
 - [Quarter of the year](./katas/quarter-of-the-year)
+- [Regex count lowercase letters](./katas/regex-count-lowercase-letters)
 - [Regex Password Validation](./katas/regex-password-validation)
 - [Regular Ball Super Ball](./katas/regular-ball-super-ball)
 - [Remove anchor from URL](./katas/remove-anchor-from-url)
@@ -200,6 +204,7 @@ These are the 270 code challenges I have completed:
 - [Row Weights](./katas/row-weights)
 - [Sentence Smash](./katas/sentence-smash)
 - [Shortest Word](./katas/shortest-word)
+- [Simple beads count](./katas/simple-beads-count)
 - [simple calculator ](./katas/simple-calculator)
 - [Simple Encryption #1 - Alternating Split](./katas/simple-encryption-number-1-alternating-split)
 - [Simple Fun #176: Reverse Letter](./katas/simple-fun-number-176-reverse-letter)
