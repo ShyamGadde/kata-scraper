@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 275 code challenges I have completed:
+These are the 278 code challenges I have completed:
 ## Fundamentals
 
 - [5 without numbers !!](./katas/5-without-numbers)
@@ -59,6 +59,7 @@ These are the 275 code challenges I have completed:
 - [Counting Duplicates](./katas/counting-duplicates)
 - [Counting sheep...](./katas/counting-sheep-dot-dot-dot)
 - [CSV representation of array](./katas/csv-representation-of-array)
+- [Dashatize it](./katas/dashatize-it)
 - [Data Reverse](./katas/data-reverse)
 - [Decipher this! ](./katas/decipher-this)
 - [Delete occurrences of an element if it occurs more than n times](./katas/delete-occurrences-of-an-element-if-it-occurs-more-than-n-times)
@@ -230,6 +231,7 @@ These are the 275 code challenges I have completed:
 - [Sum of Cubes](./katas/sum-of-cubes)
 - [Sum of differences in array](./katas/sum-of-differences-in-array)
 - [Sum of Minimums!](./katas/sum-of-minimums)
+- [Sum of Odd Cubed Numbers](./katas/sum-of-odd-cubed-numbers)
 - [Sum of Pairs](./katas/sum-of-pairs)
 - [Sum of positive](./katas/sum-of-positive)
 - [Sum of the first nth term of Series](./katas/sum-of-the-first-nth-term-of-series)
@@ -260,6 +262,7 @@ These are the 275 code challenges I have completed:
 - [Two to One](./katas/two-to-one)
 - [Unique In Order](./katas/unique-in-order)
 - [USD => CNY](./katas/usd-equals->-cny)
+- [validate code with simple regex](./katas/validate-code-with-simple-regex)
 - [Volume of a Cuboid](./katas/volume-of-a-cuboid)
 - [Vowel Count](./katas/vowel-count)
 - [Welcome to the City](./katas/welcome-to-the-city)
