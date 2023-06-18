@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 278 code challenges I have completed:
+These are the 284 code challenges I have completed:
 ## Fundamentals
 
 - [5 without numbers !!](./katas/5-without-numbers)
@@ -16,6 +16,7 @@ These are the 278 code challenges I have completed:
 - [Anagram Detection](./katas/anagram-detection)
 - [Are they the "same"?](./katas/are-they-the-same)
 - [Are You Playing Banjo?](./katas/are-you-playing-banjo)
+- [Area of a Square](./katas/area-of-a-square)
 - [Area or Perimeter](./katas/area-or-perimeter)
 - [Array.diff](./katas/array-dot-diff)
 - [Basic Mathematical Operations](./katas/basic-mathematical-operations)
@@ -39,7 +40,9 @@ These are the 278 code challenges I have completed:
 - [Cat years, Dog years](./katas/cat-years-dog-years)
 - [Categorize New Member](./katas/categorize-new-member)
 - [Century From Year](./katas/century-from-year)
+- [Check same case](./katas/check-same-case)
 - [Check the exam](./katas/check-the-exam)
+- [Classy Classes](./katas/classy-classes)
 - [Complementary DNA](./katas/complementary-dna)
 - [Consecutive strings](./katas/consecutive-strings)
 - [Convert a Boolean to a String](./katas/convert-a-boolean-to-a-string)
@@ -112,6 +115,7 @@ These are the 278 code challenges I have completed:
 - [Friend or Foe?](./katas/friend-or-foe)
 - [Function 2 - squaring an argument](./katas/function-2-squaring-an-argument)
 - [get character from ASCII Value](./katas/get-character-from-ascii-value)
+- [Get number from string](./katas/get-number-from-string)
 - [Get the Middle Character](./katas/get-the-middle-character)
 - [Give me a Diamond](./katas/give-me-a-diamond)
 - [Grasshopper - Array Mean](./katas/grasshopper-array-mean)
@@ -231,6 +235,7 @@ These are the 278 code challenges I have completed:
 - [Sum of Cubes](./katas/sum-of-cubes)
 - [Sum of differences in array](./katas/sum-of-differences-in-array)
 - [Sum of Minimums!](./katas/sum-of-minimums)
+- [Sum of numbers from 0 to N](./katas/sum-of-numbers-from-0-to-n)
 - [Sum of Odd Cubed Numbers](./katas/sum-of-odd-cubed-numbers)
 - [Sum of Pairs](./katas/sum-of-pairs)
 - [Sum of positive](./katas/sum-of-positive)
@@ -247,6 +252,7 @@ These are the 278 code challenges I have completed:
 - [Take the Derivative](./katas/take-the-derivative)
 - [Testing 1-2-3](./katas/testing-1-2-3)
 - [The 'if' function](./katas/the-if-function)
+- [The Coupon Code](./katas/the-coupon-code)
 - [The Feast of Many Beasts](./katas/the-feast-of-many-beasts)
 - [The Supermarket Queue](./katas/the-supermarket-queue)
 - [The Wide-Mouthed frog! ](./katas/the-wide-mouthed-frog)
