@@ -48,3 +48,7 @@ strEndsWith('abc', 'd') -- returns false
       StringEndsWith('abc', 'd')
       *     -->      result = 0
 ```
+```scala
+solution("abc", "bc") // returns true
+solution("abc", "d") //returns false
+```
