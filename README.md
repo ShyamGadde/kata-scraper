@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 284 code challenges I have completed:
+These are the 285 code challenges I have completed:
 ## Fundamentals
 
 - [5 without numbers !!](./katas/5-without-numbers)
@@ -277,6 +277,7 @@ These are the 284 code challenges I have completed:
 - [What's the real floor?](./katas/whats-the-real-floor)
 - [Who likes it?](./katas/who-likes-it)
 - [Will you make it?](./katas/will-you-make-it)
+- [Word a10n (abbreviation)](./katas/word-a10n-abbreviation)
 - [Write Number in Expanded Form](./katas/write-number-in-expanded-form)
 - [You Can't Code Under Pressure #1](./katas/you-cant-code-under-pressure-number-1)
 - [You only need one - Beginner](./katas/you-only-need-one-beginner)
