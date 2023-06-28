@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 285 code challenges I have completed:
+These are the 290 code challenges I have completed:
 ## Fundamentals
 
 - [5 without numbers !!](./katas/5-without-numbers)
@@ -81,6 +81,7 @@ These are the 285 code challenges I have completed:
 - [Enumerable Magic #25 - Take the First N Elements](./katas/enumerable-magic-number-25-take-the-first-n-elements)
 - [Enumerable Magic - Does My List Include This?](./katas/enumerable-magic-does-my-list-include-this)
 - [Equal Sides Of An Array](./katas/equal-sides-of-an-array)
+- [esreveR](./katas/esrever)
 - [Even numbers in an array](./katas/even-numbers-in-an-array)
 - [Even or Odd](./katas/even-or-odd)
 - [Exclamation marks series #11: Replace all vowel to exclamation mark in the sentence](./katas/exclamation-marks-series-number-11-replace-all-vowel-to-exclamation-mark-in-the-sentence)
@@ -138,6 +139,7 @@ These are the 285 code challenges I have completed:
 - [If you can't sleep, just count sheep!!](./katas/if-you-cant-sleep-just-count-sheep)
 - [Invert values](./katas/invert-values)
 - [Is he gonna survive?](./katas/is-he-gonna-survive)
+- [Is it a number?](./katas/is-it-a-number)
 - [Is it even?](./katas/is-it-even)
 - [Is the string uppercase?](./katas/is-the-string-uppercase)
 - [Is this a triangle?](./katas/is-this-a-triangle)
@@ -172,7 +174,9 @@ These are the 285 code challenges I have completed:
 - [Opposite number](./katas/opposite-number)
 - [Opposites Attract](./katas/opposites-attract)
 - [Parse nice int from char problem](./katas/parse-nice-int-from-char-problem)
+- [Parts of a list](./katas/parts-of-a-list)
 - [Persistent Bugger.](./katas/persistent-bugger)
+- [pick a set of first elements](./katas/pick-a-set-of-first-elements)
 - [Playing with digits](./katas/playing-with-digits)
 - [Plural](./katas/plural)
 - [Powers of 2](./katas/powers-of-2)
@@ -274,6 +278,7 @@ These are the 285 code challenges I have completed:
 - [Welcome to the City](./katas/welcome-to-the-city)
 - [Welcome!](./katas/welcome)
 - [What is between?](./katas/what-is-between)
+- [What's a Perfect Power  anyway?](./katas/whats-a-perfect-power-anyway)
 - [What's the real floor?](./katas/whats-the-real-floor)
 - [Who likes it?](./katas/who-likes-it)
 - [Will you make it?](./katas/will-you-make-it)
