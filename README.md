@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 290 code challenges I have completed:
+These are the 298 code challenges I have completed:
 ## Fundamentals
 
 - [5 without numbers !!](./katas/5-without-numbers)
@@ -19,6 +19,7 @@ These are the 290 code challenges I have completed:
 - [Area of a Square](./katas/area-of-a-square)
 - [Area or Perimeter](./katas/area-or-perimeter)
 - [Array.diff](./katas/array-dot-diff)
+- [ASCII Total](./katas/ascii-total)
 - [Basic Mathematical Operations](./katas/basic-mathematical-operations)
 - [Basic subclasses - Adam and Eve](./katas/basic-subclasses-adam-and-eve)
 - [Basic Training: Add item to an Array](./katas/basic-training-add-item-to-an-array)
@@ -126,6 +127,7 @@ These are the 290 code challenges I have completed:
 - [Grasshopper - Summation](./katas/grasshopper-summation)
 - [Grasshopper - Terminal game combat function](./katas/grasshopper-terminal-game-combat-function-1)
 - [Grasshopper - Terminal game move function](./katas/grasshopper-terminal-game-move-function)
+- [Greet Me](./katas/greet-me)
 - [Growth of a Population](./katas/growth-of-a-population)
 - [Hello, Name or World!](./katas/hello-name-or-world)
 - [Help the bookseller !](./katas/help-the-bookseller)
@@ -151,6 +153,7 @@ These are the 290 code challenges I have completed:
 - [Largest pair sum in array](./katas/largest-pair-sum-in-array)
 - [Lario and Muigi Pipe Problem](./katas/lario-and-muigi-pipe-problem)
 - [List Filtering](./katas/list-filtering)
+- [Love vs friendship](./katas/love-vs-friendship)
 - [Make a function that does arithmetic!](./katas/make-a-function-that-does-arithmetic)
 - [MakeUpperCase](./katas/makeuppercase)
 - [Maximum  subarray sum](./katas/maximum-subarray-sum)
@@ -164,13 +167,16 @@ These are the 290 code challenges I have completed:
 - [Most digits](./katas/most-digits)
 - [Multiple of  index](./katas/multiple-of-index)
 - [Multiplication table for number](./katas/multiplication-table-for-number)
+- [Multiplication table](./katas/multiplication-table)
 - [Mumbling](./katas/mumbling)
 - [N-th Power](./katas/n-th-power)
+- [Name on billboard](./katas/name-on-billboard)
 - [Name Shuffler](./katas/name-shuffler)
 - [No oddities here](./katas/no-oddities-here)
 - [No zeros for heros](./katas/no-zeros-for-heros)
 - [Number of People in the Bus](./katas/number-of-people-in-the-bus)
 - [Odd or Even?](./katas/odd-or-even)
+- [OOP: Object Oriented Piracy ](./katas/oop-object-oriented-piracy)
 - [Opposite number](./katas/opposite-number)
 - [Opposites Attract](./katas/opposites-attract)
 - [Parse nice int from char problem](./katas/parse-nice-int-from-char-problem)
@@ -179,6 +185,7 @@ These are the 290 code challenges I have completed:
 - [pick a set of first elements](./katas/pick-a-set-of-first-elements)
 - [Playing with digits](./katas/playing-with-digits)
 - [Plural](./katas/plural)
+- [Power of two](./katas/power-of-two)
 - [Powers of 2](./katas/powers-of-2)
 - [Predict your age!](./katas/predict-your-age)
 - [Price of Mangoes](./katas/price-of-mangoes)
@@ -217,6 +224,7 @@ These are the 290 code challenges I have completed:
 - [Simple Encryption #1 - Alternating Split](./katas/simple-encryption-number-1-alternating-split)
 - [Simple Fun #176: Reverse Letter](./katas/simple-fun-number-176-reverse-letter)
 - [Simple multiplication](./katas/simple-multiplication)
+- [Simple validation of a username with regex](./katas/simple-validation-of-a-username-with-regex)
 - [Small enough? - Beginner](./katas/small-enough-beginner)
 - [Sort and Star](./katas/sort-and-star)
 - [Sort array by string length](./katas/sort-array-by-string-length)

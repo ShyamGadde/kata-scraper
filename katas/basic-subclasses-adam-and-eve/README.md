@@ -4,7 +4,7 @@
 
 - **Completed languages:** python
 
-- **Tags:** Fundamentals
+- **Tags:** Fundamentals, Object-oriented Programming
 
 - **Rank:** 8 kyu
 
