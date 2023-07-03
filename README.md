@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 298 code challenges I have completed:
+These are the 303 code challenges I have completed:
 ## Fundamentals
 
 - [5 without numbers !!](./katas/5-without-numbers)
@@ -95,6 +95,7 @@ These are the 298 code challenges I have completed:
 - [Factorial](./katas/factorial-1)
 - [Fake Binary](./katas/fake-binary)
 - [Filter out the geese](./katas/filter-out-the-geese)
+- [Filter the number](./katas/filter-the-number)
 - [Find Maximum and Minimum Values of a List](./katas/find-maximum-and-minimum-values-of-a-list)
 - [Find Multiples of a Number](./katas/find-multiples-of-a-number)
 - [Find Nearest square number](./katas/find-nearest-square-number)
@@ -147,6 +148,7 @@ These are the 298 code challenges I have completed:
 - [Is this a triangle?](./katas/is-this-a-triangle)
 - [Isograms](./katas/isograms)
 - [Jaden Casing Strings](./katas/jaden-casing-strings)
+- [JavaScript Array Filter](./katas/javascript-array-filter)
 - [Keep Hydrated!](./katas/keep-hydrated-1)
 - [Keep up the hoop](./katas/keep-up-the-hoop)
 - [L1: Set Alarm](./katas/l1-set-alarm)
@@ -186,6 +188,7 @@ These are the 298 code challenges I have completed:
 - [Playing with digits](./katas/playing-with-digits)
 - [Plural](./katas/plural)
 - [Power of two](./katas/power-of-two)
+- [Power](./katas/power)
 - [Powers of 2](./katas/powers-of-2)
 - [Predict your age!](./katas/predict-your-age)
 - [Price of Mangoes](./katas/price-of-mangoes)
@@ -196,6 +199,7 @@ These are the 298 code challenges I have completed:
 - [Quarter of the year](./katas/quarter-of-the-year)
 - [Regex count lowercase letters](./katas/regex-count-lowercase-letters)
 - [Regex Password Validation](./katas/regex-password-validation)
+- [Regexp Basics - is it a digit?](./katas/regexp-basics-is-it-a-digit)
 - [Regular Ball Super Ball](./katas/regular-ball-super-ball)
 - [Remove anchor from URL](./katas/remove-anchor-from-url)
 - [Remove duplicates from list](./katas/remove-duplicates-from-list)
@@ -266,6 +270,7 @@ These are the 298 code challenges I have completed:
 - [The 'if' function](./katas/the-if-function)
 - [The Coupon Code](./katas/the-coupon-code)
 - [The Feast of Many Beasts](./katas/the-feast-of-many-beasts)
+- [The highest profit wins!](./katas/the-highest-profit-wins)
 - [The Supermarket Queue](./katas/the-supermarket-queue)
 - [The Wide-Mouthed frog! ](./katas/the-wide-mouthed-frog)
 - [Thinkful - Logic Drills: Traffic light](./katas/thinkful-logic-drills-traffic-light)
