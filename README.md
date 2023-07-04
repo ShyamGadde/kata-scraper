@@ -1,8 +1,9 @@
 # Index of katas by its category/discipline
 
-These are the 303 code challenges I have completed:
+These are the 305 code challenges I have completed:
 ## Fundamentals
 
+- [+1 Array](./katas/plus-1-array)
 - [5 without numbers !!](./katas/5-without-numbers)
 - [A Needle in the Haystack](./katas/a-needle-in-the-haystack)
 - [A wolf in sheep's clothing](./katas/a-wolf-in-sheeps-clothing)
@@ -219,6 +220,7 @@ These are the 303 code challenges I have completed:
 - [Reversed sequence ](./katas/reversed-sequence)
 - [Reversed Strings](./katas/reversed-strings)
 - [Rot13](./katas/rot13-1)
+- [Rotate for a Max](./katas/rotate-for-a-max)
 - [Round up to the next multiple of 5](./katas/round-up-to-the-next-multiple-of-5)
 - [Row Weights](./katas/row-weights)
 - [Sentence Smash](./katas/sentence-smash)
