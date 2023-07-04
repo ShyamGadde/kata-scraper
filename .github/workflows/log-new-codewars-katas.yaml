@@ -34,7 +34,6 @@ jobs:
       - name: Commit and push changes
         uses: EndBug/add-and-commit@v9
         with:
-          author_name: ShyamGadde
-          author_email: 73636812+ShyamGadde@users.noreply.github.com
+          default_author: github_actor
           message: "Add katas solved on ${{ env.TODAY }}"
           add: .
