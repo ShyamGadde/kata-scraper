@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 305 code challenges I have completed:
+These are the 306 code challenges I have completed:
 ## Fundamentals
 
 - [+1 Array](./katas/plus-1-array)
@@ -308,6 +308,7 @@ These are the 305 code challenges I have completed:
 - [Bit Counting](./katas/bit-counting)
 - [Create Phone Number](./katas/create-phone-number)
 - [Is a number prime?](./katas/is-a-number-prime)
+- [Make a spiral](./katas/make-a-spiral)
 - [Valid Parentheses](./katas/valid-parentheses)
 ## Bug Fixes
 
