@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 306 code challenges I have completed:
+These are the 310 code challenges I have completed:
 ## Fundamentals
 
 - [+1 Array](./katas/plus-1-array)
@@ -13,6 +13,7 @@ These are the 306 code challenges I have completed:
 - [All Star Code Challenge #18](./katas/all-star-code-challenge-number-18)
 - [Alphabet war](./katas/alphabet-war)
 - [Alternate capitalization](./katas/alternate-capitalization)
+- [Alternate case](./katas/alternate-case)
 - [altERnaTIng cAsE <=> ALTerNAtiNG CaSe](./katas/alternating-case-<-equals->-alternating-case)
 - [Anagram Detection](./katas/anagram-detection)
 - [Are they the "same"?](./katas/are-they-the-same)
@@ -124,6 +125,7 @@ These are the 306 code challenges I have completed:
 - [Grasshopper - Array Mean](./katas/grasshopper-array-mean)
 - [Grasshopper - Basic Function Fixer](./katas/grasshopper-basic-function-fixer)
 - [Grasshopper - Check for factor](./katas/grasshopper-check-for-factor)
+- [Grasshopper - Combine strings](./katas/grasshopper-combine-strings)
 - [Grasshopper - Messi goals function](./katas/grasshopper-messi-goals-function)
 - [Grasshopper - Personalized Message](./katas/grasshopper-personalized-message)
 - [Grasshopper - Summation](./katas/grasshopper-summation)
@@ -200,6 +202,7 @@ These are the 306 code challenges I have completed:
 - [Quarter of the year](./katas/quarter-of-the-year)
 - [Regex count lowercase letters](./katas/regex-count-lowercase-letters)
 - [Regex Password Validation](./katas/regex-password-validation)
+- [Regex validate PIN code](./katas/regex-validate-pin-code)
 - [Regexp Basics - is it a digit?](./katas/regexp-basics-is-it-a-digit)
 - [Regular Ball Super Ball](./katas/regular-ball-super-ball)
 - [Remove anchor from URL](./katas/remove-anchor-from-url)
@@ -235,6 +238,7 @@ These are the 306 code challenges I have completed:
 - [Sort and Star](./katas/sort-and-star)
 - [Sort array by string length](./katas/sort-array-by-string-length)
 - [Sort Numbers](./katas/sort-numbers)
+- [Sort Out The Men  From Boys ](./katas/sort-out-the-men-from-boys-1)
 - [Sort the Gift Code](./katas/sort-the-gift-code)
 - [Sort the odd](./katas/sort-the-odd)
 - [Sorted? yes? no? how?](./katas/sorted-yes-no-how)
