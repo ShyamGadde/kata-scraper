@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 310 code challenges I have completed:
+These are the 315 code challenges I have completed:
 ## Fundamentals
 
 - [+1 Array](./katas/plus-1-array)
@@ -91,6 +91,7 @@ These are the 310 code challenges I have completed:
 - [Exclamation marks series #1: Remove an exclamation mark from the end of string](./katas/exclamation-marks-series-number-1-remove-an-exclamation-mark-from-the-end-of-string)
 - [Exclamation marks series #2: Remove all exclamation marks from the end of sentence](./katas/exclamation-marks-series-number-2-remove-all-exclamation-marks-from-the-end-of-sentence)
 - [Exclamation marks series #4: Remove all exclamation marks from sentence but ensure a exclamation mark at the end of string](./katas/exclamation-marks-series-number-4-remove-all-exclamation-marks-from-sentence-but-ensure-a-exclamation-mark-at-the-end-of-string)
+- [Exclusive "or" (xor) Logical Operator](./katas/exclusive-or-xor-logical-operator)
 - [Exes and Ohs](./katas/exes-and-ohs)
 - [Extract the domain name from a URL](./katas/extract-the-domain-name-from-a-url-1)
 - [Factorial](./katas/factorial)
@@ -118,6 +119,7 @@ These are the 310 code challenges I have completed:
 - [Form The Minimum](./katas/form-the-minimum)
 - [Friend or Foe?](./katas/friend-or-foe)
 - [Function 2 - squaring an argument](./katas/function-2-squaring-an-argument)
+- [Functional Addition](./katas/functional-addition)
 - [get character from ASCII Value](./katas/get-character-from-ascii-value)
 - [Get number from string](./katas/get-number-from-string)
 - [Get the Middle Character](./katas/get-the-middle-character)
@@ -142,6 +144,7 @@ These are the 310 code challenges I have completed:
 - [How good are you really?](./katas/how-good-are-you-really)
 - [How many lightsabers do you own?](./katas/how-many-lightsabers-do-you-own)
 - [How old will I be in 2099?](./katas/how-old-will-i-be-in-2099)
+- [If you can read this...](./katas/if-you-can-read-this-dot-dot-dot)
 - [If you can't sleep, just count sheep!!](./katas/if-you-cant-sleep-just-count-sheep)
 - [Invert values](./katas/invert-values)
 - [Is he gonna survive?](./katas/is-he-gonna-survive)
@@ -170,6 +173,7 @@ These are the 310 code challenges I have completed:
 - [Minimize  Sum Of Array (Array Series #1)   ](./katas/minimize-sum-of-array-array-series-number-1)
 - [Money, Money, Money](./katas/money-money-money)
 - [Most digits](./katas/most-digits)
+- [Moves in squared strings (I)](./katas/moves-in-squared-strings-i)
 - [Multiple of  index](./katas/multiple-of-index)
 - [Multiplication table for number](./katas/multiplication-table-for-number)
 - [Multiplication table](./katas/multiplication-table)
@@ -245,6 +249,7 @@ These are the 310 code challenges I have completed:
 - [Speed Control](./katas/speed-control)
 - [Square Every Digit](./katas/square-every-digit)
 - [Square(n) Sum](./katas/square-n-sum)
+- [Street Fighter 2 - Character Selection](./katas/street-fighter-2-character-selection)
 - [String cleaning](./katas/string-cleaning)
 - [String ends with?](./katas/string-ends-with)
 - [String incrementer](./katas/string-incrementer)
