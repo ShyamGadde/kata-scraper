@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 315 code challenges I have completed:
+These are the 321 code challenges I have completed:
 ## Fundamentals
 
 - [+1 Array](./katas/plus-1-array)
@@ -43,6 +43,7 @@ These are the 315 code challenges I have completed:
 - [Cat years, Dog years](./katas/cat-years-dog-years)
 - [Categorize New Member](./katas/categorize-new-member)
 - [Century From Year](./katas/century-from-year)
+- [Char Code Calculation](./katas/char-code-calculation)
 - [Check same case](./katas/check-same-case)
 - [Check the exam](./katas/check-the-exam)
 - [Classy Classes](./katas/classy-classes)
@@ -128,6 +129,7 @@ These are the 315 code challenges I have completed:
 - [Grasshopper - Basic Function Fixer](./katas/grasshopper-basic-function-fixer)
 - [Grasshopper - Check for factor](./katas/grasshopper-check-for-factor)
 - [Grasshopper - Combine strings](./katas/grasshopper-combine-strings)
+- [Grasshopper - Function syntax debugging](./katas/grasshopper-function-syntax-debugging)
 - [Grasshopper - Messi goals function](./katas/grasshopper-messi-goals-function)
 - [Grasshopper - Personalized Message](./katas/grasshopper-personalized-message)
 - [Grasshopper - Summation](./katas/grasshopper-summation)
@@ -155,11 +157,13 @@ These are the 315 code challenges I have completed:
 - [Isograms](./katas/isograms)
 - [Jaden Casing Strings](./katas/jaden-casing-strings)
 - [JavaScript Array Filter](./katas/javascript-array-filter)
+- [Kata Example Twist](./katas/kata-example-twist)
 - [Keep Hydrated!](./katas/keep-hydrated-1)
 - [Keep up the hoop](./katas/keep-up-the-hoop)
 - [L1: Set Alarm](./katas/l1-set-alarm)
 - [Largest pair sum in array](./katas/largest-pair-sum-in-array)
 - [Lario and Muigi Pipe Problem](./katas/lario-and-muigi-pipe-problem)
+- [Leonardo Dicaprio and Oscars](./katas/leonardo-dicaprio-and-oscars)
 - [List Filtering](./katas/list-filtering)
 - [Love vs friendship](./katas/love-vs-friendship)
 - [Make a function that does arithmetic!](./katas/make-a-function-that-does-arithmetic)
@@ -221,6 +225,7 @@ These are the 315 code challenges I have completed:
 - [Return Negative](./katas/return-negative)
 - [Return the day ](./katas/return-the-day)
 - [Returning Strings](./katas/returning-strings)
+- [Reverse every other word in the string](./katas/reverse-every-other-word-in-the-string)
 - [Reverse List Order](./katas/reverse-list-order)
 - [Reverse or rotate?](./katas/reverse-or-rotate)
 - [Reverse words](./katas/reverse-words)
@@ -262,6 +267,7 @@ These are the 315 code challenges I have completed:
 - [Sum of Cubes](./katas/sum-of-cubes)
 - [Sum of differences in array](./katas/sum-of-differences-in-array)
 - [Sum of Minimums!](./katas/sum-of-minimums)
+- [Sum of Multiples](./katas/sum-of-multiples)
 - [Sum of numbers from 0 to N](./katas/sum-of-numbers-from-0-to-n)
 - [Sum of Odd Cubed Numbers](./katas/sum-of-odd-cubed-numbers)
 - [Sum of Pairs](./katas/sum-of-pairs)
