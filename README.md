@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 321 code challenges I have completed:
+These are the 324 code challenges I have completed:
 ## Fundamentals
 
 - [+1 Array](./katas/plus-1-array)
@@ -76,6 +76,7 @@ These are the 321 code challenges I have completed:
 - [Difference of Volumes of Cuboids](./katas/difference-of-volumes-of-cuboids)
 - [Directions Reduction](./katas/directions-reduction)
 - [Disemvowel Trolls](./katas/disemvowel-trolls)
+- [Divide and Conquer](./katas/divide-and-conquer)
 - [DNA to RNA Conversion](./katas/dna-to-rna-conversion)
 - [Do you speak "English"?](./katas/do-you-speak-english)
 - [Double Char](./katas/double-char)
@@ -148,6 +149,7 @@ These are the 321 code challenges I have completed:
 - [How old will I be in 2099?](./katas/how-old-will-i-be-in-2099)
 - [If you can read this...](./katas/if-you-can-read-this-dot-dot-dot)
 - [If you can't sleep, just count sheep!!](./katas/if-you-cant-sleep-just-count-sheep)
+- [Integers: Recreation One](./katas/integers-recreation-one)
 - [Invert values](./katas/invert-values)
 - [Is he gonna survive?](./katas/is-he-gonna-survive)
 - [Is it a number?](./katas/is-it-a-number)
@@ -239,6 +241,7 @@ These are the 321 code challenges I have completed:
 - [Shortest Word](./katas/shortest-word)
 - [Simple beads count](./katas/simple-beads-count)
 - [simple calculator ](./katas/simple-calculator)
+- [Simple consecutive pairs](./katas/simple-consecutive-pairs)
 - [Simple Encryption #1 - Alternating Split](./katas/simple-encryption-number-1-alternating-split)
 - [Simple Fun #176: Reverse Letter](./katas/simple-fun-number-176-reverse-letter)
 - [Simple multiplication](./katas/simple-multiplication)
