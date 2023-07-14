@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 324 code challenges I have completed:
+These are the 327 code challenges I have completed:
 ## Fundamentals
 
 - [+1 Array](./katas/plus-1-array)
@@ -194,6 +194,7 @@ These are the 324 code challenges I have completed:
 - [OOP: Object Oriented Piracy ](./katas/oop-object-oriented-piracy)
 - [Opposite number](./katas/opposite-number)
 - [Opposites Attract](./katas/opposites-attract)
+- [Parse float](./katas/parse-float)
 - [Parse nice int from char problem](./katas/parse-nice-int-from-char-problem)
 - [Parts of a list](./katas/parts-of-a-list)
 - [Persistent Bugger.](./katas/persistent-bugger)
@@ -262,6 +263,7 @@ These are the 324 code challenges I have completed:
 - [String ends with?](./katas/string-ends-with)
 - [String incrementer](./katas/string-incrementer)
 - [String repeat](./katas/string-repeat)
+- [Strings Mix](./katas/strings-mix)
 - [Student's Final Grade](./katas/students-final-grade)
 - [Sum Arrays](./katas/sum-arrays)
 - [Sum Mixed Array](./katas/sum-mixed-array)
@@ -291,6 +293,7 @@ These are the 324 code challenges I have completed:
 - [The Coupon Code](./katas/the-coupon-code)
 - [The Feast of Many Beasts](./katas/the-feast-of-many-beasts)
 - [The highest profit wins!](./katas/the-highest-profit-wins)
+- [The Office I - Outed](./katas/the-office-i-outed)
 - [The Supermarket Queue](./katas/the-supermarket-queue)
 - [The Wide-Mouthed frog! ](./katas/the-wide-mouthed-frog)
 - [Thinkful - Logic Drills: Traffic light](./katas/thinkful-logic-drills-traffic-light)
