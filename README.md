@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 327 code challenges I have completed:
+These are the 329 code challenges I have completed:
 ## Fundamentals
 
 - [+1 Array](./katas/plus-1-array)
@@ -10,6 +10,7 @@ These are the 327 code challenges I have completed:
 - [Abbreviate a Two Word Name](./katas/abbreviate-a-two-word-name)
 - [Add Length](./katas/add-length)
 - [Alan Partridge II - Apple Turnover](./katas/alan-partridge-ii-apple-turnover)
+- [All Inclusive?](./katas/all-inclusive)
 - [All Star Code Challenge #18](./katas/all-star-code-challenge-number-18)
 - [Alphabet war](./katas/alphabet-war)
 - [Alternate capitalization](./katas/alternate-capitalization)
@@ -173,6 +174,7 @@ These are the 327 code challenges I have completed:
 - [Maximum  subarray sum](./katas/maximum-subarray-sum)
 - [Maximum Length Difference](./katas/maximum-length-difference)
 - [Maximum Product ](./katas/maximum-product)
+- [Maze Runner](./katas/maze-runner)
 - [Meeting](./katas/meeting)
 - [Merge two sorted arrays into one](./katas/merge-two-sorted-arrays-into-one)
 - [Mexican Wave](./katas/mexican-wave)
