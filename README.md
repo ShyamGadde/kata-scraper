@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 329 code challenges I have completed:
+These are the 332 code challenges I have completed:
 ## Fundamentals
 
 - [+1 Array](./katas/plus-1-array)
@@ -12,6 +12,7 @@ These are the 329 code challenges I have completed:
 - [Alan Partridge II - Apple Turnover](./katas/alan-partridge-ii-apple-turnover)
 - [All Inclusive?](./katas/all-inclusive)
 - [All Star Code Challenge #18](./katas/all-star-code-challenge-number-18)
+- [Alphabet symmetry](./katas/alphabet-symmetry)
 - [Alphabet war](./katas/alphabet-war)
 - [Alternate capitalization](./katas/alternate-capitalization)
 - [Alternate case](./katas/alternate-case)
@@ -168,6 +169,7 @@ These are the 329 code challenges I have completed:
 - [Lario and Muigi Pipe Problem](./katas/lario-and-muigi-pipe-problem)
 - [Leonardo Dicaprio and Oscars](./katas/leonardo-dicaprio-and-oscars)
 - [List Filtering](./katas/list-filtering)
+- [longest_palindrome](./katas/longest-palindrome)
 - [Love vs friendship](./katas/love-vs-friendship)
 - [Make a function that does arithmetic!](./katas/make-a-function-that-does-arithmetic)
 - [MakeUpperCase](./katas/makeuppercase)
@@ -266,6 +268,7 @@ These are the 329 code challenges I have completed:
 - [String incrementer](./katas/string-incrementer)
 - [String repeat](./katas/string-repeat)
 - [Strings Mix](./katas/strings-mix)
+- [Strong Number (Special Numbers Series #2)  ](./katas/strong-number-special-numbers-series-number-2)
 - [Student's Final Grade](./katas/students-final-grade)
 - [Sum Arrays](./katas/sum-arrays)
 - [Sum Mixed Array](./katas/sum-mixed-array)
