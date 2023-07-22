@@ -57,3 +57,10 @@ sumMul(-4, 7)  // => None (n must be greater than 0)
 sumMul(0, 2)   // => None
 sumMul(2, 0)   // => None
 ```
+```cobol
+      SumMul(2, 9)   => 2 + 4 + 6 + 8 = 20
+      SumMul(3, 13)  => 3 + 6 + 9 + 12 = 30
+      SumMul(4, 123) => 4 + 8 + 12 + ... = 1860
+      SumMul(4, 1)   => -1
+      SumMul(0, 20)  => -1
+```
