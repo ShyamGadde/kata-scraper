@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 332 code challenges I have completed:
+These are the 338 code challenges I have completed:
 ## Fundamentals
 
 - [+1 Array](./katas/plus-1-array)
@@ -49,6 +49,7 @@ These are the 332 code challenges I have completed:
 - [Check same case](./katas/check-same-case)
 - [Check the exam](./katas/check-the-exam)
 - [Classy Classes](./katas/classy-classes)
+- [Common Denominators](./katas/common-denominators)
 - [Complementary DNA](./katas/complementary-dna)
 - [Consecutive strings](./katas/consecutive-strings)
 - [Convert a Boolean to a String](./katas/convert-a-boolean-to-a-string)
@@ -111,6 +112,7 @@ These are the 332 code challenges I have completed:
 - [Find the first non-consecutive number](./katas/find-the-first-non-consecutive-number)
 - [Find the middle element](./katas/find-the-middle-element)
 - [Find the next perfect square!](./katas/find-the-next-perfect-square)
+- [Find the nth Digit of a Number](./katas/find-the-nth-digit-of-a-number)
 - [Find the odd int](./katas/find-the-odd-int)
 - [Find the position!](./katas/find-the-position)
 - [Find the Remainder](./katas/find-the-remainder)
@@ -173,6 +175,7 @@ These are the 332 code challenges I have completed:
 - [Love vs friendship](./katas/love-vs-friendship)
 - [Make a function that does arithmetic!](./katas/make-a-function-that-does-arithmetic)
 - [MakeUpperCase](./katas/makeuppercase)
+- [max diff - easy](./katas/max-diff-easy-1)
 - [Maximum  subarray sum](./katas/maximum-subarray-sum)
 - [Maximum Length Difference](./katas/maximum-length-difference)
 - [Maximum Product ](./katas/maximum-product)
@@ -193,6 +196,7 @@ These are the 332 code challenges I have completed:
 - [Name Shuffler](./katas/name-shuffler)
 - [No oddities here](./katas/no-oddities-here)
 - [No zeros for heros](./katas/no-zeros-for-heros)
+- [Number of Decimal Digits](./katas/number-of-decimal-digits)
 - [Number of People in the Bus](./katas/number-of-people-in-the-bus)
 - [Odd or Even?](./katas/odd-or-even)
 - [OOP: Object Oriented Piracy ](./katas/oop-object-oriented-piracy)
@@ -270,6 +274,7 @@ These are the 332 code challenges I have completed:
 - [Strings Mix](./katas/strings-mix)
 - [Strong Number (Special Numbers Series #2)  ](./katas/strong-number-special-numbers-series-number-2)
 - [Student's Final Grade](./katas/students-final-grade)
+- [Substituting Variables Into Strings: Padded Numbers](./katas/substituting-variables-into-strings-padded-numbers)
 - [Sum Arrays](./katas/sum-arrays)
 - [Sum Mixed Array](./katas/sum-mixed-array)
 - [Sum of a sequence](./katas/sum-of-a-sequence)
@@ -300,6 +305,7 @@ These are the 332 code challenges I have completed:
 - [The highest profit wins!](./katas/the-highest-profit-wins)
 - [The Office I - Outed](./katas/the-office-i-outed)
 - [The Supermarket Queue](./katas/the-supermarket-queue)
+- [The Vowel Code](./katas/the-vowel-code)
 - [The Wide-Mouthed frog! ](./katas/the-wide-mouthed-frog)
 - [Thinkful - Logic Drills: Traffic light](./katas/thinkful-logic-drills-traffic-light)
 - [Third Angle of a Triangle](./katas/third-angle-of-a-triangle)
