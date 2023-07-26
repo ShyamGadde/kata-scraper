@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 338 code challenges I have completed:
+These are the 343 code challenges I have completed:
 ## Fundamentals
 
 - [+1 Array](./katas/plus-1-array)
@@ -22,8 +22,10 @@ These are the 338 code challenges I have completed:
 - [Are You Playing Banjo?](./katas/are-you-playing-banjo)
 - [Area of a Square](./katas/area-of-a-square)
 - [Area or Perimeter](./katas/area-or-perimeter)
+- [Array Leaders (Array Series #3)](./katas/array-leaders-array-series-number-3)
 - [Array.diff](./katas/array-dot-diff)
 - [ASCII Total](./katas/ascii-total)
+- [Automorphic Number (Special Numbers Series  #6)](./katas/automorphic-number-special-numbers-series-number-6)
 - [Basic Mathematical Operations](./katas/basic-mathematical-operations)
 - [Basic subclasses - Adam and Eve](./katas/basic-subclasses-adam-and-eve)
 - [Basic Training: Add item to an Array](./katas/basic-training-add-item-to-an-array)
@@ -69,6 +71,7 @@ These are the 338 code challenges I have completed:
 - [Counting Duplicates](./katas/counting-duplicates)
 - [Counting sheep...](./katas/counting-sheep-dot-dot-dot)
 - [CSV representation of array](./katas/csv-representation-of-array)
+- [Currying functions: multiply all elements in an array](./katas/currying-functions-multiply-all-elements-in-an-array)
 - [Dashatize it](./katas/dashatize-it)
 - [Data Reverse](./katas/data-reverse)
 - [Decipher this! ](./katas/decipher-this)
@@ -199,9 +202,11 @@ These are the 338 code challenges I have completed:
 - [Number of Decimal Digits](./katas/number-of-decimal-digits)
 - [Number of People in the Bus](./katas/number-of-people-in-the-bus)
 - [Odd or Even?](./katas/odd-or-even)
+- [Odd-Even String Sort](./katas/odd-even-string-sort)
 - [OOP: Object Oriented Piracy ](./katas/oop-object-oriented-piracy)
 - [Opposite number](./katas/opposite-number)
 - [Opposites Attract](./katas/opposites-attract)
+- [Ordered Count of Characters](./katas/ordered-count-of-characters)
 - [Parse float](./katas/parse-float)
 - [Parse nice int from char problem](./katas/parse-nice-int-from-char-problem)
 - [Parts of a list](./katas/parts-of-a-list)
