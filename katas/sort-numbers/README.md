@@ -82,7 +82,10 @@ sort_ascending(0, NULL); // nothing to do for empty array
 sol(List(0, 3, 2, 5, 4, 1)) // returns List(0, 1, 2, 3, 4, 5)
 sol(List()) // returns List()
 ```
-
+```crystal
+solution([1, 2, 10, 50, 5]) # should return [1,2,5,10,50]
+solution(nil) # should return [] of Int32
+```
 ~~~if:lambdacalc
 ## Lambda Calculus
 
