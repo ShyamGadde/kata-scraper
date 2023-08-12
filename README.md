@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 343 code challenges I have completed:
+These are the 345 code challenges I have completed:
 ## Fundamentals
 
 - [+1 Array](./katas/plus-1-array)
@@ -119,6 +119,7 @@ These are the 343 code challenges I have completed:
 - [Find the odd int](./katas/find-the-odd-int)
 - [Find the position!](./katas/find-the-position)
 - [Find the Remainder](./katas/find-the-remainder)
+- [Find the Slope](./katas/find-the-slope)
 - [Find the smallest integer in the array](./katas/find-the-smallest-integer-in-the-array)
 - [Find the stray number](./katas/find-the-stray-number)
 - [Find the unique number](./katas/find-the-unique-number-1)
@@ -147,6 +148,7 @@ These are the 343 code challenges I have completed:
 - [Growth of a Population](./katas/growth-of-a-population)
 - [Hello, Name or World!](./katas/hello-name-or-world)
 - [Help the bookseller !](./katas/help-the-bookseller)
+- [Help the Fruit Guy](./katas/help-the-fruit-guy)
 - [Hex to Decimal](./katas/hex-to-decimal)
 - [Highest and Lowest](./katas/highest-and-lowest)
 - [Highest Rank Number in an Array](./katas/highest-rank-number-in-an-array)
