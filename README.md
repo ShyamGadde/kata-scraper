@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 345 code challenges I have completed:
+These are the 349 code challenges I have completed:
 ## Fundamentals
 
 - [+1 Array](./katas/plus-1-array)
@@ -27,6 +27,7 @@ These are the 345 code challenges I have completed:
 - [ASCII Total](./katas/ascii-total)
 - [Automorphic Number (Special Numbers Series  #6)](./katas/automorphic-number-special-numbers-series-number-6)
 - [Basic Mathematical Operations](./katas/basic-mathematical-operations)
+- [Basic Sequence Practice](./katas/basic-sequence-practice)
 - [Basic subclasses - Adam and Eve](./katas/basic-subclasses-adam-and-eve)
 - [Basic Training: Add item to an Array](./katas/basic-training-add-item-to-an-array)
 - [Beginner - Lost Without a Map](./katas/beginner-lost-without-a-map)
@@ -199,6 +200,7 @@ These are the 345 code challenges I have completed:
 - [N-th Power](./katas/n-th-power)
 - [Name on billboard](./katas/name-on-billboard)
 - [Name Shuffler](./katas/name-shuffler)
+- [New Cashier Does Not Know About Space or Shift ](./katas/new-cashier-does-not-know-about-space-or-shift)
 - [No oddities here](./katas/no-oddities-here)
 - [No zeros for heros](./katas/no-zeros-for-heros)
 - [Number of Decimal Digits](./katas/number-of-decimal-digits)
@@ -263,6 +265,7 @@ These are the 345 code challenges I have completed:
 - [Simple multiplication](./katas/simple-multiplication)
 - [Simple validation of a username with regex](./katas/simple-validation-of-a-username-with-regex)
 - [Small enough? - Beginner](./katas/small-enough-beginner)
+- [Smallest value of an array](./katas/smallest-value-of-an-array)
 - [Sort and Star](./katas/sort-and-star)
 - [Sort array by string length](./katas/sort-array-by-string-length)
 - [Sort Numbers](./katas/sort-numbers)
@@ -278,6 +281,7 @@ These are the 345 code challenges I have completed:
 - [String ends with?](./katas/string-ends-with)
 - [String incrementer](./katas/string-incrementer)
 - [String repeat](./katas/string-repeat)
+- [String transformer](./katas/string-transformer)
 - [Strings Mix](./katas/strings-mix)
 - [Strong Number (Special Numbers Series #2)  ](./katas/strong-number-special-numbers-series-number-2)
 - [Student's Final Grade](./katas/students-final-grade)
