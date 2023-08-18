@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 349 code challenges I have completed:
+These are the 356 code challenges I have completed:
 ## Fundamentals
 
 - [+1 Array](./katas/plus-1-array)
@@ -18,6 +18,7 @@ These are the 349 code challenges I have completed:
 - [Alternate case](./katas/alternate-case)
 - [altERnaTIng cAsE <=> ALTerNAtiNG CaSe](./katas/alternating-case-<-equals->-alternating-case)
 - [Anagram Detection](./katas/anagram-detection)
+- [Are arrow functions odd?](./katas/are-arrow-functions-odd)
 - [Are they the "same"?](./katas/are-they-the-same)
 - [Are You Playing Banjo?](./katas/are-you-playing-banjo)
 - [Area of a Square](./katas/area-of-a-square)
@@ -42,6 +43,7 @@ These are the 349 code challenges I have completed:
 - [Break camelCase](./katas/break-camelcase)
 - [Build a pile of Cubes](./katas/build-a-pile-of-cubes)
 - [Build Tower](./katas/build-tower)
+- [Building blocks](./katas/building-blocks)
 - [Bumps in the Road](./katas/bumps-in-the-road)
 - [Calculate average ](./katas/calculate-average)
 - [Calculating with Functions](./katas/calculating-with-functions)
@@ -131,6 +133,8 @@ These are the 349 code challenges I have completed:
 - [Friend or Foe?](./katas/friend-or-foe)
 - [Function 2 - squaring an argument](./katas/function-2-squaring-an-argument)
 - [Functional Addition](./katas/functional-addition)
+- [Geometry Basics: Distance between points in 2D](./katas/geometry-basics-distance-between-points-in-2d)
+- [get ascii value of character](./katas/get-ascii-value-of-character)
 - [get character from ASCII Value](./katas/get-character-from-ascii-value)
 - [Get number from string](./katas/get-number-from-string)
 - [Get the Middle Character](./katas/get-the-middle-character)
@@ -176,6 +180,7 @@ These are the 349 code challenges I have completed:
 - [Largest pair sum in array](./katas/largest-pair-sum-in-array)
 - [Lario and Muigi Pipe Problem](./katas/lario-and-muigi-pipe-problem)
 - [Leonardo Dicaprio and Oscars](./katas/leonardo-dicaprio-and-oscars)
+- [Linked Lists - Length & Count](./katas/linked-lists-length-and-count)
 - [List Filtering](./katas/list-filtering)
 - [longest_palindrome](./katas/longest-palindrome)
 - [Love vs friendship](./katas/love-vs-friendship)
@@ -320,6 +325,7 @@ These are the 349 code challenges I have completed:
 - [The Wide-Mouthed frog! ](./katas/the-wide-mouthed-frog)
 - [Thinkful - Logic Drills: Traffic light](./katas/thinkful-logic-drills-traffic-light)
 - [Third Angle of a Triangle](./katas/third-angle-of-a-triangle)
+- [Tidy Number (Special Numbers Series  #9)](./katas/tidy-number-special-numbers-series-number-9)
 - [Title Case](./katas/title-case)
 - [Tortoise racing](./katas/tortoise-racing)
 - [Total amount of points](./katas/total-amount-of-points)
@@ -341,6 +347,7 @@ These are the 349 code challenges I have completed:
 - [Who likes it?](./katas/who-likes-it)
 - [Will you make it?](./katas/will-you-make-it)
 - [Word a10n (abbreviation)](./katas/word-a10n-abbreviation)
+- [Word values](./katas/word-values)
 - [Write Number in Expanded Form](./katas/write-number-in-expanded-form)
 - [You Can't Code Under Pressure #1](./katas/you-cant-code-under-pressure-number-1)
 - [You only need one - Beginner](./katas/you-only-need-one-beginner)
