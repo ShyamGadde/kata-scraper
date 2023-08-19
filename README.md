@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 356 code challenges I have completed:
+These are the 365 code challenges I have completed:
 ## Fundamentals
 
 - [+1 Array](./katas/plus-1-array)
@@ -47,6 +47,7 @@ These are the 356 code challenges I have completed:
 - [Bumps in the Road](./katas/bumps-in-the-road)
 - [Calculate average ](./katas/calculate-average)
 - [Calculating with Functions](./katas/calculating-with-functions)
+- [Cat and Mouse - Easy Version](./katas/cat-and-mouse-easy-version)
 - [Cat years, Dog years](./katas/cat-years-dog-years)
 - [Categorize New Member](./katas/categorize-new-member)
 - [Century From Year](./katas/century-from-year)
@@ -61,6 +62,7 @@ These are the 356 code challenges I have completed:
 - [Convert a Number to a String!](./katas/convert-a-number-to-a-string)
 - [Convert a String to a Number!](./katas/convert-a-string-to-a-number)
 - [Convert a string to an array](./katas/convert-a-string-to-an-array)
+- [Convert an array of strings to array of numbers](./katas/convert-an-array-of-strings-to-array-of-numbers)
 - [Convert boolean values to strings 'Yes' or 'No'.](./katas/convert-boolean-values-to-strings-yes-or-no)
 - [Convert number to reversed array of digits](./katas/convert-number-to-reversed-array-of-digits)
 - [Convert to Binary](./katas/convert-to-binary)
@@ -102,6 +104,7 @@ These are the 356 code challenges I have completed:
 - [Exclamation marks series #1: Remove an exclamation mark from the end of string](./katas/exclamation-marks-series-number-1-remove-an-exclamation-mark-from-the-end-of-string)
 - [Exclamation marks series #2: Remove all exclamation marks from the end of sentence](./katas/exclamation-marks-series-number-2-remove-all-exclamation-marks-from-the-end-of-sentence)
 - [Exclamation marks series #4: Remove all exclamation marks from sentence but ensure a exclamation mark at the end of string](./katas/exclamation-marks-series-number-4-remove-all-exclamation-marks-from-sentence-but-ensure-a-exclamation-mark-at-the-end-of-string)
+- [Exclamation marks series #6: Remove n exclamation marks in the sentence from left to right](./katas/exclamation-marks-series-number-6-remove-n-exclamation-marks-in-the-sentence-from-left-to-right)
 - [Exclusive "or" (xor) Logical Operator](./katas/exclusive-or-xor-logical-operator)
 - [Exes and Ohs](./katas/exes-and-ohs)
 - [Extract the domain name from a URL](./katas/extract-the-domain-name-from-a-url-1)
@@ -126,6 +129,7 @@ These are the 356 code challenges I have completed:
 - [Find the smallest integer in the array](./katas/find-the-smallest-integer-in-the-array)
 - [Find the stray number](./katas/find-the-stray-number)
 - [Find the unique number](./katas/find-the-unique-number-1)
+- [Find the vowels](./katas/find-the-vowels)
 - [Fix string case](./katas/fix-string-case)
 - [Fix your code before the garden dies! ](./katas/fix-your-code-before-the-garden-dies)
 - [Flatten and sort an array](./katas/flatten-and-sort-an-array)
@@ -179,6 +183,7 @@ These are the 356 code challenges I have completed:
 - [L1: Set Alarm](./katas/l1-set-alarm)
 - [Largest pair sum in array](./katas/largest-pair-sum-in-array)
 - [Lario and Muigi Pipe Problem](./katas/lario-and-muigi-pipe-problem)
+- [Last Survivor](./katas/last-survivor)
 - [Leonardo Dicaprio and Oscars](./katas/leonardo-dicaprio-and-oscars)
 - [Linked Lists - Length & Count](./katas/linked-lists-length-and-count)
 - [List Filtering](./katas/list-filtering)
@@ -245,6 +250,7 @@ These are the 356 code challenges I have completed:
 - [Remove First and Last Character](./katas/remove-first-and-last-character)
 - [Remove String Spaces](./katas/remove-string-spaces)
 - [Remove the minimum](./katas/remove-the-minimum)
+- [Remove the time](./katas/remove-the-time)
 - [Removing Elements](./katas/removing-elements)
 - [Replace With Alphabet Position](./katas/replace-with-alphabet-position)
 - [Return Negative](./katas/return-negative)
@@ -278,6 +284,8 @@ These are the 356 code challenges I have completed:
 - [Sort the Gift Code](./katas/sort-the-gift-code)
 - [Sort the odd](./katas/sort-the-odd)
 - [Sorted? yes? no? how?](./katas/sorted-yes-no-how)
+- [Spacify](./katas/spacify)
+- [Special  Number (Special Numbers Series  #5)](./katas/special-number-special-numbers-series-number-5)
 - [Speed Control](./katas/speed-control)
 - [Square Every Digit](./katas/square-every-digit)
 - [Square(n) Sum](./katas/square-n-sum)
@@ -336,6 +344,7 @@ These are the 356 code challenges I have completed:
 - [Two to One](./katas/two-to-one)
 - [Unique In Order](./katas/unique-in-order)
 - [USD => CNY](./katas/usd-equals->-cny)
+- [V     A     P     O     R     C     O     D     E](./katas/v-a-p-o-r-c-o-d-e)
 - [validate code with simple regex](./katas/validate-code-with-simple-regex)
 - [Volume of a Cuboid](./katas/volume-of-a-cuboid)
 - [Vowel Count](./katas/vowel-count)
