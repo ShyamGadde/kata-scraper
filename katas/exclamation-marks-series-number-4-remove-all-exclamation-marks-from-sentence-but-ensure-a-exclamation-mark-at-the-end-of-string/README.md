@@ -17,10 +17,10 @@ Remove all exclamation marks from sentence but ensure a exclamation mark at the 
 ## Examples
 
 ```
-remove("Hi!") === "Hi!"
-remove("Hi!!!") === "Hi!"
-remove("!Hi") === "Hi!"
-remove("!Hi!") === "Hi!"
-remove("Hi! Hi!") === "Hi Hi!"
-remove("Hi") === "Hi!"
+"Hi!"     ---> "Hi!"
+"Hi!!!"   ---> "Hi!"
+"!Hi"     ---> "Hi!"
+"!Hi!"    ---> "Hi!"
+"Hi! Hi!" ---> "Hi Hi!"
+"Hi"      ---> "Hi!"
 ```

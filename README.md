@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 365 code challenges I have completed:
+These are the 370 code challenges I have completed:
 ## Fundamentals
 
 - [+1 Array](./katas/plus-1-array)
@@ -85,6 +85,7 @@ These are the 365 code challenges I have completed:
 - [Detect Pangram](./katas/detect-pangram)
 - [Determine offspring sex based on genes XX and XY chromosomes](./katas/determine-offspring-sex-based-on-genes-xx-and-xy-chromosomes)
 - [Difference of Volumes of Cuboids](./katas/difference-of-volumes-of-cuboids)
+- [Digits explosion](./katas/digits-explosion)
 - [Directions Reduction](./katas/directions-reduction)
 - [Disemvowel Trolls](./katas/disemvowel-trolls)
 - [Divide and Conquer](./katas/divide-and-conquer)
@@ -188,6 +189,7 @@ These are the 365 code challenges I have completed:
 - [Linked Lists - Length & Count](./katas/linked-lists-length-and-count)
 - [List Filtering](./katas/list-filtering)
 - [longest_palindrome](./katas/longest-palindrome)
+- [Lottery Ticket](./katas/lottery-ticket)
 - [Love vs friendship](./katas/love-vs-friendship)
 - [Make a function that does arithmetic!](./katas/make-a-function-that-does-arithmetic)
 - [MakeUpperCase](./katas/makeuppercase)
@@ -217,6 +219,7 @@ These are the 365 code challenges I have completed:
 - [Number of People in the Bus](./katas/number-of-people-in-the-bus)
 - [Odd or Even?](./katas/odd-or-even)
 - [Odd-Even String Sort](./katas/odd-even-string-sort)
+- [Ones and Zeros](./katas/ones-and-zeros)
 - [OOP: Object Oriented Piracy ](./katas/oop-object-oriented-piracy)
 - [Opposite number](./katas/opposite-number)
 - [Opposites Attract](./katas/opposites-attract)
@@ -262,11 +265,13 @@ These are the 365 code challenges I have completed:
 - [Reverse words](./katas/reverse-words)
 - [Reversed sequence ](./katas/reversed-sequence)
 - [Reversed Strings](./katas/reversed-strings)
+- [Reversing Words in a String](./katas/reversing-words-in-a-string)
 - [Rot13](./katas/rot13-1)
 - [Rotate for a Max](./katas/rotate-for-a-max)
 - [Round up to the next multiple of 5](./katas/round-up-to-the-next-multiple-of-5)
 - [Row Weights](./katas/row-weights)
 - [Sentence Smash](./katas/sentence-smash)
+- [SevenAte9](./katas/sevenate9)
 - [Shortest Word](./katas/shortest-word)
 - [Simple beads count](./katas/simple-beads-count)
 - [simple calculator ](./katas/simple-calculator)

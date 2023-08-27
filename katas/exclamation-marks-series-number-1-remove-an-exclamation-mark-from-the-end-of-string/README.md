@@ -17,10 +17,10 @@ Remove an exclamation mark from the end of a string. For a beginner kata, you ca
 # Examples
 
 ```
-remove("Hi!") == "Hi"
-remove("Hi!!!") == "Hi!!"
-remove("!Hi") == "!Hi"
-remove("!Hi!") == "!Hi"
-remove("Hi! Hi!") == "Hi! Hi"
-remove("Hi") == "Hi"
+"Hi!"     ---> "Hi"
+"Hi!!!"   ---> "Hi!!"
+"!Hi"     ---> "!Hi"
+"!Hi!"    ---> "!Hi"
+"Hi! Hi!" ---> "Hi! Hi"
+"Hi"      ---> "Hi"
 ```
