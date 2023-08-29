@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 370 code challenges I have completed:
+These are the 377 code challenges I have completed:
 ## Fundamentals
 
 - [+1 Array](./katas/plus-1-array)
@@ -9,6 +9,7 @@ These are the 370 code challenges I have completed:
 - [A wolf in sheep's clothing](./katas/a-wolf-in-sheeps-clothing)
 - [Abbreviate a Two Word Name](./katas/abbreviate-a-two-word-name)
 - [Add Length](./katas/add-length)
+- [Age Range Compatibility Equation](./katas/age-range-compatibility-equation)
 - [Alan Partridge II - Apple Turnover](./katas/alan-partridge-ii-apple-turnover)
 - [All Inclusive?](./katas/all-inclusive)
 - [All Star Code Challenge #18](./katas/all-star-code-challenge-number-18)
@@ -55,6 +56,7 @@ These are the 370 code challenges I have completed:
 - [Check same case](./katas/check-same-case)
 - [Check the exam](./katas/check-the-exam)
 - [Classy Classes](./katas/classy-classes)
+- [Color Ghost](./katas/color-ghost)
 - [Common Denominators](./katas/common-denominators)
 - [Complementary DNA](./katas/complementary-dna)
 - [Consecutive strings](./katas/consecutive-strings)
@@ -163,6 +165,7 @@ These are the 370 code challenges I have completed:
 - [Highest and Lowest](./katas/highest-and-lowest)
 - [Highest Rank Number in an Array](./katas/highest-rank-number-in-an-array)
 - [Highest Scoring Word](./katas/highest-scoring-word)
+- [Holiday III - Fire on the boat](./katas/holiday-iii-fire-on-the-boat)
 - [How good are you really?](./katas/how-good-are-you-really)
 - [How many lightsabers do you own?](./katas/how-many-lightsabers-do-you-own)
 - [How old will I be in 2099?](./katas/how-old-will-i-be-in-2099)
@@ -170,6 +173,7 @@ These are the 370 code challenges I have completed:
 - [If you can't sleep, just count sheep!!](./katas/if-you-cant-sleep-just-count-sheep)
 - [Integers: Recreation One](./katas/integers-recreation-one)
 - [Invert values](./katas/invert-values)
+- [IPv4 to int32](./katas/ipv4-to-int32)
 - [Is he gonna survive?](./katas/is-he-gonna-survive)
 - [Is it a number?](./katas/is-it-a-number)
 - [Is it even?](./katas/is-it-even)
@@ -258,6 +262,7 @@ These are the 370 code challenges I have completed:
 - [Replace With Alphabet Position](./katas/replace-with-alphabet-position)
 - [Return Negative](./katas/return-negative)
 - [Return the day ](./katas/return-the-day)
+- [Return the first M multiples of N](./katas/return-the-first-m-multiples-of-n)
 - [Returning Strings](./katas/returning-strings)
 - [Reverse every other word in the string](./katas/reverse-every-other-word-in-the-string)
 - [Reverse List Order](./katas/reverse-list-order)
@@ -284,6 +289,8 @@ These are the 370 code challenges I have completed:
 - [Smallest value of an array](./katas/smallest-value-of-an-array)
 - [Sort and Star](./katas/sort-and-star)
 - [Sort array by string length](./katas/sort-array-by-string-length)
+- [Sort arrays - 1](./katas/sort-arrays-1)
+- [Sort by Last Char](./katas/sort-by-last-char)
 - [Sort Numbers](./katas/sort-numbers)
 - [Sort Out The Men  From Boys ](./katas/sort-out-the-men-from-boys-1)
 - [Sort the Gift Code](./katas/sort-the-gift-code)
