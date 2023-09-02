@@ -1,6 +1,6 @@
 # Index of katas by its category/discipline
 
-These are the 390 code challenges I have completed:
+These are the 393 code challenges I have completed:
 ## Fundamentals
 
 - [+1 Array](./katas/plus-1-array)
@@ -28,6 +28,7 @@ These are the 390 code challenges I have completed:
 - [Array.diff](./katas/array-dot-diff)
 - [ASCII Total](./katas/ascii-total)
 - [Automorphic Number (Special Numbers Series  #6)](./katas/automorphic-number-special-numbers-series-number-6)
+- [Basic Calculator](./katas/basic-calculator)
 - [Basic Mathematical Operations](./katas/basic-mathematical-operations)
 - [Basic Sequence Practice](./katas/basic-sequence-practice)
 - [Basic subclasses - Adam and Eve](./katas/basic-subclasses-adam-and-eve)
@@ -61,6 +62,7 @@ These are the 390 code challenges I have completed:
 - [Common Denominators](./katas/common-denominators)
 - [Complementary DNA](./katas/complementary-dna)
 - [Consecutive strings](./katas/consecutive-strings)
+- [Consonant value](./katas/consonant-value)
 - [Convert a Boolean to a String](./katas/convert-a-boolean-to-a-string)
 - [Convert a Number to a String!](./katas/convert-a-number-to-a-string)
 - [Convert a String to a Number!](./katas/convert-a-string-to-a-number)
@@ -186,6 +188,7 @@ These are the 390 code challenges I have completed:
 - [Jaden Casing Strings](./katas/jaden-casing-strings)
 - [JavaScript Array Filter](./katas/javascript-array-filter)
 - [Kata Example Twist](./katas/kata-example-twist)
+- [Kebabize](./katas/kebabize)
 - [Keep Hydrated!](./katas/keep-hydrated-1)
 - [Keep up the hoop](./katas/keep-up-the-hoop)
 - [L1: Set Alarm](./katas/l1-set-alarm)
