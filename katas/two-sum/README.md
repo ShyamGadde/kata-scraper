@@ -39,7 +39,7 @@ twoSum [1, 2, 3] 4 === (0, 2)
 twoSum([1, 2, 3], 4) // returns [0, 2] or [2, 0]
 ```
 ```python
-two_sum([1, 2, 3], 4) # returns [0, 2] or [2, 0]
+two_sum([1, 2, 3], 4) # returns (0, 2) or (2, 0)
 ```
 ```rust
 two_sum(&[1, 2, 3], 4) // return (0, 2) or (2, 0)
