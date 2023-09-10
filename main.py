@@ -19,7 +19,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
 
 
-async def read_file_content(file_path) -> str:
+async def read_file_content_async(file_path) -> str:
     """
     This is an asynchronous function that reads the content of a file and returns it.
 
@@ -36,7 +36,7 @@ async def read_file_content(file_path) -> str:
         return await file.read()
 
 
-async def write_file_content(file_path, content) -> None:
+async def write_file_content_async(file_path, content) -> None:
     """
     This is an asynchronous Python function that writes content to a file at a
     specified file path.
@@ -157,8 +157,7 @@ class CodeWarsKataScrapper:
         self.main_folder_path: str = "./katas"
         self.total_completed_katas: int = 0
         self.counter: int = 0
-
-        self.error_list: list = []
+        self.error_list: list[str] = []
 
     async def main(self) -> None:
         """
@@ -319,10 +318,10 @@ class CodeWarsKataScrapper:
         )
 
         try:
-            if not os.path.exists(file_path) or content != await read_file_content(
+            if not os.path.exists(
                 file_path
-            ):
-                await write_file_content(file_path, content)
+            ) or content != await read_file_content_async(file_path):
+                await write_file_content_async(file_path, content)
         except OSError:
             self.error_list.append(
                 f"An error occurred while creating the problem description \
@@ -356,8 +355,8 @@ class CodeWarsKataScrapper:
 
             if not os.path.exists(
                 file_path
-            ) or solution_code != await read_file_content(file_path):
-                await write_file_content(file_path, solution_code)
+            ) or solution_code != await read_file_content_async(file_path):
+                await write_file_content_async(file_path, solution_code)
         except TimeoutError:
             self.error_list.append(
                 f"The driver took too much time for {kata['name']} ({language}). \
@@ -401,10 +400,10 @@ class CodeWarsKataScrapper:
         )
 
         try:
-            if not os.path.exists(file_path) or content != await read_file_content(
+            if not os.path.exists(
                 file_path
-            ):
-                await write_file_content(file_path, content)
+            ) or content != await read_file_content_async(file_path):
+                await write_file_content_async(file_path, content)
         except OSError:
             self.error_list.append("There was a problem while creating the index file.")
 
