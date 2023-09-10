@@ -1,7 +1,7 @@
 """
-This script is a program for scraping completed katas from Codewars, organizing them into folders
-and files, and generating an index file. It utilizes Selenium and aiohttp libraries for web
-scraping and asynchronous file operations.
+This script is a program for scraping completed katas from Codewars, organizing them
+into folders and files, and generating an index file. It utilizes Selenium and aiohttp
+libraries for web scraping and asynchronous file operations.
 """
 
 import asyncio
@@ -24,12 +24,13 @@ async def read_file_content(file_path) -> str:
     This is an asynchronous function that reads the content of a file and returns it.
 
     Args:
-    file_path: The file path parameter is a string that specifies the location of the file to be
-    read. It can be an absolute or relative path to the file.
+    file_path: The file path parameter is a string that specifies the location of the
+    file to be read. It can be an absolute or relative path to the file.
 
     Returns:
-    The function `read_file_content` returns the content of the file located at `file_path` as a
-    string. The content is read asynchronously using the `aiofiles` library.
+    The function `read_file_content` returns the content of the file located at
+    `file_path` as a string. The content is read asynchronously using the `aiofiles`
+    library.
     """
     async with aiofiles.open(file_path, "r", encoding="utf-8") as file:
         return await file.read()
@@ -37,14 +38,16 @@ async def read_file_content(file_path) -> str:
 
 async def write_file_content(file_path, content) -> None:
     """
-    This is an asynchronous Python function that writes content to a file at a specified file path.
+    This is an asynchronous Python function that writes content to a file at a
+    specified file path.
 
     Args:
-    - file_path: The file path is a string that specifies the location and name of the file that you
-    want to write to. It should include the file extension (e.g. ".txt", ".csv", etc.) and the
-    full path if the file is not in the current working directory.
-    - content: The content parameter is a string that represents the text content that will be
-    written to the file.
+    - file_path: The file path is a string that specifies the location and name of the
+    file that you want to write to. It should include the file extension
+    (e.g. ".txt", ".csv", etc.) and the full path if the file is not in the current
+    working directory.
+    - content: The content parameter is a string that represents the text content that
+    will be written to the file.
     """
     async with aiofiles.open(file_path, "w", encoding="utf-8") as file:
         await file.write(content)
@@ -54,27 +57,31 @@ class CodeWarsKataScrapper:
     """
     A class that represents a scrapper for retrieving completed katas from Codewars.
 
-    This class scrapes completed katas from the user's Codewars profile, organizes them into folders
-    and files, and generates an index file categorizing the completed katas. It uses Selenium for
-    web scraping and aiohttp for asynchronous HTTP requests and file operations.
+    This class scrapes completed katas from the user's Codewars profile, organizes them
+    into folders and files, and generates an index file categorizing the completed
+    katas. It uses Selenium for web scraping and aiohttp for asynchronous HTTP requests
+    and file operations.
 
     Attributes:
-        - language_extensions (dict): A dictionary mapping programming languages to their file
-        extensions.
-        - kata_categories (dict): A dictionary mapping category names to lists of katas belonging
-        to those categories.
-        - options (Options): Options for configuring the headless browser.
-        - browser (WebDriver): The web driver instance for interacting with the web browser.
-        - completed_katas_url (str): The URL for retrieving completed katas from the Codewars API.
-        - kata_info_url (str): The base URL for retrieving information about a specific kata from
-        the Codewars API.
-        - main_folder_path (str): The path to the main folder where the katas will be organized.
-        - total_completed_katas (int): The total number of completed katas.
-        - counter (int): A counter for tracking the progress of kata processing.
-        - error_list (list): A list for storing any errors encountered during processing.
+        - language_extensions (dict): A dictionary mapping programming languages to
+        their file extensions
+        - kata_categories (dict): A dictionary mapping category names to lists of katas
+        belonging to those categories
+        - options (Options): Options for configuring the headless browser
+        - browser (WebDriver): The web driver instance for interacting with the web
+        browser
+        - completed_katas_url (str): The URL for retrieving completed katas from the
+        Codewars API
+        - kata_info_url (str): The base URL for retrieving information about a specific
+        kata from the Codewars API
+        - main_folder_path (str): The path to the main folder where the katas will be
+        organized
+        - total_completed_katas (int): The total number of completed katas
+        - counter (int): A counter for tracking the progress of kata processing
+        - error_list (list): A list for storing any errors encountered during processing
     """
 
-    def __init__(self):
+    def __init__(self) -> None:
         self.language_extensions: dict[str, str] = {
             "agda": "agda",
             "bf": "b",
@@ -142,7 +149,7 @@ class CodeWarsKataScrapper:
         self.browser = webdriver.Chrome(options=self.options)
         self.browser.implicitly_wait(0.5)
 
-        self.completed_katas_url: str = (
+        self.completed_katas_url = (
             f"https://www.codewars.com/api/v1/users/{self.get_credentials('username')}/"
             "code-challenges/completed"
         )
@@ -153,10 +160,10 @@ class CodeWarsKataScrapper:
 
         self.error_list: list = []
 
-    async def main(self):
+    async def main(self) -> None:
         """
-        This is an async function that scrapes completed katas from Codewars, creates folders and
-        files for each kata, and generates an index file.
+        This is an async function that scrapes completed katas from Codewars, creates
+        folders and files for each kata, and generates an index file.
         """
 
         self.sign_in_to_codewars(
@@ -173,7 +180,7 @@ class CodeWarsKataScrapper:
             self.total_completed_katas: int = response_content["totalItems"]
             number_of_pages: int = response_content["totalPages"]
 
-            tasks: list = []
+            tasks = []
 
             for page in range(number_of_pages):
                 response = await session.get(f"{self.completed_katas_url}?page={page}")
@@ -195,7 +202,8 @@ class CodeWarsKataScrapper:
 
                     self.counter += 1
                     print(
-                        f"\rProcessing kata {self.counter} of {self.total_completed_katas}...",
+                        f"\rProcessing kata {self.counter} \
+                            of {self.total_completed_katas}...",
                         end="",
                     )
 
@@ -209,15 +217,12 @@ class CodeWarsKataScrapper:
                         )
                     )
 
-                    for language in kata["completedLanguages"]:
-                        tasks.append(
-                            asyncio.create_task(
-                                self.create_solution_file(
-                                    kata_folder_path, kata, language
-                                )
-                            )
+                    tasks.extend(
+                        asyncio.create_task(
+                            self.create_solution_file(kata_folder_path, kata, language)
                         )
-
+                        for language in kata["completedLanguages"]
+                    )
             await asyncio.gather(*tasks)
 
         await self.create_index_file()
@@ -231,18 +236,20 @@ class CodeWarsKataScrapper:
 
     def get_credentials(self, key: str) -> str:
         """
-        This function retrieves the credentials for a specific key from the environment variables.
+        This function retrieves the credentials for a specific key from the environment
+        variables.
 
         Args:
-        key (str): The key parameter is a string that specifies which credential to retrieve. It can
-        be one of three values: "username", "email", or "password".
+        key (str): The key parameter is a string that specifies which credential to
+        retrieve. It can be one of three values: "username", "email", or "password".
 
         Returns:
-        a string that corresponds to the value of the environment variable associated with the input
-        key. If the key is "username", the function returns the value of the environment variable
-        "CODEWARS_USERNAME". If the key is "email", the function returns the value of the
-        environment variable "CODEWARS_EMAIL". If the key is "password", the function returns
-        the value of the environment variable
+        a string that corresponds to the value of the environment variable associated
+        with the input key. If the key is "username", the function returns the value of
+        the environment variable "CODEWARS_USERNAME". If the key is "email", the
+        function returns the value of the environment variable "CODEWARS_EMAIL".
+        If the key is "password", the function returns the value of the environment
+        variable
         """
         load_dotenv()
         if key == "username":
@@ -254,17 +261,18 @@ class CodeWarsKataScrapper:
 
     def sign_in_to_codewars(
         self, driver: WebDriver, codewars_email: str, codewars_password: str
-    ):
+    ) -> None:
         """
-        This function signs in to Codewars using a given email and password through a web driver.
+        This function signs in to Codewars using a given email and password through a
+        web driver.
 
         Args:
-        - driver (WebDriver): WebDriver is an object that controls the web browser and allows
-        the script to interact with it.
-        - codewars_email (str): The email address associated with the Codewars account that you
-        want to sign in to.
-        - codewars_password (str): The password for the Codewars account that the user wants to
-        sign in to.
+        - driver (WebDriver): WebDriver is an object that controls the web browser and
+        allows the script to interact with it.
+        - codewars_email (str): The email address associated with the Codewars account
+        that you want to sign in to.
+        - codewars_password (str): The password for the Codewars account that the user
+        wants to sign in to.
         """
         try:
             driver.get("https://www.codewars.com/users/sign_in")
@@ -288,16 +296,17 @@ class CodeWarsKataScrapper:
         self, kata_folder_path, kata, kata_details
     ) -> None:
         """
-        This function creates a README.md file in a specified folder path with information about a
-        coding problem.
+        This function creates a README.md file in a specified folder path with
+        information about a coding problem.
 
         Args:
-        - kata_folder_path: The path to the folder where the README.md file will be created or
-        updated.
-        - kata: A dictionary containing information about a specific CodeWars kata, including its
-        name, ID, completion date, and completed languages.
-        - kata_details: The `kata_details` parameter is a dictionary containing details about a
-        specific coding challenge or kata, such as its description, tags, and rank.
+        - kata_folder_path: The path to the folder where the README.md file will be
+        created or updated.
+        - kata: A dictionary containing information about a specific CodeWars kata,
+        including its name, ID, completion date, and completed languages.
+        - kata_details: The `kata_details` parameter is a dictionary containing details
+        about a specific coding challenge or kata, such as its description, tags,
+        and rank.
         """
         file_path: str = os.path.join(kata_folder_path, "README.md")
         content: str = (
@@ -316,18 +325,20 @@ class CodeWarsKataScrapper:
                 await write_file_content(file_path, content)
         except OSError:
             self.error_list.append(
-                f"An error occurred while creating the problem description file of {kata['name']}."
+                f"An error occurred while creating the problem description \
+                    file of {kata['name']}."
             )
 
     async def create_solution_file(self, kata_folder_path, kata, language) -> None:
         """
-        This function creates a solution file for a given kata and language by scraping the code
-        from the newest solution on the kata's Codewars page.
+        This function creates a solution file for a given kata and language by scraping
+        the code from the newest solution on the kata's Codewars page.
 
         Args:
-        - kata_folder_path: The path to the folder where the solution file will be created.
-        - kata: The kata parameter is a dictionary containing information about a specific coding
-        challenge on Codewars, such as its ID, name, and description.
+        - kata_folder_path: The path to the folder where the solution file will be
+        created.
+        - kata: The kata parameter is a dictionary containing information about a
+        specific coding challenge on Codewars, such as its ID, name, and description.
         - language: The programming language of the solution file to be created.
         """
         try:
@@ -349,12 +360,13 @@ class CodeWarsKataScrapper:
                 await write_file_content(file_path, solution_code)
         except TimeoutError:
             self.error_list.append(
-                f"The driver took too much time for {kata['name']} ({language}). Skipping..."
+                f"The driver took too much time for {kata['name']} ({language}). \
+                    Skipping..."
             )
         except NoSuchElementException:
             self.error_list.append(
-                f"Couldn't find the solution for {kata['name']} ({language}) on CodeWars. "
-                "Failed to create solution file. Skipping..."
+                f"Couldn't find the solution for {kata['name']} ({language}) "
+                "on CodeWars. Failed to create solution file. Skipping..."
             )
         except OSError:
             self.error_list.append(
@@ -364,8 +376,8 @@ class CodeWarsKataScrapper:
 
     async def create_index_file(self) -> None:
         """
-        This function creates an index file with a list of completed code challenges sorted
-        by category.
+        This function creates an index file with a list of completed code challenges
+        sorted by category.
         """
         file_path: str = "./README.md"
 
@@ -374,7 +386,8 @@ class CodeWarsKataScrapper:
 
         content: str = (
             "# Index of katas by its category/discipline\n\n"
-            + f"These are the {self.total_completed_katas} code challenges I have completed:"
+            + f"These are the {self.total_completed_katas} code challenges I have \
+                completed:"
             + "\n## Fundamentals\n\n"
             + "\n".join(self.kata_categories["reference"])
             + "\n## Algorithms\n\n"
@@ -388,7 +401,9 @@ class CodeWarsKataScrapper:
         )
 
         try:
-            if not os.path.exists(file_path) or content != await read_file_content(file_path):
+            if not os.path.exists(file_path) or content != await read_file_content(
+                file_path
+            ):
                 await write_file_content(file_path, content)
         except OSError:
             self.error_list.append("There was a problem while creating the index file.")
