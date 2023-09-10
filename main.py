@@ -10,7 +10,7 @@ import sys
 from collections import defaultdict
 
 import aiofiles
-from aiohttp import ClientSession
+from aiohttp import ClientSession, ContentTypeError
 from dotenv import load_dotenv
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
@@ -138,8 +138,18 @@ class CodeWarsKataScrapper:
             "vb": "vb",
         }
         self.language_icons = {
-            "python": "python/python-original.svg",
+            "c": "c/c-original.svg",
+            "cplusplus": "cplusplus/cplusplus-original.svg",
+            "csharp": "csharp/csharp-original.svg",
+            "go": "go/go-original.svg",
+            "haskell": "haskell/haskell-original.svg",
+            "java": "java/java-original.svg",
             "javascript": "javascript/javascript-original.svg",
+            "php": "php/php-original.svg",
+            "python": "python/python-original.svg",
+            "ruby": "ruby/ruby-original.svg",
+            "rust": "rust/rust-plain.svg",
+            "typescript": "typescript/typescript-original.svg",
         }
         self.kata_categories: dict[str, dict[str, list[dict[str, str]]]] = {}
         for category in [
@@ -194,9 +204,22 @@ class CodeWarsKataScrapper:
                 completed_katas: list[dict] = response_content["data"]
 
                 for kata in completed_katas:
-                    response = await session.get(f"{self.kata_info_url}{kata['id']}")
-                    kata_details: dict = await response.json()
-                    await asyncio.sleep(0.5)
+                    backoff_time = 1.0
+                    while True:
+                        try:
+                            response = await session.get(
+                                f"{self.kata_info_url}{kata['id']}"
+                            )
+                            kata_details: dict = await response.json()
+                            break
+                        except ContentTypeError:
+                            print(
+                                "\rAn error occurred while retrieving information. "
+                                f"Retrying in {backoff_time} seconds...",
+                                end="",
+                            )
+                            await asyncio.sleep(backoff_time)
+                            backoff_time *= 2
 
                     kata_folder_path: str = os.path.join(
                         self.main_folder_path, kata["slug"]
@@ -217,7 +240,7 @@ class CodeWarsKataScrapper:
                     self.counter += 1
                     print(
                         f"\rProcessing kata {self.counter} "
-                        f"of {self.total_completed_katas}...",
+                        f"of {self.total_completed_katas}...".ljust(100),
                         end="",
                     )
 
