@@ -7,6 +7,7 @@ libraries for web scraping and asynchronous file operations.
 import asyncio
 import os
 import sys
+from collections import defaultdict
 
 import aiofiles
 from aiohttp import ClientSession
@@ -82,7 +83,7 @@ class CodeWarsKataScrapper:
     """
 
     def __init__(self) -> None:
-        self.language_extensions: dict[str, str] = {
+        self.language_extensions = {
             "agda": "agda",
             "bf": "b",
             "c": "c",
@@ -136,13 +137,19 @@ class CodeWarsKataScrapper:
             "typescript": "ts",
             "vb": "vb",
         }
-        self.kata_categories: dict[str, list[str]] = {
-            "reference": [],  # Equivalent to the "Fundamentals" category
-            "algorithms": [],
-            "bug_fixes": [],
-            "refactoring": [],
-            "games": [],  # Equivalent to the "Puzzles" category
+        self.language_icons = {
+            "python": "python/python-original.svg",
+            "javascript": "javascript/javascript-original.svg",
         }
+        self.kata_categories: dict[str, dict[str, list[dict[str, str]]]] = {}
+        for category in [
+            "reference",  # Equivalent to the "Fundamentals" category
+            "algorithms",
+            "bug_fixes",
+            "refactoring",
+            "games",  # Equivalent to the "Puzzles" category
+        ]:
+            self.kata_categories[category] = defaultdict(list)
 
         self.options = Options()
         self.options.add_argument("--headless")
@@ -195,14 +202,22 @@ class CodeWarsKataScrapper:
                         self.main_folder_path, kata["slug"]
                     )
 
-                    self.kata_categories[kata_details["category"]].append(
-                        f'- [{kata["name"]}](./katas/{kata["slug"]})'
-                    )
+                    kata_object = {
+                        "id": kata["id"],
+                        "name": kata["name"],
+                        "link": f'./katas/{kata["slug"]}',
+                        "completed_languages": kata["completedLanguages"],
+                        "tags": kata_details["tags"],
+                    }
+
+                    self.kata_categories[kata_details["category"]][
+                        kata_details["rank"]["name"]
+                    ].append(kata_object)
 
                     self.counter += 1
                     print(
-                        f"\rProcessing kata {self.counter} \
-                            of {self.total_completed_katas}...",
+                        f"\rProcessing kata {self.counter} "
+                        f"of {self.total_completed_katas}...",
                         end="",
                     )
 
@@ -309,7 +324,7 @@ class CodeWarsKataScrapper:
         """
         file_path: str = os.path.join(kata_folder_path, "README.md")
         content: str = (
-            f"# [{kata['name']}](https://www.codewars.com/kata/{kata['id']})\n\n"
+            f"# [{kata['name']}]({kata_details['url']})\n\n"
             f"- **Completed at:** {kata['completedAt']}\n\n"
             f"- **Completed languages:** {', '.join(kata['completedLanguages'])}\n\n"
             f"- **Tags:** {', '.join(kata_details['tags'])}\n\n"
@@ -380,24 +395,48 @@ class CodeWarsKataScrapper:
         """
         file_path: str = "./README.md"
 
-        for problems in self.kata_categories.values():
-            problems.sort(key=lambda s: s.lower())
+        for category in self.kata_categories.values():
+            for rank in category.values():
+                rank.sort(key=lambda s: s["name"].lower())
 
         content: str = (
-            "# Index of katas by its category/discipline\n\n"
-            + f"These are the {self.total_completed_katas} code challenges I have \
-                completed:"
-            + "\n## Fundamentals\n\n"
-            + "\n".join(self.kata_categories["reference"])
-            + "\n## Algorithms\n\n"
-            + "\n".join(self.kata_categories["algorithms"])
-            + "\n## Bug Fixes\n\n"
-            + "\n".join(self.kata_categories["bug_fixes"])
-            + "\n## Refactoring\n\n"
-            + "\n".join(self.kata_categories["refactoring"])
-            + "\n## Puzzles\n\n"
-            + "\n".join(self.kata_categories["games"])
+            "# KataVault\n\n"
+            f"These are the {self.total_completed_katas} code challenges I have "
+            "completed sorted by category and kyu:"
         )
+
+        for category_name, category in self.kata_categories.items():
+            if not category:
+                continue
+
+            if category_name == "reference":
+                category_name = "fundamentals"
+            elif category_name == "games":
+                category_name = "puzzles"
+
+            content += f"\n\n## {category_name.capitalize().replace('_', ' ')}\n\n"
+
+            for rank, problems in category.items():
+                problems.sort(key=lambda s: s["name"].lower())
+
+                content += f"\n### {rank}\n\n"
+                content += "| Kata | Languages | Tags |\n"
+                content += "| ---- | --------- | :----: |\n"
+
+                for problem in problems:
+                    problem["completed_languages"] = map(
+                        lambda s: '[<img height="15px" style="vertical-align: middle" '
+                        'src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/'
+                        f'{self.language_icons[s]}" />]'
+                        f'({problem["link"]}/solution.{self.language_extensions[s]})',
+                        problem["completed_languages"],
+                    )
+
+                    content += (
+                        f"| [{problem['name']}]({problem['link']}) "
+                        f"| {' '.join(problem['completed_languages'])} "
+                        f"| {', '.join(problem['tags'])} |\n"
+                    )
 
         try:
             if not os.path.exists(
