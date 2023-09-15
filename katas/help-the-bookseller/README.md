@@ -2,7 +2,7 @@
 
 - **Completed at:** 2023-05-09T01:16:41.529Z
 
-- **Completed languages:** python
+- **Completed languages:** python, javascript
 
 - **Tags:** Fundamentals, Algorithms
 
