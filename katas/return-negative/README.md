@@ -94,7 +94,7 @@ makeNegative(0);  # return 0
 ```
 ``` coffeescript
 makeNegative 1    # return -1
-makeNegative -5   # return -5
+makeNegative -1   # return -1
 makeNegative 0    # return 0
 ```
 ``` elixir
