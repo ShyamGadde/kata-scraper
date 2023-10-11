@@ -17,7 +17,7 @@ He drops the ball out of the window. The ball bounces (for example), to two-thir
  
 His mother looks out of a window 1.5 meters from the ground.
 
-How many times will the mother see the ball pass in front of her window (including when it's falling _and_ bouncing?
+How many times will the mother see the ball pass in front of her window (including when it's falling _and_ bouncing)?
 
 #### Three conditions must be met for a valid experiment:
 
