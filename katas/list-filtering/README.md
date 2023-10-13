@@ -39,3 +39,8 @@ filterList(List(1, 2, "a", "b")) == List(1, 2)
 filterList(List(1, "a", "b", 0, 15)) == List(1, 0, 15)
 filterList(List(1, 2, "aasf", "1", "123", 123)) == List(1, 2, 123)
 ```
+```kotlin
+filterList(ListOf(1, 2, "a", "b")) == [1,2]
+filterList(ListOf(1, 2, "a", "b", 0, 15)) == [1,0,15]
+filterList(ListOf(1, 2, "a", "b", "aasf", "1", "123", 231)) == [1,2,123]
+```
