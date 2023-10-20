@@ -18,10 +18,10 @@ You need to return a string that looks like a diamond shape when printed on the 
 
 Return `null/nil/None/...` if the input is an even number or negative, as it is not possible to print a diamond of even or negative size.
 
-
 ## Examples
 
 A size 3 diamond:
+
 
 ```
  *
