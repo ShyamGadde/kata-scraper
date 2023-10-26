@@ -41,6 +41,3 @@ b = [121, 14641, 20736, 36100, 25921, 361, 20736, 361]
 - `a` or `b` might be `nil` or `null` or `None` or `nothing` (except in C++, COBOL, Crystal, D, Dart, Elixir, Fortran, F#, Haskell, Nim, OCaml, Pascal, Perl, PowerShell, Prolog, PureScript, R, Racket, Rust, Shell, Swift). 
 
 If `a` or `b` are `nil` (or `null` or `None`, depending on the language), the problem doesn't make sense so return false.
-
-#### Note for C
-The two arrays have the same size `(> 0)` given as parameter in function `comp`.
