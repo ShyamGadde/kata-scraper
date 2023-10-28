@@ -1,6 +1,6 @@
 # KataVault
 
-These are the 397 code challenges I have completed sorted by category and kyu:
+These are the 398 code challenges I have completed sorted by category and kyu:
 
 ## Fundamentals
 
@@ -49,6 +49,7 @@ These are the 397 code challenges I have completed sorted by category and kyu:
 | [New Cashier Does Not Know About Space or Shift ](./katas/new-cashier-does-not-know-about-space-or-shift) | [<img height="15px" style="vertical-align: middle" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />](./katas/new-cashier-does-not-know-about-space-or-shift/solution.py) | Strings, Fundamentals |
 | [Persistent Bugger.](./katas/persistent-bugger) | [<img height="15px" style="vertical-align: middle" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />](./katas/persistent-bugger/solution.js) | Fundamentals |
 | [Playing with digits](./katas/playing-with-digits) | [<img height="15px" style="vertical-align: middle" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />](./katas/playing-with-digits/solution.js) | Fundamentals, Mathematics |
+| [Primorial Of  a Number ](./katas/primorial-of-a-number) | [<img height="15px" style="vertical-align: middle" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />](./katas/primorial-of-a-number/solution.py) | Fundamentals, Arrays, Number Theory |
 | [Replace With Alphabet Position](./katas/replace-with-alphabet-position) | [<img height="15px" style="vertical-align: middle" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />](./katas/replace-with-alphabet-position/solution.js) | Strings, Fundamentals |
 | [Reverse every other word in the string](./katas/reverse-every-other-word-in-the-string) | [<img height="15px" style="vertical-align: middle" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />](./katas/reverse-every-other-word-in-the-string/solution.py) | Arrays, Fundamentals |
 | [Reverse or rotate?](./katas/reverse-or-rotate) | [<img height="15px" style="vertical-align: middle" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />](./katas/reverse-or-rotate/solution.py) | Algorithms, Strings |
