@@ -128,3 +128,4 @@ ToAlternativeCase("String.prototype.toAlternatingCase"); // => "sTRING.PROTOTYPE
 ```
 
 As usual, your function/method should be pure, i.e. it should **not** mutate the original string.
+
