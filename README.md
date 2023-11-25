@@ -1,5 +1,7 @@
 # KataVault
 
+![](https://www.codewars.com/users/AquaMayhs/badges/large)
+
 These are the 398 code challenges I have completed sorted by category and kyu:
 
 ## Fundamentals
