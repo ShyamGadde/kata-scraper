@@ -424,7 +424,7 @@ class CodeWarsKataScrapper:
 
         content: str = (
             "# KataVault\n\n"
-            f"![](https://www.codewars.com/users/{os.getenv("CODEWARS_USERNAME")}/badges/large)\n\n"
+            f"![](https://www.codewars.com/users/{os.getenv('CODEWARS_USERNAME')}/badges/large)\n\n"
             f"These are the {self.total_completed_katas} code challenges I have "
             "completed sorted by category and kyu:"
         )
