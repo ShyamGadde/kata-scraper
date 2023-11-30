@@ -2,7 +2,7 @@
 
 - **Completed at:** 2023-05-03T04:36:57.328Z
 
-- **Completed languages:** python, javascript
+- **Completed languages:** javascript, python
 
 - **Tags:** Fundamentals, Arrays
 
