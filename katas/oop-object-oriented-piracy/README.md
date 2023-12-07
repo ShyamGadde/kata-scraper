@@ -19,9 +19,11 @@ Unfortunately for you, people weigh a lot these days, so how do you know if a sh
 
 You begin with writing a generic Ship class / struct:
 ```javascript
-function Ship(draft,crew) {
- this.draft = draft;
- this.crew = crew;
+class Ship {
+  constructor(draft, crew) {
+    this.draft = draft
+    this.crew = crew
+  }
 }
 ```
 ```python
@@ -67,7 +69,7 @@ Every time your spies see a new ship enter the dock, they will create a new ship
 * crew - the count of crew on board
 
 ```javascript
-var titanic = new Ship(15, 10);
+const titanic = new Ship(15, 10);
 ```
 ```python
 Titanic = Ship(15, 10)
