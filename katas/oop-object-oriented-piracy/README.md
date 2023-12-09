@@ -62,6 +62,14 @@ public class Ship {
     }
 } 
 ```
+```ruby
+class Ship
+  def initialize(draft,crew)
+    @draft=draft
+    @crew=crew
+  end
+end
+```
 
 Every time your spies see a new ship enter the dock, they will create a new ship object based on their observations:
 
@@ -86,6 +94,9 @@ Ship titanic = new Ship(15, 10);
 ```java
 Ship titanic = new Ship(15, 10);
 ```
+```ruby
+titanic = Ship.new(15, 10)
+```
 
 ## Task
 You have access to the ship "draft" and "crew". "Draft" is the total ship weight and "crew" is the number of humans on the ship.
@@ -108,6 +119,10 @@ IsWorthIt
 ```java
 isWorthIt
 ```
+```ruby
+is_worth_it
+```
+
 to decide if the ship is worthy to loot. For example:
 
 ```javascript
@@ -125,6 +140,9 @@ titanic.is_worth_it() -> false
 ```
 ```java
 titanic.isWorthIt() == false
+```
+```ruby
+titanic.is_worth_it() # false
 ```
 
 Good luck and may you find GOOOLD!
