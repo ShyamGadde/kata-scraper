@@ -20,7 +20,7 @@ Create a function *take* that takes an `Array<Int>` and an `Int`, *n*, and retur
 
 If you need help, here's a reference:
 ```
-~~~if:javascript
+~~~if:javascript,coffeescript
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
 ~~~
 ~~~if:ruby
@@ -40,4 +40,7 @@ https://docs.microsoft.com/en-us/dotnet/api/system.array?view=netcore-3.1
 ~~~
 ~~~if:cobol
 https://www.ibm.com/docs/en/cobol-zos/4.2?topic=program-handling-tables
+~~~
+~~~if:scala
+https://scala-lang.org/api/3.x/scala/collection/Seq.html
 ~~~
