@@ -30,3 +30,5 @@ Array's length > 2.
 
 More details here:
 https://en.wikipedia.org/wiki/Comma-separated_values
+
+Note: you shouldn't escape the `\n`, it should work as a new line.
