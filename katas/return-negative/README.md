@@ -94,7 +94,7 @@ makeNegative(0);  # return 0
 ```
 ``` coffeescript
 makeNegative 1    # return -1
-makeNegative -1   # return -1
+makeNegative -5   # return -5
 makeNegative 0    # return 0
 ```
 ``` elixir
@@ -103,9 +103,11 @@ make_negative -5   # return -5
 make_negative 0    # return 0
 ```
 ``` go
+
 MakeNegative(1)    // return -1
 MakeNegative(-5)   // return -5
 MakeNegative(0)    // return 0
+
 ```
 ``` julia
 Kata.makenegative(1)  # return -1
@@ -139,6 +141,13 @@ makeNegative(0.12) // return -0.12
 (make-negative 0)    ; 0
 (make-negative 0.12) ; -0.12
 ```
+
+``` rust
+make_negative(1);  // return -1 
+make_negative(-5); // return -5
+make_negative(0);  // return 0
+```
+
 ``` scala
 Negative.makeNegative(1)  // return -1
 Negative.makeNegative(-5) // return -5
@@ -157,6 +166,11 @@ Kata::make_negative(0.12); # return -0.12
       * RESULT = -5
         MAKE-NEGATIVE 0
       * RESULT = 0
+```
+``` clojure
+(make-negative  1)  ; return -1
+(make-negative  -5) ; return -5
+(make-negative  0)  ; return 0
 ```
 
 ### Notes
