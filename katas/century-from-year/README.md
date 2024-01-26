@@ -27,6 +27,7 @@ Given a year, return the century it is in.
 1900 --> 19
 1601 --> 17
 2000 --> 20
+2742 --> 28
 ```
 
 ```if:sql

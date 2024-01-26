@@ -10,7 +10,7 @@
 
 ## Description
 
-Very simple, given an integer or a floating-point number, find its opposite.
+Very simple, given a number (integer / decimal / both depending on the language), find its opposite (additive inverse).
 
 Examples:
 ```
