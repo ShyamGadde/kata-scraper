@@ -28,16 +28,12 @@ You'll have to translate a string to Pilot's alphabet ([NATO phonetic alphabet](
 
 **Note:**
 
-* There are preloaded dictionary you can use, named `NATO`
+* There is a preloaded dictionary that you can use, named `NATO`. It uses uppercase keys, e.g. `NATO['A']` is `"Alfa"`. See comments in the initial code to see how to access it in your language.
 * The set of used punctuation is `,.!?`.
 * Punctuation should be kept in your return string, but spaces should not.
 * __Xray__ should not have a dash within.
 * Every word and punctuation mark should be seperated by a space ' '.
 * There should be no trailing whitespace
-
-~~~if:php
-You can access the preloaded associative array using `Constants::$NATO` 
-~~~
 
 ~~~if:rust
 The NATO phonetic alphabet (A–Z) is preloaded:
