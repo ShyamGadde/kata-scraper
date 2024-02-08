@@ -12,7 +12,7 @@
 
 Linked Lists - Length & Count
 
-Implement Length() to count the number of nodes in a linked list.<br>
+Implement `length` to count the number of nodes in a linked list.<br>
 ```javascript
 length(null) => 0
 length(1 -> 2 -> 3 -> null) => 3
@@ -29,12 +29,20 @@ Length(1 -> 2 -> 3 -> null) => 3
       NodeListLength(null) => 0
       NodeListLength(1 -> 2 -> 3 -> null) => 3
 ```
-```if-not:csharp
+```lambdacalc
+length nil # 0
+length (1 -> 2 -> 3 -> nil) # 3
+```
+~~~if-not:csharp,lambdacalc
 Implement Count() to count the occurrences of an integer in a linked list.
-```
-```if:csharp
+~~~
+~~~if:csharp
 Implement Count() to count the occurrences of a that satisfy a condition provided by a predicate which takes in a node's Data value.
-```
+~~~
+~~~if:lambdacalc
+Implement `count` to count the occurrences of an element in a linked list. A function `eq` is preloaded for you to make comparisons, which will return `True = \ a _ . a` or `False = \ _ b . b`.
+~~~
+
 ```javascript
 count(null, 1) => 0
 count(1 -> 2 -> 3 -> null, 1) => 1
@@ -53,8 +61,28 @@ Count(1 -> 1 -> 1 -> 2 -> 2 -> 2 -> 2 -> 3 -> 3 -> nullptr, 2) => 4
       NodeListCount(null, 1) => 0
       NodeListCount(1 -> 2 -> 2 -> 2 -> 2 -> 3 -> 3 -> null, 2) => 4
 ```
+```lambdacalc
+count nil 1 # 0
+count (1 -> 2 -> 3 -> nil) 1 # 1
+count (1 -> 1 -> 2 -> 1 -> 2) 2 # 2
+```
 
 I've decided to bundle these two functions within the same Kata since they are both very similar.
+
+~~~if:lambdacalc
+### Lambda Calculus Notes
+
+In the LC translations of this series, we use the Scott encoding of a linked list. In this encoding, a list is a function which accepts two arguments. If the list is `nil` then it returns the first argument (the default case), otherwise it will pass its data and tail to the second argument. In practice this looks like this:
+```lambdacalc
+my-list (default-case) (\ data next . result)
+```
+For this kata, `nil` is defined for you in `Preloaded` like this:
+```lambdacalc
+nil = \ n _ . n
+```
+
+In addition, we also use the [Scott encoding](https://github.com/codewars/lambda-calculus/wiki/encodings-guide#scott-numerals) of numbers.
+~~~
 
 The `push()`/`Push()` and `buildOneTwoThree()`/`BuildOneTwoThree()` functions do not need to be redefined.
 
