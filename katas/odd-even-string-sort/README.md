@@ -23,3 +23,8 @@ indices:   01234567      0246 1357
 Even indices 0, 2, 4, 6, so we have `"CdWr"` as the first group.  
 Odd indices are 1, 3, 5, 7, so the second group is `"oeas"`.  
 And the final string to return is `"Cdwr oeas"`.
+
+
+### Notes
+
+Tested strings are at least 8 characters long.
