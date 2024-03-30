@@ -4,7 +4,7 @@
 
 - **Completed languages:** javascript
 
-- **Tags:** Fundamentals
+- **Tags:** Fundamentals, Mathematics
 
 - **Rank:** 6 kyu
 
