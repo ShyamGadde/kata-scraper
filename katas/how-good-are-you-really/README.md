@@ -10,13 +10,19 @@
 
 ## Description
 
-There was a test in your class and you passed it. Congratulations!</br>
-But you're an ambitious person. You want to know if you're better than the average student in your class.</br>
+There was a test in your class and you passed it. Congratulations!
 
-You receive an array with your peers' test scores. Now calculate the average and compare your score!</br>
+
+
+But you're an ambitious person. You want to know if you're better than the average student in your class.
+
+
+
+You receive an array with your peers' test scores. Now calculate the average and compare your score!
+
 
 ~~~if-not:nasm,racket
-Return `True` if you're better, else `False`!
+Return `true` if you're better, else `false`!
 ~~~
 
 ~~~if:racket
@@ -29,4 +35,4 @@ Return `1` if you're better, else `0`!
 
 ### Note:
 
-Your points are not included in the array of your class's points. For calculating the average point you may add your point to the given array!
+Your points are not included in the array of your class's points. Do not forget them when calculating the average score!
