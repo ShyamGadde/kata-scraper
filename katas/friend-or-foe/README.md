@@ -23,13 +23,15 @@ Ex: Input = `{ "Ryan" "Kieran" "Jason" "Yous" }`, Output = `{ "Ryan" "Yous" }`
 ~~~
 
 i.e.
-```haskell
-friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
+```C++
+friend {"Ryan", "Kieran", "Mark"} `shouldBe` {"Ryan", "Mark"}
 ```
 
 ```factor
 { "Ryan" "Kieran" "Mark" } friend -> { "Ryan" "Mark" }
 ```
+
+If there are no friends return `{""}`.
 
 
 Note: keep the original order of the names in the output.
