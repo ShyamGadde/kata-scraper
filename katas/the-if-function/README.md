@@ -49,7 +49,7 @@ void TheFalse() { std::cout << "false" }
 _if(true, TheTrue, TheFalse);
 // Logs 'true' to the console.
 ```
-``` csharp
+```csharp
 Kata.If(true, () => Console.WriteLine("True"), () => Console.WriteLine("False"));
 // write "True" to console
 ```
@@ -88,4 +88,8 @@ _if(true, || println!("true"), || println!("false"))
 ```lua
 kata._if(true, function() print("true") end, function() print("false") end)
 -- prints "true" to the console
+```
+```java
+Kata._if(true, () -> System.out.println("true"), () -> System.out.println("false"));
+// prints "true" to the System out.
 ```
