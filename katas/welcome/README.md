@@ -17,7 +17,7 @@ Your start-up's BA has told marketing that your website has a large audience in 
 - Write a 'welcome' function that takes a parameter 'language', with a type `String`, and returns a greeting - if you have it in your database. It should default to English if the language is not in the database, or in the event of an invalid input.
 
 ### The Database
-
+Please modify this as appropriate for your language.
 ```haskell
 [ ("english", "Welcome")
 , ("czech", "Vitejte")
