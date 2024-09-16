@@ -48,9 +48,15 @@ four(plus(nine())); // must return 13
 eight(minus(three())); // must return 5
 six(divided_by(two())); // must return 3
 ```
+```ocaml
+seven @@ times      @@ five  (* must return 35 *)
+four  @@ plus       @@ nine  (* must return 13 *)
+eight @@ minus      @@ three (* must return  5 *)
+six   @@ divided_by @@ two   (* must return  3 *)
+```
 
 Requirements:
-~~~if:ruby,python,cpp
+~~~if:ruby,python,cpp,ocaml
 * There must be a function for each number from 0 ("zero") to 9 ("nine")
 * There must be a function for each of the following mathematical operations: plus, minus, times, divided_by
 * Each calculation consist of exactly one operation and two numbers
@@ -64,7 +70,7 @@ Requirements:
 * The leftmost word represents the left operand, the rightmost word represents the right operand
 * Division should be **integer division**. For example, this should return `2`, not `2.666666...`:
 ~~~
-~~~if-not:ruby,python,factor,cpp
+~~~if-not:ruby,python,factor,cpp,ocaml
 * There must be a function for each number from 0 ("zero") to 9 ("nine")
 * There must be a function for each of the following mathematical operations: plus, minus, times, dividedBy
 * Each calculation consist of exactly one operation and two numbers
@@ -89,4 +95,7 @@ eight divided-by three
 ```
 ```cpp
 eight(divided_by(three()));
+```
+```ocaml
+eight @@ divided_by @@ three
 ```
