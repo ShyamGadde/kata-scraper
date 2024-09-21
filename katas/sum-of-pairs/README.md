@@ -32,7 +32,7 @@ sum_pairs([4, 3, 2, 3, 4],         6)
 
 sum_pairs([0, 0, -2, 3], 2)
 #  there are no pairs of values that can be added to produce 2.
-== None/nil/undefined (Based on the language)
+== None/nil/undefined/Nothing (Based on the language)
 
 sum_pairs([10, 5, 2, 3, 7, 5],         10)
 #              ^-----------^   5 + 5 = 10, indices: 1, 5
