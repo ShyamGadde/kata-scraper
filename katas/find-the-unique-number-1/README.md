@@ -4,7 +4,7 @@
 
 - **Completed languages:** python
 
-- **Tags:** Fundamentals, Algorithms, Arrays
+- **Tags:** Fundamentals, Algorithms, Arrays, Performance
 
 - **Rank:** 6 kyu
 
