@@ -15,9 +15,9 @@
 You will be given a number and you will need to return it as a string in [Expanded Form](https://www.mathsisfun.com/definitions/expanded-notation.html). For example:
 
 ```
-expandedForm(12)    --> should return "10 + 2"
-expandedForm(42)    --> should return "40 + 2"
-expandedForm(70304) --> should return "70000 + 300 + 4"
+   12 --> "10 + 2"
+   45 --> "40 + 2"
+70304 --> "70000 + 300 + 4"
 ```
 
 NOTE: All numbers will be whole numbers greater than 0.
