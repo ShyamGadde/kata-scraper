@@ -19,3 +19,30 @@ Write a function that takes an array of words and smashes them together into a s
 ```
 ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
 ```
+
+```ruby
+words = ['hello', 'world', 'this', 'is', 'great']
+smash(words) # returns "hello world this is great"
+```
+```haskell
+smash ["hello", "world", "this", "is", "great"] `shouldBe` "hello world this is great"
+```
+```elixir
+words = ["hello", "world", "this", "is", "great"]
+smash(words) # returns "hello world this is great"
+```
+
+
+## Assumptions
+
+* You can assume that you are only given words.
+* You cannot assume the size of the array.
+* You can assume that you do get an array.
+
+## What We're Testing
+
+We're testing basic loops and string manipulation. This is for beginners who are just learning loops and string manipulation.
+
+## Disclaimer
+
+This is for beginners so we want to test basic loops and string manipulation. Advanced users should easily be able to do this in one line.
