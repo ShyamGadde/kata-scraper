@@ -11,7 +11,7 @@
 ## Description
 
 A bookseller has lots of books classified in 26 categories labeled A, B, ... Z. 
-Each book has a code `c` of 3, 4, 5 or more characters. The **1st** character of a code is a capital letter which defines the book category.
+Each book has a code `c` with randomized sizes of characters. The **1st** character of a code is a capital letter which defines the book category.
   
   In the bookseller's stocklist each code `c` is followed by a space and by a positive integer n (int n >= 0) 
   which indicates the quantity of books of this code in stock.
