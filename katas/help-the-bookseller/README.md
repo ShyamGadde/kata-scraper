@@ -10,41 +10,36 @@
 
 ## Description
 
-A bookseller has lots of books classified in 26 categories labeled A, B, ... Z. 
-Each book has a code `c` with randomized sizes of characters. The **1st** character of a code is a capital letter which defines the book category.
+A bookseller has lots of books classified in 26 categories labeled `A, B, C, ..., Z`. Each book has a *code* of at least 3 characters. The **1st character** of a code is a capital letter which **defines the book category**.
   
-  In the bookseller's stocklist each code `c` is followed by a space and by a positive integer n (int n >= 0) 
-  which indicates the quantity of books of this code in stock.
+In the bookseller's stocklist each code is followed by a space and by a positive integer, which indicates the *quantity* of books of this code in stock.
 
-For example an extract of a stocklist could be:
+
+## Task
+
+You will receive the bookseller's stocklist and a list of categories. Your task is to find the total number of books in the bookseller's stocklist, with the category codes in the list of categories. Note: the codes are in the same order in both lists.
+
+Return the result as a string described in the example below, or as a list of pairs (Haskell/Clojure/Racket/Prolog).
+
+If any of the input lists is empty, return an empty string, or an empty array/list (Clojure/Racket/Prolog).
+
+
+## Example
+```python
+# the bookseller's stocklist:
+"ABART 20", "CDXEF 50", "BKWRK 25", "BTSQZ 89", "DRTYM 60"
+
+# list of categories: 
+"A", "B", "C", "W"
+
+# result:
+"(A : 20) - (B : 114) - (C : 50) - (W : 0)"
 ```
-L = {"ABART 20", "CDXEF 50", "BKWRK 25", "BTSQZ 89", "DRTYM 60"}.
-or
-L = ["ABART 20", "CDXEF 50", "BKWRK 25", "BTSQZ 89", "DRTYM 60"] or ....
-```
 
-  You will be given a stocklist (e.g. : L) and a list of categories in capital letters 
-  e.g : 
-```
-M = {"A", "B", "C", "W"} 
-or
-M = ["A", "B", "C", "W"] or ...
-```
-  
-  and your task is to find all the books of L with codes 
-  belonging to each category of M and to sum their quantity according to each category. 
+Explanation:
+* category `A`: 20 books (`ABART`)
+* category `B`: 114 books = 25 (`BKWRK`) + 89 (`BTSQZ`)
+* category `C`: 50 books (`CDXEF`)
+* category `W`: 0 books
 
-
-  For the lists L and M of example you have to return the string (in Haskell/Clojure/Racket/Prolog a list of pairs):  
-  ```
-  (A : 20) - (B : 114) - (C : 50) - (W : 0)
-  ```  
-
-  where A, B, C, W are the categories, 20 is the sum of the unique book of category A, 114 the sum corresponding
-  to "BKWRK" and "BTSQZ", 50 corresponding to "CDXEF" and 0 to category 'W' since there are no code beginning with W.
-
-  If L or M are empty return string is `""` (Clojure/Racket/Prolog should return an empty array/list instead).
-  
-#### Notes:
-- In the result codes and their values are in the same order as in M.
-- See "Samples Tests" for the return.
+ 
