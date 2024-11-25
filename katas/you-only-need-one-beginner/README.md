@@ -16,7 +16,7 @@ You will be given an array `a` and a value `x`. All you need to do is check whet
 The type of `a` and `x` can be `String` or `Int`.
 ~~~
 ~~~if-not:swift
-Array can contain numbers or strings. X can be either.
+`a` can contain numbers or strings. `x` can be either.
 ~~~
 ~~~if:racket
 In racket, you'll be given a list instead of an array. If the value is in the list,
